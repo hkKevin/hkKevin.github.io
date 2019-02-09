@@ -7,18 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Pak Kiu Leung - a Front-end Web Developer</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!--Hint.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"> <!-- Link to the CSS animation library -->
-  
-  
-  <link rel="stylesheet" type="text/css" href='style.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" />
+  <!--Hint.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <!--Link to the CSS animation library-->
 
-  
-  
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href='style.css'>
 </head>
 
 <body>
@@ -51,12 +53,12 @@
       </div>
       <div class="heading">
         <h1>Hi!<br />
-          I'm <div class="wow fadeInDown inline">Pak Kiu Leung</div>,<br />
+          I'm <div class="wow bounce inline">Pak Kiu Leung</div>,<br />
           a Front-end Web Developer.</h1>
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque expedita fuga voluptatibus hic deleniti.
         Doloribus laborum quaerat fugit labore.</p>
-      <a href="#my-projects" class="button">My Projects</a>
+      <a href="#my-projects" id="headerBtn" class="button">My Projects</a>
       <div id='arrow-down'>
         <i class="fas fa-chevron-down"></i>
       </div>
@@ -79,13 +81,13 @@
 
         </div>
         <div id='skills'>
-          <div class="skill wow fadeInUp inline">HTML</div>
-          <div class="skill wow fadeInUp inline" data-wow-delay=".1s">CSS</div>
-          <div class="skill wow fadeInUp inline" data-wow-delay=".2s">Bootstrap</div>
-          <div class="skill wow fadeInUp inline" data-wow-delay=".2s">JavaScript</div>
-          <div class="skill wow fadeInUp inline" data-wow-delay=".3s">React</div>
-          <div class="skill wow fadeInUp inline" data-wow-delay=".4s">jQuery</div>
-          <div class="skill wow fadeInUp inline" data-wow-delay=".5s">SQL</div>
+          <div class="skill inline" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">HTML</div>
+          <div class="skill inline" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="bottom-bottom">CSS</div>
+          <div class="skill inline" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="bottom-bottom">Bootstrap</div>
+          <div class="skill inline" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">JavaScript</div>
+          <div class="skill inline" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="bottom-bottom">React</div>
+          <div class="skill inline" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="bottom-bottom">jQuery</div>
+          <div class="skill inline" data-aos="fade-up" data-aos-delay="600" data-aos-anchor-placement="bottom-bottom">SQL</div>
         </div>
       </div>
     </section>
@@ -94,7 +96,7 @@
     <section id="my-projects" class="grid">
       <h2 class="content-title">My Projects</h2>
       <ul>
-        <li class='card wow fadeInUp' data-toggle="modal" data-target="#modal-1">
+        <li class='card wow slideInUp' data-toggle="modal" data-target="#modal-1">
           <img src="./img/burger-app.png" alt="Image of Burger App">
           <div class="card-content">
             <h3 class="card-title">Burger App</h3>
@@ -106,19 +108,21 @@
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title">Burger App</h4>
-                    <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                      <a href="https://github.com/hkKevin/burger-app" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                      </a>
-                    </span>
-                    </span>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                    <h4 class="modal-title">
+                      Burger App
+                      <div class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                        <a href="https://github.com/hkKevin/burger-app" target="_blank">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                    </h4>
                     <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </div>
                   </div>
                   <div class="modal-body">
+                    <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live
+                      Website</a>
                     <div style="width:100%;height:0;padding-bottom:64%;position:relative;">
                       <iframe src="https://giphy.com/embed/jZyGTPLMJtEtO" width="100%" height="100%" style="position:absolute"
                         frameBorder="0" class="giphy-embed" allowFullScreen>
@@ -136,9 +140,7 @@
                   </div>
                   <div class="modal-footer">
                     <div class="button" data-dismiss="modal">Close</div>
-                    <div class="wow pulse inline">
-                      <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live Website</a>
-                    </div>
+                    <!-- <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live Website</a> -->
                   </div>
                 </div>
               </div>
@@ -146,7 +148,7 @@
           </div>
         </li>
 
-        <li class='card wow fadeInUp' data-wow-delay=".1s" data-toggle="modal" data-target="#modal-2">
+        <li class='card wow slideInUp' data-wow-delay=".1s" data-toggle="modal" data-target="#modal-2">
           <img src="https://images.pexels.com/photos/1451447/pexels-photo-1451447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt="Image of Memo App">
           <div class="card-content">
@@ -159,19 +161,20 @@
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title">Memo App</h4>
-                    <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                      <a href="https://github.com/hkKevin/memo" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                      </a>
-                    </span>
-                    </span>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                    <h4 class="modal-title">
+                      Memo App
+                      <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                        <a href="https://github.com/hkKevin/memo" target="_blank">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </span>
+                    </h4>
                     <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </div>
                   </div>
                   <div class="modal-body">
+                    <a class="button live-website" href='#' target='_blank'>Live Website</a>
                     <div style="width:100%;height:0;padding-bottom:64%;position:relative;">
                       <iframe src="https://giphy.com/embed/jZyGTPLMJtEtO" width="100%" height="100%" style="position:absolute"
                         frameBorder="0" class="giphy-embed" allowFullScreen>
@@ -189,7 +192,7 @@
                   </div>
                   <div class="modal-footer">
                     <div class="button" data-dismiss="modal">Close</div>
-                    <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live Website</a>
+                    <!-- <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live Website</a> -->
                   </div>
                 </div>
               </div>
@@ -197,7 +200,7 @@
           </div>
         </li>
 
-        <li class='card wow fadeInUp' data-wow-delay=".2s" data-toggle="modal" data-target="#modal-3">
+        <li class='card wow slideInUp' data-wow-delay=".2s" data-toggle="modal" data-target="#modal-3">
           <img src="./img/movie-world.png" alt="Image of Movie World">
           <div class="card-content">
             <h3 class="card-title">Movie World</h3>
@@ -208,19 +211,20 @@
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title">Movie World</h4>
-                    <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                      <a href="https://github.com/hkKevin/movie-world" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                      </a>
-                    </span>
-                    </span>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                    <h4 class="modal-title">
+                      Movie World
+                      <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                        <a href="https://github.com/hkKevin/movie-world" target="_blank">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </span>
+                    </h4>
                     <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </div>
                   </div>
                   <div class="modal-body">
+                    <a class="button live-website" href='https://festive-curie-c1aab0.netlify.com/' target='_blank'>Live Website</a>
                     <div style="width:100%;height:0;padding-bottom:64%;position:relative;">
                       <iframe src="https://giphy.com/embed/jZyGTPLMJtEtO" width="100%" height="100%" style="position:absolute"
                         frameBorder="0" class="giphy-embed" allowFullScreen>
@@ -238,7 +242,7 @@
                   </div>
                   <div class="modal-footer">
                     <div class="button" data-dismiss="modal">Close</div>
-                    <a class="button live-website" href='https://festive-curie-c1aab0.netlify.com/' target='_blank'>Live Website</a>
+                    <!-- <a class="button live-website" href='https://festive-curie-c1aab0.netlify.com/' target='_blank'>Live Website</a> -->
                   </div>
                 </div>
               </div>
@@ -254,22 +258,41 @@
         <h2 class="content-title">Contact Me</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ipsum ut qui, quia delectus cum aliquid
           enim voluptate harum nesciunt?</p>
-        <a href="mailto:pakkiuleung@gmail.com" target="_blank">pakkiuleung@gmail.com</a>
+        <a data-aos="fade" data-aos-delay="500" href="mailto:pakkiuleung@gmail.com" target="_blank">pakkiuleung@gmail.com</a>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer id="main-footer" class="grid">
-    <div>Made by <a target='_blank' href="https://github.com/hkKevin">Pak Kiu Leung</a></div>
+    <div class="wow fadeInUp" data-wow-delay="1s">Created<span class="wow fadeIn" data-wow-delay="1.7s"> with ❤️</span> by <a target='_blank' href="https://github.com/hkKevin">Pak Kiu Leung</a></div>
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> <!-- the wow animation JavaScript -->
   <script type="application/javascript"> new WOW().init(); </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <script src='./index.js'></script>
 </body>
 

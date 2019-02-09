@@ -1,4 +1,4 @@
-new WOW().init();
+// new WOW().init();
 
 $(document).ready(function () {
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
   // }
 
 
-  new WOW().init();
+  // new WOW().init();
 
 
   // Burger icon onClick
