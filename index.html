@@ -5,17 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href='style.css'>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" />
-  <!--Hint.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <!--Animate.css-->
+
   <title>Pak Kiu Leung - a Front-end Web Developer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!--Hint.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"> <!-- Link to the CSS animation library -->
+  
+  
+  <link rel="stylesheet" type="text/css" href='style.css'>
+
+  
+  
 </head>
 
 <body>
@@ -46,7 +49,11 @@
         <div id="bar-2"></div>
         <div id="bar-3"></div>
       </div>
-      <h1>Hi!<br>I'm Pak Kiu Leung,<br>a Front-end Web Developer.</h1>
+      <div class="heading">
+        <h1>Hi!<br />
+          I'm <div class="wow fadeInDown inline">Pak Kiu Leung</div>,<br />
+          a Front-end Web Developer.</h1>
+      </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque expedita fuga voluptatibus hic deleniti.
         Doloribus laborum quaerat fugit labore.</p>
       <a href="#my-projects" class="button">My Projects</a>
@@ -72,13 +79,13 @@
 
         </div>
         <div id='skills'>
-          <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">Bootstrap</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">React</span>
-          <span class="skill">jQuery</span>
-          <span class="skill">SQL</span>
+          <div class="skill wow fadeInUp inline">HTML</div>
+          <div class="skill wow fadeInUp inline" data-wow-delay=".1s">CSS</div>
+          <div class="skill wow fadeInUp inline" data-wow-delay=".2s">Bootstrap</div>
+          <div class="skill wow fadeInUp inline" data-wow-delay=".2s">JavaScript</div>
+          <div class="skill wow fadeInUp inline" data-wow-delay=".3s">React</div>
+          <div class="skill wow fadeInUp inline" data-wow-delay=".4s">jQuery</div>
+          <div class="skill wow fadeInUp inline" data-wow-delay=".5s">SQL</div>
         </div>
       </div>
     </section>
@@ -87,16 +94,15 @@
     <section id="my-projects" class="grid">
       <h2 class="content-title">My Projects</h2>
       <ul>
-        <li class='card' data-toggle="modal" data-target="#modal-1">
-          <img src="./img/burger-app.png" alt="a screen of coding">
+        <li class='card wow fadeInUp' data-toggle="modal" data-target="#modal-1">
+          <img src="./img/burger-app.png" alt="Image of Burger App">
           <div class="card-content">
             <h3 class="card-title">Burger App</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, labore eos vero quos alias sint quam
               praesentium reiciendis commodi quae.</p>
             <!-- <div class="button" data-toggle="modal" data-target="#modal-1">Learn More</div> -->
             <!-- 1st Modal -->
-            <div class="modal fade bd-example-modal-xl" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
+            <div class="modal fade bd-example-modal-xl" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -130,8 +136,9 @@
                   </div>
                   <div class="modal-footer">
                     <div class="button" data-dismiss="modal">Close</div>
-                    <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live
-                      Website</a>
+                    <div class="wow pulse inline">
+                      <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live Website</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -139,17 +146,16 @@
           </div>
         </li>
 
-        <li class='card' data-toggle="modal" data-target="#modal-2">
+        <li class='card wow fadeInUp' data-wow-delay=".1s" data-toggle="modal" data-target="#modal-2">
           <img src="https://images.pexels.com/photos/1451447/pexels-photo-1451447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Group meeting">
+            alt="Image of Memo App">
           <div class="card-content">
             <h3 class="card-title">Memo App</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, labore eos vero quos alias sint quam
               praesentium reiciendis commodi quae.</p>
             <!-- <div class="button" data-toggle="modal" data-target="#modal-2">Learn More</div> -->
             <!-- 2nd Modal -->
-            <div class="modal fade bd-example-modal-xl" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
+            <div class="modal fade bd-example-modal-xl" id="modal-2" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -183,8 +189,7 @@
                   </div>
                   <div class="modal-footer">
                     <div class="button" data-dismiss="modal">Close</div>
-                    <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live
-                      Website</a>
+                    <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live Website</a>
                   </div>
                 </div>
               </div>
@@ -192,16 +197,14 @@
           </div>
         </li>
 
-        <li class='card' data-toggle="modal" data-target="#modal-3">
-          <img src="https://images.pexels.com/photos/1451447/pexels-photo-1451447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Group meeting">
+        <li class='card wow fadeInUp' data-wow-delay=".2s" data-toggle="modal" data-target="#modal-3">
+          <img src="./img/movie-world.png" alt="Image of Movie World">
           <div class="card-content">
             <h3 class="card-title">Movie World</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, labore eos vero quos alias sint quam
               praesentium reiciendis commodi quae.</p>
             <!-- 3rd Modal -->
-            <div class="modal fade bd-example-modal-xl" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
+            <div class="modal fade bd-example-modal-xl" id="modal-3" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -235,8 +238,7 @@
                   </div>
                   <div class="modal-footer">
                     <div class="button" data-dismiss="modal">Close</div>
-                    <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live
-                      Website</a>
+                    <a class="button live-website" href='https://festive-curie-c1aab0.netlify.com/' target='_blank'>Live Website</a>
                   </div>
                 </div>
               </div>
@@ -262,12 +264,12 @@
     <div>Made by <a target='_blank' href="https://github.com/hkKevin">Pak Kiu Leung</a></div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> <!-- the wow animation JavaScript -->
+  <script type="application/javascript"> new WOW().init(); </script>
   <script src='./index.js'></script>
 </body>
 

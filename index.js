@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(function () {
 
   // var sideNavWidth = $("#sidenav").width();
@@ -28,7 +30,7 @@ $(document).ready(function () {
   // }
 
 
-
+  new WOW().init();
 
 
   // Burger icon onClick
