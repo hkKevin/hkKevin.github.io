@@ -35,7 +35,6 @@ html {
 
 body {
   margin: 0;
-  /* font-family: Arial, Helvetica, sans-serif; */
   background: #e3e3ff;
   color: #222;
   /* font-size: 2.5vh; */
@@ -349,7 +348,7 @@ header .content-wrap,
 .card:hover {
   cursor: pointer;
   border: 1px solid #ddd;
-  box-shadow: 1px 1px 10px 5px #aaa;
+  box-shadow: 1px 1px 1px 1px #bbb;
 }
 
 .card-title {
@@ -407,7 +406,38 @@ header .content-wrap,
   color: #2690d4;
   text-decoration: none;
   /* font-size: 3.5vh; */
-  font-size: calc(22px + (40 - 22) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1900 - 300)));
+}
+
+.box div {
+  margin-left: 1em;
+}
+
+@media (max-width: 500px) {
+  .box div {
+    margin-left: .5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .box div {
+    margin-left: .1em;
+  }
+}
+
+#contact-me i {
+  color: #2690d4;
+  opacity: 0.3;
+  font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1900 - 300)));
+}
+
+#contact-me i:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#contact-me i:active {
+  opacity: 1;
 }
 
 /* Footer */

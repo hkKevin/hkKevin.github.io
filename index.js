@@ -1,6 +1,17 @@
 $(document).ready(function () {
 
-  AOS.init();
+  AOS.init(); // Initialize Animation On Scroll
+
+  var clipboard = new ClipboardJS('.copy'); // Initialize ClipboardJS
+  clipboard.on('success', function(e) {
+    $('#copy-hint').attr('aria-label', 'Copied'); // Hint changed from 'Copy to Clipboard' to 'Copied.'
+    setTimeout(aaafunc, 500);
+    e.clearSelection();
+  });
+
+  aaafunc = () => {
+    $('#copy-hint').attr('aria-label', 'Copy');
+  }
 
   // Burger icon onClick
   $('#burger-icon').click(function () {
