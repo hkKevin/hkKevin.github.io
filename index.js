@@ -1,42 +1,10 @@
-// new WOW().init();
-
 $(document).ready(function () {
 
   AOS.init();
 
-  // var sideNavWidth = $("#sidenav").width();
-  // console.log("sideNavWidth: " + sideNavWidth);
-  // // Navigation Bar
-  // let prevScrollPosition = window.pageYOffset;
-  // window.onscroll = () => {
-  //   // alert(document.getElementById('sidenav').style.width)
-  //   let currentScrollPosition = window.pageYOffset;
-  //   if (prevScrollPosition > currentScrollPosition) {
-  //     // show
-  //     // alert("show")
-  //     $("#navbar").css("top", "0");
-  //     $("#burger-icon").css("top", "0");
-  //     // document.getElementById('navbar').style.top = '0';
-  //     // document.getElementById('burger-icon').style.top = '0';
-  //     // } else if (prevScrollPosition < currentScrollPosition && (sideNavWidth == 0 || sideNavWidth == '0px') ) {
-  //   } else if (prevScrollPosition < currentScrollPosition) {
-  //     // } else if (prevScrollPosition < currentScrollPosition) {
-  //     // hide
-  //     // alert("hide")
-  //     $('#navbar').css("top", "-100px");
-  //     $('#burger-icon').css("top", "-100px");
-  //     // document.getElementById('navbar').style.top = '-100px';
-  //     // document.getElementById('burger-icon').style.top = '-100px';
-  //   }
-  //   prevScrollPosition = currentScrollPosition;
-  // }
-
-
-  // new WOW().init();
-
-
   // Burger icon onClick
   $('#burger-icon').click(function () {
+
     // Scrolling is prohibited when sidenav is displayed
     if ($('body').css('overflow') != 'hidden') {
       $('body').css('overflow', 'hidden');
@@ -48,7 +16,6 @@ $(document).ready(function () {
     $('#bar-1').toggleClass('transform-bar-1');
     $('#bar-2').toggleClass('transform-bar-2');
     $('#bar-3').toggleClass('transform-bar-3');
-
 
 
     // Show or Hide sidenav
@@ -63,10 +30,6 @@ $(document).ready(function () {
     
     $('#sidenav').animate({ width: toggleWidth }, 100);
 
-    // var toggleWidth = $("#sidenav").width() != 0 ? "0px" : "100%";
-    // $('#sidenav').animate({ width: toggleWidth }, 100);
-
-    
   });
 
 
@@ -83,10 +46,7 @@ $(document).ready(function () {
     $('#bar-2').toggleClass('transform-bar-2');
     $('#bar-3').toggleClass('transform-bar-3');
 
-    setTimeout(function(){ $("#burger-icon").css("top", "0"); }, 1500);
-    
   });
-
 
   // Burger icon on hover
   $("#burger-icon").hover( function() {
@@ -95,6 +55,6 @@ $(document).ready(function () {
   
 });
 
-$(window).on('load', function() {
-  AOS.refresh();
-});
+// $(window).on('load', function() {
+//   AOS.refresh();
+// });

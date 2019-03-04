@@ -7,17 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Pak Kiu Leung - a Front-end Web Developer</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!--Hint.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"> <!--Link to the CSS animation library-->
-
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> <!-- Bootstrap -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- Font family: Open Sans -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!-- Hint.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"> <!-- animate.css library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Animation On Scroll library -->
   <link rel="stylesheet" type="text/css" href='style.css'>
 </head>
 
@@ -37,7 +32,7 @@
 
     <div id='home' class="content-wrap">
       <!-- Burger Icon -->
-      <div id="burger-icon">
+      <div id="burger-icon" class="hint hint--bottom hint--rounded" aria-label="Toggle Menu">
         <div id="bar-1"></div>
         <div id="bar-2"></div>
         <div id="bar-3"></div>
@@ -47,7 +42,9 @@
           I'm <div class="wow bounce inline">Pak Kiu Leung</div> - <br />
           a Front-end Web Developer.</h1>
       </div>
-      <p>I have tremendous passion in front-end development. I am going to dedicate my whole life to this industry. My goal is to deliver neat content and comfortable experience to viewers. So that, they can find what they seek easily.</p>
+      <p>I have tremendous passion in front-end development. I am going to dedicate my whole life to this industry. My
+        goal is to deliver neat content and comfortable experience to viewers. Hence, they can find what they seek
+        easily.</p>
       <a href="#my-projects" id="headerBtn" class="button">My Projects</a>
       <div id='arrow-down'>
         <i class="fas fa-chevron-down"></i>
@@ -64,8 +61,10 @@
           About Me
         </h2>
         <div class='content-text'>
-          <p>I am studying Bachelor of I.T. (Web Design & Development). The more I explore, the more I found myself lacking in technical skills. Besides, the web technologies changes rapidly. Therefore, I keep learning the latest technologies online (e.g. YouTube, Udemy etc.). I enjoy learning new technologies because my experience and confident can be boosted in web development. Below are the technical skills I learnt so far:</p>
-
+          <p>I am studying Bachelor of I.T. (Web Design & Development). The more I explore, the more I found myself
+            lacking in technical skills. Therefore, I keep learning the latest technologies online to keep myself
+            updated. I enjoy learning new technologies because my experience and confident in web development can be
+            boosted. Below are the technical skills I learnt so far:</p>
         </div>
         <div id='skills'>
           <div class="skill inline" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">HTML 5</div>
@@ -84,165 +83,160 @@
     <section id="my-projects" class="grid">
       <h2 class="content-title">My Projects</h2>
       <ul>
-        <li class='card wow slideInUp' data-toggle="modal" data-target="#modal-1">
-          <img src="./img/burger-app.png" alt="Image of Burger App">
-          <div class="card-content">
-            <h3 class="card-title">Burger App</h3>
-            <p>A React app for ordering burger including user authorization and user orders history.</p>
-            <!-- 1st Modal -->
-            <div class="modal fade bd-example-modal-xl" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">
-                      Burger App
-                      <div class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                        <a href="https://github.com/hkKevin/burger-app" target="_blank">
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </div>
-                    </h4>
-                    <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </div>
-                  </div>
-                  <div class="modal-body">
-                    <a class="button live-website" href='https://udemy-react-burger-a234c.firebaseapp.com/' target='_blank'>Live
-                      Website</a>
-                    <!-- <div style="width:100%;height:0;padding-bottom:64%;position:relative;">
-                      <iframe src="https://giphy.com/embed/jZyGTPLMJtEtO" width="100%" height="100%" style="position:absolute"
-                        frameBorder="0" class="giphy-embed" allowFullScreen>
-                      </iframe>
-                    </div> -->
-                    <img src="./img/burger-app.png" alt="Image of Burger App">
-                    <h5 class="project-features">Features:</h5>
-                    <ul>
-                      <li>Using React router for routing within a single page app</li>
-                      <li>Burger orders are stored on Firebase</li>
-                      <li>Users can view their own orders history</li>
-                      <li>Enforced user authorization</li>
-                      <li>Burger Ingredients are visualized while building the burger</li>
-                      <li>Implemented responsive web design</li>
-                    </ul>
-
-                  </div>
-                  <div class="modal-footer">
-                    <div class="button" data-dismiss="modal">Close</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li class='card wow slideInUp' data-wow-delay=".1s" data-toggle="modal" data-target="#modal-2">
+        <li class='card wow slideInUp' data-toggle="modal" data-target="#modal-memo-app">
           <img src="./img/memo-app.png" alt="Image of Memo App">
           <div class="card-content">
             <h3 class="card-title">Memo App</h3>
             <p>A React App that allows resizing, dragging, creating, editing and deleting memos.</p>
-            <!-- 2nd Modal -->
-            <div class="modal fade bd-example-modal-xl" id="modal-2" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">
-                      Memo App
-                      <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                        <a href="https://github.com/hkKevin/memo" target="_blank">
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </span>
-                    </h4>
-                    <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </div>
-                  </div>
-                  <div class="modal-body">
-                    <a class="button live-website" href='https://vigilant-hawking-ade786.netlify.com/' target='_blank'>Live Website</a>
-                    <!-- <div style="width:100%;height:0;padding-bottom:64%;position:relative;">
-                      <iframe src="https://giphy.com/embed/jZyGTPLMJtEtO" width="100%" height="100%" style="position:absolute"
-                        frameBorder="0" class="giphy-embed" allowFullScreen>
-                      </iframe>
-                    </div> -->
-                    <img src="./img/memo-app.png" alt="Image of Memo App">
-                    <h5 class="project-features">Features:</h5>
-                    <ul>
-                      <li>Memos can be resized manually (to adjust the width & height)</li>
-                      <li>Memos can be dragged (to reorder the memos)</li>
-                      <li>The layout of memos are stored on Local Storage</li>
-                      <li>Memos title, content and color are stored on Firebase</li>
-                      <li>Memos can be updated and deleted on Firebase</li>
-                      <li>Implemented responsive web design</li>
-                    </ul>
-
-                  </div>
-                  <div class="modal-footer">
-                    <div class="button" data-dismiss="modal">Close</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </li>
 
-        <li class='card wow slideInUp' data-wow-delay=".2s" data-toggle="modal" data-target="#modal-3">
+        <li class='card wow slideInUp' data-wow-delay=".1s" data-toggle="modal" data-target="#modal-movie-world">
           <img src="./img/movie-world.png" alt="Image of Movie World">
           <div class="card-content">
             <h3 class="card-title">Movie World</h3>
             <p>A React app for searching info of movies (using The Movie Database API).</p>
-            <!-- 3rd Modal -->
-            <div class="modal fade bd-example-modal-xl" id="modal-3" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">
-                      Movie World
-                      <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                        <a href="https://github.com/hkKevin/movie-world" target="_blank">
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </span>
-                    </h4>
-                    <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </div>
-                  </div>
-                  <div class="modal-body">
-                    <a class="button live-website" href='https://festive-curie-c1aab0.netlify.com/' target='_blank'>Live Website</a>
-                    <!-- <div style="width:100%;height:0;padding-bottom:64%;position:relative;">
-                      <iframe src="https://giphy.com/embed/jZyGTPLMJtEtO" width="100%" height="100%" style="position:absolute"
-                        frameBorder="0" class="giphy-embed" allowFullScreen>
-                      </iframe>
-                    </div> -->
-                    <img src="./img/movie-world.png" alt="Image of Movie World">
-                    <h5 class="project-features">Features:</h5>
-                    <ul>
-                      <li>Fetch movie info with Async. HTTP Requests via an API</li>
-                      <li>Present movie info (posters, trailers, reviews etc.) in a modern design</li>
-                      <li>Implemented pagination for multiple page of search results</li>
-                      <li>Utilizing React Router to navigate the web app</li>
-                      <li>Implemented carousel for rotating horizontal posters automatically</li>
-                      <li>Implemented comfortable animation on scroll</li>
-                      <li>Implemented responsive web design</li>
-                    </ul>
 
-                  </div>
-                  <div class="modal-footer">
-                    <div class="button" data-dismiss="modal">Close</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+        </li>
+
+        <li class='card wow slideInUp' data-wow-delay=".2s" data-toggle="modal" data-target="#modal-burger-app">
+          <img src="./img/burger-app.png" alt="Image of Burger App">
+          <div class="card-content">
+            <h3 class="card-title">Burger App</h3>
+            <p>A React app for ordering burger including user authorization and user orders history.</p>
+
           </div>
         </li>
       </ul>
     </section>
 
+    <!-- Modals -->
+    <section>
+      <!-- Modal of the Memo App -->
+      <div class="modal fade bd-example-modal-xl" id="modal-memo-app" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Memo App
+                <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                  <a href="https://github.com/hkKevin/memo" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </span>
+              </h4>
+              <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+            </div>
+            <div class="modal-body">
+              <a class="button live-website" href='https://vigilant-hawking-ade786.netlify.com/' target='_blank'>Live Website</a>
+              <img src="./img/memo-app.png" alt="Image of Memo App">
+              <div class="project-features">
+                <h5>Features:</h5>
+                <ul>
+                  <li>Memos can be resized manually (to adjust the width & height)</li>
+                  <li>Memos can be dragged (to reorder the memos)</li>
+                  <li>The layout of memos are stored on Local Storage</li>
+                  <li>Memos title, content and color are stored on Firebase</li>
+                  <li>Memos can be updated and deleted on Firebase</li>
+                  <li>Implemented responsive web design</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="button" data-dismiss="modal">Close</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal of the Movie World -->
+      <div class="modal fade bd-example-modal-xl" id="modal-movie-world" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Movie World
+                <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                  <a href="https://github.com/hkKevin/movie-world" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </span>
+              </h4>
+              <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+            </div>
+            <div class="modal-body">
+              <a class="button live-website" href='https://festive-curie-c1aab0.netlify.com/' target='_blank'>Live Website</a>
+              <img src="./img/movie-world.png" alt="Image of Movie World">
+              <div class="project-features">
+                <h5>Features:</h5>
+                <ul>
+                  <li>Fetch movie info with Async. HTTP Requests via an API</li>
+                  <li>Present movie info (posters, trailers, reviews etc.) in a modern design</li>
+                  <li>Implemented pagination for multiple page of search results</li>
+                  <li>Utilizing React Router to navigate the web app</li>
+                  <li>Implemented carousel for rotating horizontal posters automatically</li>
+                  <li>Implemented comfortable animation on scroll</li>
+                  <li>Implemented responsive web design</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="button" data-dismiss="modal">Close</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal of the Burger App-->
+      <div class="modal fade bd-example-modal-xl" id="modal-burger-app" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Burger App
+                <div class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                  <a href="https://github.com/hkKevin/burger-app" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </h4>
+              <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+            </div>
+            <div class="modal-body">
+              <a class="button live-website" href='https://gifted-bhaskara-7a31cb.netlify.com/' target='_blank'>Live Website</a>
+              <img src="./img/burger-app.png" alt="Image of Burger App">
+              <div class="project-features">
+                <h5>Features:</h5>
+                <ul>
+                  <li>Using React router for routing within a single page app</li>
+                  <li>Burger orders are stored on Firebase</li>
+                  <li>Users can view their own orders history</li>
+                  <li>Enforced user authorization</li>
+                  <li>Burger Ingredients are visualized while building the burger</li>
+                  <li>Implemented responsive web design</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="button" data-dismiss="modal">Close</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><section></section>
+
     <!-- Contact Me -->
     <section id="contact-me" class="grid">
       <div class="box">
         <h2 class="content-title">Contact Me</h2>
-        <p>I would love to hear from you. Please email me and I will get in touch ASAP.</p><br/>
+        <p>I would love to hear from you. Please email me and I will get in touch ASAP.</p><br />
         <a data-aos="fade" data-aos-delay="500" href="mailto:pakkiuleung@gmail.com" target="_blank">pakkiuleung@gmail.com</a>
       </div>
     </section>
@@ -250,35 +244,17 @@
 
   <!-- Footer -->
   <footer id="main-footer" class="grid">
-    <!-- <div class="wow fadeInUp" data-wow-delay="1s">Created with ❤️ by <span class="wow fadeIn" data-wow-delay="2s"><a target='_blank' href="https://github.com/hkKevin">Pak Kiu Leung</a></span></div> -->
-    <div>Created with ❤️ by <a target='_blank' href="https://github.com/hkKevin">Pak Kiu Leung</a></div>
+    <div>Created with ❤️ by <a class="hint hint--top hint--rounded" aria-label="GitHub Profile" target='_blank' href="https://github.com/hkKevin">Pak Kiu Leung</a></div>
   </footer>
 
 
 
-
-
-
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> <!-- Popper.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> <!-- bootstrap.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> <!-- the wow animation JavaScript -->
-  <script type="application/javascript"> new WOW().init(); </script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- <script>
-    AOS.init();
-  </script> -->
-
+  <script type="application/javascript"> new WOW().init(); </script> <!-- initialize wow animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- animation on scroll -->
   <script src='./index.js'></script>
 </body>
 
