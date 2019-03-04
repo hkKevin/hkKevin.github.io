@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
 
+  AOS.init();
+
   // var sideNavWidth = $("#sidenav").width();
   // console.log("sideNavWidth: " + sideNavWidth);
   // // Navigation Bar
@@ -91,4 +93,8 @@ $(document).ready(function () {
     $("#bar-1, #bar-2, #bar-3").toggleClass("burger-bar-hover");
   });
   
+});
+
+$(window).on('load', function() {
+  AOS.refresh();
 });
