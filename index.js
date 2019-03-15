@@ -5,11 +5,11 @@ $(document).ready(function () {
   var clipboard = new ClipboardJS('.copy'); // Initialize ClipboardJS
   clipboard.on('success', function(e) {
     $('#copy-hint').attr('aria-label', 'Copied'); // Hint changed from 'Copy to Clipboard' to 'Copied.'
-    setTimeout(aaafunc, 500);
+    setTimeout(showCopy, 500);
     e.clearSelection();
   });
 
-  aaafunc = () => {
+  showCopy = () => {
     $('#copy-hint').attr('aria-label', 'Copy');
   }
 
