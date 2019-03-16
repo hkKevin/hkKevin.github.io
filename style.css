@@ -452,6 +452,7 @@ header .content-wrap,
 #main-footer a {
   color: #2690d4;
   text-decoration: none;
+  display: inline-block;
 }
 
 
