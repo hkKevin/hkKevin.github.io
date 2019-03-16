@@ -29,7 +29,7 @@ section:nth-child(even) {
 
 /* Cursor highlight */
 ::selection {
-  background: rgba(210, 233, 255, 0.5);
+  background: rgb(210, 233, 255);
 }
 
 img {
@@ -53,7 +53,7 @@ h1, h2, h3, p {
   display: block;
   background: #fff;
   color: #74819a;
-  border: 2px solid #74819a;
+  border: 1px solid #74819a;
   margin: 0.5em 0;
   padding: .2em 1.2em;
   text-decoration: none !important;
@@ -140,6 +140,7 @@ body {
 
 .content-title {
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 #sidenav {
@@ -254,10 +255,6 @@ header .content-wrap,
   padding: 20vh 0;
 }
 
-.content-title {
-  margin-bottom: 3vh;
-}
-
 #skills {
   text-align: center;
   display: flex;
@@ -282,15 +279,24 @@ header .content-wrap,
   width: 70px;
 }
 
-/* My Projects */
-#my-projects {
+/* Projects */
+#projects {
   padding: 20vh 1em;
 }
 
-#my-projects ul {
-  list-style: none;
-  margin: 0;
+.project-type {
+  margin-bottom: 3vh;
+}
+
+#projects ul,
+#projects #my-projects ul {
+  /* list-style: none; */
+  /* margin: 0; */
   padding: 0;
+}
+
+#group-projects {
+  margin-bottom: 10vh;
 }
 
 .card {
@@ -302,7 +308,6 @@ header .content-wrap,
 
 .card:hover {
   cursor: pointer;
-  border: 1px solid #ddd;
   box-shadow: 1px 1px 10px 1px #bbb;
 }
 
@@ -319,6 +324,17 @@ header .content-wrap,
   text-align: left;
 }
 
+#group-projects .project-description {
+  list-style: disc;
+  margin-left: 2em;
+}
+
+@media (max-width: 500px) {
+  #group-projects .project-description {
+    margin-left: 1em;
+  }
+}
+
 .modal {
   padding-right: 0 !important;
 }
@@ -332,7 +348,7 @@ header .content-wrap,
 }
 
 .fa-github {
-  color: rgba(116, 129, 154, 0.5);
+  color: rgba(116, 129, 154, 0.7);
 }
 
 .fa-github:hover {
@@ -353,6 +369,12 @@ header .content-wrap,
 
 .modal-content .hint {
   padding-left: 3vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  filter: invert(50%);
 }
 
 .project-features h5 {
@@ -466,9 +488,11 @@ header .content-wrap,
   }
 
   .content-wrap, 
-  #my-projects ul,
-  #my-projects h2,
-  #my-projects p {
+  #projects ul,
+  #projects #my-projects ul,
+  #projects h2,
+  #projects h4,
+  #projects p {
     grid-column: 2/4;
   }
 
@@ -480,7 +504,7 @@ header .content-wrap,
     grid-column: 2/4;
   }
 
-  #my-projects ul {
+  #projects #my-projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.5em;

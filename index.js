@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 
   // SideNav link onClick
-  $("#sidenav-home, #sidenav-about-me, #sidenav-my-projects, #sidenav-contact-me").click(function () {
+  $("#sidenav-home, #sidenav-about-me, #sidenav-projects, #sidenav-contact-me").click(function () {
     // Hide sidenav
     $('#sidenav').animate({ width: 0 }, 100);
 
