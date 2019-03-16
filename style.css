@@ -43,7 +43,7 @@ h1, h2, h3, p {
   padding: 1em 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
   header h1 {
     padding: 1em 0 0 0;
   }
@@ -95,7 +95,7 @@ body {
   margin: 0;
   background: #fff;
   color: #74819a;
-  font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
   line-height: 2;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
@@ -219,7 +219,7 @@ header .content-wrap {
 header h1 {
   text-align: left;
   line-height: 1.7;
-  font-size: calc(26px + (70 - 26) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(20px + (70 - 20) * ((100vw - 300px) / (1900 - 300)));
 }
 
 #my-name {
