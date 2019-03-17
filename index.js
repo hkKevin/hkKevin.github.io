@@ -2,6 +2,8 @@ $(document).ready(function () {
 
   AOS.init(); // Initialize Animation On Scroll
 
+  new WOW().init(); //  Initialize wow animation
+
   var clipboard = new ClipboardJS('.copy'); // Initialize ClipboardJS
   clipboard.on('success', function(e) {
     $('#copy-hint').attr('aria-label', 'Copied'); // Hint changed from 'Copy to Clipboard' to 'Copied.'
