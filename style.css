@@ -43,12 +43,6 @@ h1, h2, h3, p {
   padding: 1em 0;
 }
 
-@media (max-width: 450px) {
-  header h1 {
-    padding: 1em 0 0 0;
-  }
-}
-
 .button {
   display: block;
   background: #fff;
@@ -173,20 +167,13 @@ body {
   color: #fff;
 }
 
-#header-btn{
-  background: #f4f5f7;
-  text-align: center;
-}
-
-#header-btn:hover {
-  background: #74819a;
-  color: #fff;
-}
-
 /* Header */
 header > .content-wrap {
   min-height: 100vh;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 #particles-js {
@@ -219,6 +206,7 @@ header h1 {
   text-align: left;
   line-height: 1.7;
   font-size: calc(20px + (70 - 20) * ((100vw - 300px) / (1900 - 300)));
+  padding: 5vh 0;
 }
 
 #my-name {
@@ -227,26 +215,20 @@ header h1 {
   display: inline-block;
 }
 
-#arrow-down {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  bottom: 2vh;
-  left: 50%;
-  right: 50%;
-  position: absolute;
-  animation: arrowDown 2s ease 2s infinite normal;
-}
-
-@keyframes arrowDown {
-  0% {bottom: 2vh;}
-  50% {bottom: 1vh;}
-  100% {bottom: 2vh;}
-}
-
 header .content-wrap,
 #about-me .content-wrap {
   padding: 0 1.5em;
+}
+
+#header-btn{
+  background: #f4f5f7;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#header-btn:hover {
+  background: #74819a;
+  color: #fff;
 }
 
 /* About Me */
