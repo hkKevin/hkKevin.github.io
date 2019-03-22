@@ -13,24 +13,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!-- Hint.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"> <!-- animate.css library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Animation On Scroll library -->
-  <link rel="stylesheet" type="text/css" href='style.css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div id='container'>
+  <div id="container">
   <!-- Side Nav -->
   <div id="sidenav">
-    <a id="sidenav-home" href="#home">HOME</a>
-    <a id="sidenav-about-me" href="#about-me">ABOUT ME</a>
-    <a id="sidenav-projects" href="#projects">PROJECTS</a>
-    <a id="sidenav-contact-me" href="#contact-me">CONTACT ME</a>
+    <a id="sidenav-home" href="#home">Home</a>
+    <a id="sidenav-about-me" href="#about-me">About Me</a>
+    <a id="sidenav-projects" href="#projects">Projects</a>
+    <a id="sidenav-contact-me" href="#contact-me">Contact Me</a>
   </div>
 
   <!-- Home -->
   <header class="grid">
-    <div id="bg-image"></div>
-
-    <div id='home' class="content-wrap">
+    <div id="particles-js"></div>
+    <div id="home" class="content-wrap">
       <!-- Burger Icon -->
       <div id="burger-icon" class="hint hint--bottom hint--rounded" aria-label="Toggle Menu">
         <div id="bar-1"></div>
@@ -38,16 +37,11 @@
         <div id="bar-3"></div>
       </div>
       <div class="heading">
-        <h1>Hi! I'm <div id="my-name" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Pak Kiu Leung</div> - <br />
+        <h1>Hi! I'm <div id="my-name" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">Pak Kiu Leung</div> - <br />
           a Front-end Web Developer.</h1>
-        <!-- <h1>Hi! I'm <span id="my-name" class="wow bounce">Pak Kiu Leung</span> - <br />
-          a Front-end Web Developer.</h1> -->
       </div>
-      <p>I have a tremendous passion and proficient technical skills in front-end development. I am capable of building user-centered and responsive websites with dynamic contents. I am going to put all my effort into improving my technical and enterprise skills as a web developer every day. Delivering an interactive and intuitive web experience to audiences is my principal goal.</p>
-      <a href="#projects" id="headerBtn" class="button">Projects</a>
-      <div id='arrow-down'>
-        <i class="fas fa-chevron-down"></i>
-      </div>
+      <p class="content-text"  data-aos="fade" data-aos-anchor-placement="center-bottom">I have a tremendous passion and proficient technical skills in front-end development. I am capable of building user-centered and responsive websites with dynamic contents. I am going to put all my effort into improving my technical and enterprise skills as a web developer every day. Delivering an interactive and intuitive web experience to audiences is my principal goal.</p>
+      <a href="#projects" id="header-btn" class="button">Projects</a>
     </div>
   </header>
 
@@ -57,39 +51,41 @@
     <section id="about-me" class="grid">
       <div class="content-wrap">
         <h2 class="content-title">About Me</h2>
-        <div class='content-text'>
-          <p>I am studying a Bachelor of I.T. (Web Design & Development) at the University of Wollongong. The more I explore, the more I found myself
+        <div class="content-text" data-aos="fade" data-aos-anchor-placement="center-bottom">
+          <p>
+            I am studying a Bachelor of I.T. (Web Design & Development) at the University of Wollongong. The more I explore, the more I found myself
             lacking in technical skills. Therefore, I keep learning the latest technologies online to keep myself
             updated. I enjoy learning new technologies because my experience and confidence in web development can be
-            boosted. Below are the technical skills I learned so far:</p>
+            boosted. Below are the technical skills I learned so far:
+          </p>
         </div>
-        <div id='skills'>
+        <div id="skills">
             <a href="https://reactjs.org/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="React" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/react.png" alt="Logo of React" />
+              <img id="react-logo" src="img/logos/react.png" alt="Logo of React" />
             </a>
             <a href="https://redux.js.org/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Redux" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/redux.png" alt="Logo of Redux"/>
+              <img id="redux-logo" src="img/logos/redux.png" alt="Logo of Redux"/>
             </a>
             <a href="https://jquery.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="jQuery" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/jquery.png" alt="Logo of jQuery"/>
+              <img id="jquery-logo" src="img/logos/jquery.png" alt="Logo of jQuery"/>
             </a>
             <a href="https://firebase.google.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Firebase" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/firebase.png" alt="Logo of Firebase"/>
+              <img id="firebase-logo" src="img/logos/firebase.png" alt="Logo of Firebase"/>
             </a>
             <a href="https://www.javascript.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="JavaScript" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/javascript.png" alt="Logo of JavaScript"/>
+              <img id="js-logo" src="img/logos/javascript.png" alt="Logo of JavaScript"/>
             </a>
             <a href="https://getbootstrap.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Bootstrap" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/bootstrap.png" alt="Logo of Bootstrap"/>
+              <img id="bootstrap-logo" src="img/logos/bootstrap.png" alt="Logo of Bootstrap"/>
             </a>
             <a href="https://www.w3schools.com/html/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="HTML" data-aos="fade-up" data-aos-delay="600" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/html.png" alt="Logo of HTML"/>
+              <img id="html-logo" src="img/logos/html.png" alt="Logo of HTML"/>
             </a>
             <a href="https://www.w3schools.com/css/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="CSS" data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/css.png" alt="Logo of CSS"/>
+              <img id="css-logo" src="img/logos/css.png" alt="Logo of CSS"/>
             </a>
             <a href="https://www.mysql.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="MySQL" data-aos="fade-up" data-aos-delay="800" data-aos-anchor-placement="center-bottom">
-              <img src="img/logos/mysql.png" alt="Logo of MySQL"/>
+              <img id="mysql-logo" src="img/logos/mysql.png" alt="Logo of MySQL"/>
             </a>
         </div>
       </div>
@@ -99,13 +95,12 @@
     <section id="projects" class="grid">
       <h2 class="content-title">Projects</h2>
 
-      <h4 class="project-type">Group Project</h4>
-      <ul id="group-projects">
-        <li class='card wow slideInUp' data-toggle="modal" data-target="#modal-sydney-trains">
+      <h4 class="project-type" data-aos="fade" data-aos-anchor-placement="center-bottom">Co-developed Project</h4>
+      <ul id="co-developed-projects">
+        <li class="card wow slideInUp" data-toggle="modal" data-target="#modal-sydney-trains">
           <img src="./img/projects/system-1.png" alt="Image of Sydney Trains Data Visualisation System">
           <div class="card-content">
             <h3 class="card-title">Sydney Trains Data Visualisation System</h3>
-            <!-- <p class="project-description">A web app that displays trains data (real-time & historical) as graphs and map for performance analysis in order to improve timetable scheduling.</p> -->
             <ul class="project-description">
               <li>
                 Received a Certificate of Appreciation from Sydney Trains
@@ -116,23 +111,25 @@
               <li>
                 A web app that displays trains data (real-time & historical) as graphs and map for performance analysis in order to improve timetable scheduling for the client
               </li>
+              <li>
+                Responsible for Front-end development
+              </li>
             </ul>
           </div>
         </li>
       </ul>
 
 
-      <h4 class="project-type">My Projects</h4>
-        <ul id="my-projects">
-          <li class='card wow slideInUp' data-toggle="modal" data-target="#modal-memo-app">
+      <h4 class="project-type" data-aos="fade" data-aos-anchor-placement="center-bottom">Personal Projects</h4>
+        <ul id="personal-projects">
+          <li class="card wow slideInUp" data-toggle="modal" data-target="#modal-memo-app">
             <img src="./img/projects/memo-app.png" alt="Image of Memo App">
             <div class="card-content">
               <h3 class="card-title">Memo App</h3>
               <p class="project-description">A React app that allows resizing, dragging, creating, editing and deleting memos.</p>
             </div>
           </li>
-  
-          <li class='card wow slideInUp' data-wow-delay=".1s" data-toggle="modal" data-target="#modal-movie-world">
+          <li class="card wow slideInUp" data-wow-delay=".1s" data-toggle="modal" data-target="#modal-movie-world">
             <img src="./img/projects/movie-world.png" alt="Image of Movie World">
             <div class="card-content">
               <h3 class="card-title">Movie World</h3>
@@ -140,23 +137,15 @@
   
             </div>
           </li>
-  
-          <li class='card wow slideInUp' data-wow-delay=".2s" data-toggle="modal" data-target="#modal-burger-app">
-            <img src="./img/projects/burger-app.png" alt="Image of Burger App">
-            <div class="card-content">
-              <h3 class="card-title">Burger App</h3>
-              <p class="project-description">A React app for ordering burgers including user authorization and user orders history.</p>
-            </div>
-          </li>
         </ul>
-      <p>These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p>
+      <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p>
     </section>
 
     <!-- Modals -->
     <section>
       <!-- Modal of the Sydney Trains Data Visualisation System -->
-      <div class="modal fade bd-example-modal-xl" id="modal-sydney-trains" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal fade" id="modal-sydney-trains" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title">
@@ -167,7 +156,7 @@
               </div>
             </div>
             <div class="modal-body">
-              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div id="carousel-controls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="./img/projects/Certificate of Appreciation.png" alt="Photo of the Certificate of Appreciation">
@@ -200,11 +189,11 @@
                       <img class="d-block w-100" src="./img/projects/system-6.png" alt="Image of the Charting & Analysis">
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -216,7 +205,7 @@
                   <li>The scheduled and real-time performance is compared in the Time-Distance Diagram</li>
                   <li>The patterns of delay for different times in each station are displayed in the Arrival Variance Analysis</li>
                   <li>Specific queries like "Most Frequently Late Trips" and "Number of Trains that Skipped Stops" can be searched due to the interpretation of historical trains data</li>
-                  <li>The entire real-time train's network can be seen in the Live Map due to the integration of Leaflet.js while bottleneck can be observed instantly when happened</li>
+                  <li>The entire real-time train's network can be seen in the Live Map due to the integration of Leaflet.js while bottleneck can be observed instantly if formed</li>
                   <li>Datasets can be downloaded as CSV format</li>
                   <li>Utilizing HTML, CSS, jQuery, Node.js, MySQL, Chart.js, Leaflet.js etc.</li>
                 </ul>
@@ -230,8 +219,8 @@
       </div>
 
       <!-- Modal of the Memo App -->
-      <div class="modal fade bd-example-modal-xl" id="modal-memo-app" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal fade" id="modal-memo-app" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title">
@@ -247,7 +236,7 @@
               </div>
             </div>
             <div class="modal-body">
-              <a class="button live-website" href='https://vigilant-hawking-ade786.netlify.com/' target='_blank'>Live Website</a>
+              <a class="button live-website" href="https://vigilant-hawking-ade786.netlify.com/" target="_blank">Live Website</a>
               <img src="./img/projects/memo-app.png" alt="Image of Memo App">
               <div class="project-features">
                 <h5>Features:</h5>
@@ -269,8 +258,8 @@
       </div>
 
       <!-- Modal of the Movie World -->
-      <div class="modal fade bd-example-modal-xl" id="modal-movie-world" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal fade" id="modal-movie-world" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title">
@@ -286,7 +275,7 @@
               </div>
             </div>
             <div class="modal-body">
-              <a class="button live-website" href='https://festive-curie-c1aab0.netlify.com/' target='_blank'>Live Website</a>
+              <a class="button live-website" href="https://festive-curie-c1aab0.netlify.com/" target="_blank">Live Website</a>
               <img src="./img/projects/movie-world.png" alt="Image of Movie World">
               <div class="project-features">
                 <h5>Features:</h5>
@@ -307,54 +296,15 @@
           </div>
         </div>
       </div>
-
-      <!--Modal of the Burger App-->
-      <div class="modal fade bd-example-modal-xl" id="modal-burger-app" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">
-                Burger App
-                <div class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                  <a href="https://github.com/hkKevin/burger-app" target="_blank">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </h4>
-              <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </div>
-            </div>
-            <div class="modal-body">
-              <a class="button live-website" href='https://gifted-bhaskara-7a31cb.netlify.com/' target='_blank'>Live Website</a>
-              <img src="./img/projects/burger-app.png" alt="Image of Burger App">
-              <div class="project-features">
-                <h5>Features:</h5>
-                <ul>
-                  <li>Using React router for routing within a single page app</li>
-                  <li>Burger orders are stored on Firebase</li>
-                  <li>Users can view their own orders history</li>
-                  <li>Enforced user authorization</li>
-                  <li>Burger Ingredients are visualized while building the burger</li>
-                  <li>Implemented responsive web design</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="button" data-dismiss="modal">Close</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section><section></section>
 
     <!-- Contact Me -->
     <section id="contact-me" class="grid">
-      <div class="box">
+      <div class="contact-me-container">
         <h2 class="content-title">Contact Me</h2>
-        <p>I would love to hear from you. Please email me and I will get in touch ASAP.</p><br />
+        <p data-aos="fade" data-aos-anchor-placement="center-bottom">I would love to hear from you. Please email me and I will get in touch ASAP.</p><br />
         <a class="hint hint--bottom hint--rounded" aria-label="Email me" data-aos="fade-up" data-aos-delay="500" href="mailto:pakkiuleung@gmail.com" target="_blank">pakkiuleung@gmail.com</a>
-        <div id='copy-hint' class="hint hint--bottom hint--rounded" aria-label="Copy">
+        <div id="copy-hint" class="hint hint--bottom hint--rounded" aria-label="Copy">
           <i class="far fa-copy copy" data-clipboard-text="pakkiuleung@gmail.com"></i>
         </div>
       </div>
@@ -363,19 +313,27 @@
 
   <!-- Footer -->
   <footer id="main-footer" class="grid">
-    <div>Created with <span class="fa fa-heart"></span> by <a class="hint hint--top hint--rounded" aria-label="GitHub Profile" target='_blank' href="https://github.com/hkKevin">Pak Kiu Leung</a></div>
+    <div>Created with <span class="fa fa-heart"></span> by Pak Kiu Leung</div>
+    <div id="social-media-container">
+      <a id="linkedin-profile" href="https://www.linkedin.com/in/pakkiuleung/" class="hint hint--top hint--rounded" aria-label="LinkedIn Profile" target="_blank">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a id="github-profile" href="https://github.com/hkKevin" class="hint hint--top hint--rounded" aria-label="GitHub Profile" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
   </footer>
 
   </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  <!-- particles.js -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> <!-- Popper.js -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> <!-- bootstrap.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> <!-- the wow animation JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- animation on scroll -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script> <!-- clipboard.js -->
-  <script src='./index.js'></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

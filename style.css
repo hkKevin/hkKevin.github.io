@@ -118,7 +118,7 @@ body {
   height: 3px;
   background-color: #afb6c5;
   margin: 6px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .burger-bar-hover {
@@ -145,15 +145,14 @@ body {
 
 #sidenav {
   height: 100%;
-  width: 0px;
+  min-height: 100vh;
+  width: 0;
   position: fixed;
   z-index: 3;
-  top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  transition: 0.1s;
 }
 
 #sidenav a:first-child {
@@ -174,34 +173,34 @@ body {
   color: #fff;
 }
 
-#headerBtn{
+#header-btn{
   background: #f4f5f7;
   text-align: center;
 }
 
-#headerBtn:hover {
+#header-btn:hover {
   background: #74819a;
   color: #fff;
 }
 
 /* Header */
-header {
+header > .content-wrap {
   min-height: 100vh;
   text-align: left;
 }
 
-#bg-image {
+#particles-js {
   position: absolute;
-  background-color: #f4f5f7;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100vh;
-  z-index: -1;
+  z-index: -10;
   opacity: 1;
+  background-color: #f4f5f7 !important;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
-
 
 header .content-wrap {
   display: flex;
@@ -279,23 +278,45 @@ header .content-wrap,
   width: 70px;
 }
 
+#react-logo {
+  width: 82px;
+}
+
+#jquery-logo {
+  width: 120px;
+}
+
+#firebase-logo {
+  width: 50px;
+}
+
+#html-logo {
+  width: 80px;
+}
+
+#css-logo {
+  width: 58px;
+}
+
+#mysql-logo {
+  width: 100px;
+}
+
 /* Projects */
 #projects {
   padding: 20vh 1em;
 }
 
 .project-type {
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
 }
 
 #projects ul,
-#projects #my-projects ul {
-  /* list-style: none; */
-  /* margin: 0; */
+#projects #personal-projects ul {
   padding: 0;
 }
 
-#group-projects {
+#co-developed-projects {
   margin-bottom: 10vh;
 }
 
@@ -304,6 +325,7 @@ header .content-wrap,
   margin-bottom: 3em;
   background: #fff;
   color: #74819a;
+  box-shadow: 1px 1px 1px 1px #bbb;
 }
 
 .card:hover {
@@ -324,13 +346,13 @@ header .content-wrap,
   text-align: left;
 }
 
-#group-projects .project-description {
+#co-developed-projects .project-description {
   list-style: disc;
   margin-left: 2em;
 }
 
 @media (max-width: 500px) {
-  #group-projects .project-description {
+  #co-developed-projects .project-description {
     margin-left: 1em;
   }
 }
@@ -347,11 +369,12 @@ header .content-wrap,
   line-height: 1.5;
 }
 
-.fa-github {
+.fa-github, .fa-linkedin {
   color: rgba(116, 129, 154, 0.7);
 }
 
-.fa-github:hover {
+.fa-github:hover,
+.fa-linkedin:hover {
   color: rgba(116, 129, 154, 1);
 }
 
@@ -406,22 +429,22 @@ header .content-wrap,
   font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1900 - 300)));
 }
 
-.box {
+.contact-me-container {
   text-align: center;
 }
 
-.box div {
+.contact-me-container div {
   margin-left: 1em;
 }
 
 @media (max-width: 500px) {
-  .box div {
+  .contact-me-container div {
     margin-left: .5em;
   }
 }
 
 @media (max-width: 400px) {
-  .box div {
+  .contact-me-container div {
     margin-left: .1em;
   }
 }
@@ -443,17 +466,27 @@ header .content-wrap,
 
 /* Footer */
 #main-footer {
-  padding: 2em;
+  padding: 1em;
   background: #f4f5f7;
   color: #74819a;
   text-align: center;
 }
 
-#main-footer a {
-  color: #2690d4;
-  text-decoration: none;
-  display: inline-block;
+#social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2vh;
 }
+
+#linkedin-profile {
+  margin-right: 4vh;
+}
+
+#github-profile {
+  margin-left: 4vh;
+}
+
 
 
 
@@ -471,13 +504,14 @@ header .content-wrap,
     display: inline-block;
   }
 
-  header .button {
-    margin-top: 6vh;
-  }
-
+  header .content-text,
   #about-me .content-text {
     columns: 2;
-    column-gap: 2em;
+    column-gap: 5em;
+  }
+
+  header .button {
+    margin-top: 6vh;
   }
 
   #about-me .content-text p {
@@ -490,7 +524,7 @@ header .content-wrap,
 
   .content-wrap, 
   #projects ul,
-  #projects #my-projects ul,
+  #projects #personal-projects ul,
   #projects h2,
   #projects h4,
   #projects p {
@@ -505,9 +539,9 @@ header .content-wrap,
     grid-column: 2/4;
   }
 
-  #projects #my-projects {
+  #projects #personal-projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.5em;
   }
 
