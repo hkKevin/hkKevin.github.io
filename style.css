@@ -298,6 +298,10 @@ header .content-wrap,
   padding: 0;
 }
 
+#projects li {
+  display: inline-block;
+}
+
 #co-developed-projects {
   margin-bottom: 10vh;
 }
@@ -403,6 +407,7 @@ header .content-wrap,
 /* Contact Me */
 #contact-me {
   padding: 20vh 1em;
+  background: #fff;
 }
 
 #contact-me a {

@@ -5,13 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <title>Pak Kiu Leung - a Front-end Web Developer</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> <!-- Bootstrap -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- Font family: Open Sans -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- font awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!-- Hint.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"> <!-- animate.css library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Animation On Scroll library -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -37,7 +35,7 @@
         <div id="bar-3"></div>
       </div>
       <div class="heading">
-        <h1>Hi! I'm <div id="my-name" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">Pak Kiu Leung</div> - <br />
+        <h1>Hi! I'm <div id="my-name" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-delay="100">Pak Kiu Leung</div> - <br />
           a Front-end Web Developer.</h1>
       </div>
       <p class="content-text"  data-aos="fade" data-aos-anchor-placement="center-bottom">I have a tremendous passion and proficient technical skills in front-end development. I am capable of building user-centered and responsive websites with dynamic contents. I am going to put all my effort into improving my technical and enterprise skills as a web developer every day. Delivering an interactive and intuitive web experience to audiences is my principal goal.</p>
@@ -97,48 +95,46 @@
 
       <h4 class="project-type" data-aos="fade" data-aos-anchor-placement="center-bottom">Co-developed Project</h4>
       <ul id="co-developed-projects">
-        <li class="card wow slideInUp" data-toggle="modal" data-target="#modal-sydney-trains">
-          <img src="./img/projects/system-1.png" alt="Image of Sydney Trains Data Visualisation System">
-          <div class="card-content">
-            <h3 class="card-title">Sydney Trains Data Visualisation System</h3>
-            <ul class="project-description">
-              <li>
-                Received a Certificate of Appreciation from Sydney Trains
-              </li>
-              <li>
-                Awarded the Runner Up Prize at the University of Wollongong Tradeshow 2018
-              </li>
-              <li>
-                A web app that displays trains data (real-time & historical) as graphs and map for performance analysis in order to improve timetable scheduling for the client
-              </li>
-              <li>
-                Responsible for Front-end development
-              </li>
-            </ul>
-          </div>
+        <li class="card" data-toggle="modal" data-target="#modal-sydney-trains" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <img src="./img/projects/system-1.png" alt="Image of Sydney Trains Data Visualisation System">
+            <div class="card-content">
+              <h3 class="card-title">Sydney Trains Data Visualisation System</h3>
+              <ul class="project-description">
+                <li>
+                  Received a Certificate of Appreciation from Sydney Trains
+                </li>
+                <li>
+                  Awarded the Runner Up Prize at the University of Wollongong Tradeshow 2018
+                </li>
+                <li>
+                  A web app that displays trains data (real-time & historical) as graphs and map for performance analysis in order to improve timetable scheduling for the client
+                </li>
+                <li>
+                  Responsible for Front-end development
+                </li>
+              </ul>
+            </div>
         </li>
       </ul>
 
-
       <h4 class="project-type" data-aos="fade" data-aos-anchor-placement="center-bottom">Personal Projects</h4>
         <ul id="personal-projects">
-          <li class="card wow slideInUp" data-toggle="modal" data-target="#modal-memo-app">
+          <li class="card" data-toggle="modal" data-target="#modal-memo-app" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <img src="./img/projects/memo-app.png" alt="Image of Memo App">
             <div class="card-content">
               <h3 class="card-title">Memo App</h3>
               <p class="project-description">A React app that allows resizing, dragging, creating, editing and deleting memos.</p>
             </div>
           </li>
-          <li class="card wow slideInUp" data-wow-delay=".1s" data-toggle="modal" data-target="#modal-movie-world">
+          <li class="card" data-toggle="modal" data-target="#modal-movie-world" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200">
             <img src="./img/projects/movie-world.png" alt="Image of Movie World">
             <div class="card-content">
               <h3 class="card-title">Movie World</h3>
               <p class="project-description">A React app for searching info of movies (using The Movie Database API).</p>
-  
             </div>
           </li>
         </ul>
-      <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p>
+      <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p>
     </section>
 
     <!-- Modals -->
@@ -296,7 +292,7 @@
           </div>
         </div>
       </div>
-    </section><section></section>
+    </section>
 
     <!-- Contact Me -->
     <section id="contact-me" class="grid">
@@ -330,7 +326,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> <!-- Popper.js -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> <!-- bootstrap.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> <!-- the wow animation JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- animation on scroll -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script> <!-- clipboard.js -->
   <script src="./index.js"></script>
