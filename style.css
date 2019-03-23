@@ -328,13 +328,13 @@ header .content-wrap,
   padding: 1em;
 }
 
-.project-description {
-  text-align: left;
+#co-developed-projects .project-description {
+  list-style-type: disc;
+  margin-left: 2em;
 }
 
-#co-developed-projects .project-description {
-  list-style: disc;
-  margin-left: 2em;
+#co-developed-projects .project-description li { 
+  display: list-item;
 }
 
 @media (max-width: 500px) {
