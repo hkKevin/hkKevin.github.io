@@ -44,7 +44,7 @@ h1, h2, h3, p {
 }
 
 .button {
-  display: block;
+  display: block !important;
   background: #fff;
   color: #74819a;
   border: 1px solid #74819a;
@@ -52,7 +52,6 @@ h1, h2, h3, p {
   padding: .2em 1.2em;
   text-decoration: none !important;
   border-radius: 5px;
-  display: block;
   cursor: pointer;
 }
 
@@ -326,11 +325,14 @@ header .content-wrap,
 
 .card-content {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #co-developed-projects .project-description {
   list-style-type: disc;
-  margin-left: 2em;
+  margin: 1em 0 1em 2em;
 }
 
 #co-developed-projects .project-description li { 
@@ -397,11 +399,15 @@ header .content-wrap,
   margin-bottom: 1.5em;
 }
 
-
 .live-website {
-  display: block !important;
+  display: block;
   text-align: center;
   margin-bottom: 1.3em;
+}
+
+.modal-footer > .button {
+  text-align: center;
+  width: 100%;
 }
 
 /* Contact Me */
@@ -491,6 +497,10 @@ header .content-wrap,
     display: inline-block;
   }
 
+  .more-btn {
+    margin-top: 2vh;
+  }
+
   header .content-text,
   #about-me .content-text {
     columns: 2;
@@ -507,6 +517,10 @@ header .content-wrap,
 
   #skills {
     margin-top: 5vh;
+  }
+
+  .modal-footer > .button {
+    width: inherit;
   }
 
   .content-wrap, 
