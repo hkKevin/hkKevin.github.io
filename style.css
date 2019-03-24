@@ -230,6 +230,10 @@ header .content-wrap,
   color: #fff;
 }
 
+.icon {
+  margin-right: .5em;
+}
+
 /* About Me */
 #about-me {
   padding: 20vh 0;
