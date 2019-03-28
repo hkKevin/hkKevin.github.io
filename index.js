@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   AOS.init(); // Initialize Animation On Scroll
 
-  var clipboard = new ClipboardJS('.copy'); // Initialize ClipboardJS
+  var clipboard = new ClipboardJS('.copy-icon'); // Initialize ClipboardJS
   clipboard.on('success', function(e) {
     $('#copy-hint').attr('aria-label', 'Copied'); // Hint changed from 'Copy to Clipboard' to 'Copied.'
     setTimeout(showCopy, 500);

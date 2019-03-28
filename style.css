@@ -53,11 +53,20 @@ h1, h2, h3, p {
   text-decoration: none !important;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:hover {
   background: #74819a;
   color: #fff;
+}
+
+.button:active {
+  transform: scale(1.05);
 }
 
 /* Scroll Bar */
@@ -103,6 +112,10 @@ body {
   right: 2vh;
   transition: top 0.3s;
   z-index: 99;
+}
+
+#burger-icon:active {
+  transform: scale(1.05);
 }
 
 /* Burger icon components */
@@ -164,6 +177,10 @@ body {
 
 #sidenav a:hover {
   color: #fff;
+}
+
+#sidenav a:active {
+  transform: scale(1.05);
 }
 
 /* Header */
@@ -361,13 +378,20 @@ header .content-wrap,
   line-height: 1.5;
 }
 
-.fa-github, .fa-linkedin {
+.fa-github, 
+.fa-linkedin {
   color: rgba(116, 129, 154, 0.7);
+  transition: 0.3s;
 }
 
 .fa-github:hover,
 .fa-linkedin:hover {
   color: rgba(116, 129, 154, 1);
+}
+
+.fa-github:active,
+.fa-linkedin:active {
+  transform: scale(1.05);
 }
 
 @media (max-width: 500px) {
@@ -423,7 +447,7 @@ header .content-wrap,
 #contact-me a {
   color: #2690d4;
   text-decoration: none;
-  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1900 - 300)));
 }
 
 .contact-me-container {
@@ -431,34 +455,34 @@ header .content-wrap,
 }
 
 .contact-me-container div {
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 
 @media (max-width: 500px) {
   .contact-me-container div {
-    margin-left: .5em;
+    margin-left: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .contact-me-container div {
-    margin-left: .1em;
+    margin-left: 0.6em;
   }
 }
 
-#contact-me i {
+.copy-icon {
   color: #2690d4;
-  opacity: 0.3;
+  opacity: 0.7;
   font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1900 - 300)));
 }
 
-#contact-me i:hover {
+.copy-icon:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 1;
 }
 
-#contact-me i:active {
-  opacity: 1;
+.copy-icon:active {
+  transform: scale(1.05);
 }
 
 /* Footer */
