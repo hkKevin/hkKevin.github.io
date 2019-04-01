@@ -46,8 +46,8 @@ h1, h2, h3, p {
 .button {
   display: block !important;
   background: #fff;
-  color: #74819a;
-  border: 1px solid #74819a;
+  color: #637089;
+  border: 1px solid #637089;
   margin: 0.5em 0;
   padding: .2em 1.2em;
   text-decoration: none !important;
@@ -61,7 +61,7 @@ h1, h2, h3, p {
 }
 
 .button:hover {
-  background: #74819a;
+  background: #637089;
   color: #fff;
 }
 
@@ -89,14 +89,14 @@ h1, h2, h3, p {
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #74819a;
+    background: #637089;
   }
 }
 
 body {
   margin: 0;
   background: #fff;
-  color: #74819a;
+  color: #637089;
   font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
   line-height: 2;
   text-align: left;
@@ -128,7 +128,7 @@ body {
 }
 
 .burger-bar-hover {
-  background-color: #74819a !important;
+  background-color: #637089 !important;
 }
 
 /* Transformation effect for burger menu */
@@ -209,7 +209,7 @@ header .content-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #74819a;  
+  color: #637089;  
 }
 
 .heading {
@@ -227,7 +227,7 @@ header h1 {
 
 #my-name {
   font-weight: bold;
-  color: #74819a;
+  color: #637089;
   display: inline-block;
 }
 
@@ -243,7 +243,7 @@ header .content-wrap,
 }
 
 #header-btn:hover {
-  background: #74819a;
+  background: #637089;
   color: #fff;
 }
 
@@ -336,7 +336,7 @@ header .content-wrap,
   border: none;
   margin-bottom: 3em;
   background: #fff;
-  color: #74819a;
+  color: #637089;
   box-shadow: 1px 1px 1px 1px #bbb;
 }
 
@@ -505,7 +505,7 @@ header .content-wrap,
 #main-footer {
   padding: 1em;
   background: #f4f5f7;
-  color: #74819a;
+  color: #637089;
   text-align: center;
 }
 

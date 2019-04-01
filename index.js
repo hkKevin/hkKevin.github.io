@@ -78,7 +78,7 @@ $(document).ready(function () {
         }
       },
       "color": {
-        "value": "#74819a"
+        "value": "#637089"
       },
       "shape": {
         "type": "circle"
@@ -105,8 +105,8 @@ $(document).ready(function () {
       },
       "line_linked": {
         "enable": true,
-        "distance": 300,
-        "color": "#74819a",
+        "distance": 350,
+        "color": "#637089",
         "opacity": 1,
         "width": 0.3
       },
