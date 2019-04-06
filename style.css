@@ -66,7 +66,7 @@ h1, h2, h3, p {
 }
 
 .button:active {
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 /* Scroll Bar */
@@ -133,7 +133,7 @@ body {
 
 /* Transformation effect for burger menu */
 .transform-bar-1 {
-  transform: rotate(-405deg) translate(-8px, 7px);
+  transform: rotate(-45deg) translate(-8px, 7px);
 }
 
 .transform-bar-2 {
@@ -141,7 +141,7 @@ body {
 }
 
 .transform-bar-3 {
-  transform: rotate(405deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
 }
 
 .content-title {
@@ -173,10 +173,12 @@ body {
   color: #bbb;
   opacity: 1;
   padding: 5vh 0;
+  transition: 0.1s;
 }
 
 #sidenav a:hover {
   color: #fff;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #sidenav a:active {
@@ -347,7 +349,7 @@ header .content-wrap,
 
 .card:active {
   transition-delay: 0s !important;
-  transform: scale(0.97) !important;
+  transform: scale(0.99) !important;
 }
 
 .card-title {

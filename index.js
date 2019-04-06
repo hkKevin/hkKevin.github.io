@@ -14,8 +14,28 @@ $(document).ready(function () {
   }
 
 
-  // Burger icon onClick
+  // Burger icon clicked
   $('#burger-icon').click(function () {
+       
+    // Show or Hide sidenav
+    var toggleWidth = "";
+    if ( $("#sidenav").width() != 0 ) {
+      toggleWidth = "0px"
+      $("#sidenav a").css({ opacity: 0 });
+      // Display burger icon
+      $('#bar-1').removeClass('transform-bar-1');
+      $('#bar-2').removeClass('transform-bar-2');
+      $('#bar-3').removeClass('transform-bar-3');
+    } else {
+      toggleWidth = "100%"
+      $("#sidenav a").css({ opacity: 1 });
+      // Display Times icon
+      $('#bar-1').addClass('transform-bar-1');
+      $('#bar-2').addClass('transform-bar-2');
+      $('#bar-3').addClass('transform-bar-3');
+    }
+    
+    $('#sidenav').animate({ width: toggleWidth }, 100);
 
     // Scrolling is prohibited when sidenav is displayed
     if ($('body').css('overflow') != 'hidden') {
@@ -23,24 +43,6 @@ $(document).ready(function () {
     } else if ($('body').css('overflow') != 'initial') {
       $('body').css("overflow", "initial");
     }
-
-    // Animation for burger icon
-    $('#bar-1').toggleClass('transform-bar-1');
-    $('#bar-2').toggleClass('transform-bar-2');
-    $('#bar-3').toggleClass('transform-bar-3');
-
-
-    // Show or Hide sidenav
-    var toggleWidth = "";
-    if ( $("#sidenav").width() != 0 ) {
-      toggleWidth = "0px"
-      $("#sidenav a").css({ opacity: 0 });
-    } else {
-      toggleWidth = "100%"
-      $("#sidenav a").css({ opacity: 1 });
-    }
-    
-    $('#sidenav').animate({ width: toggleWidth }, 100);
 
   });
 
@@ -54,9 +56,9 @@ $(document).ready(function () {
     $('body').css({ "overflow": "initial" });
 
     // Transform back to the burger icon
-    $('#bar-1').toggleClass('transform-bar-1');
-    $('#bar-2').toggleClass('transform-bar-2');
-    $('#bar-3').toggleClass('transform-bar-3');
+    $('#bar-1').removeClass('transform-bar-1');
+    $('#bar-2').removeClass('transform-bar-2');
+    $('#bar-3').removeClass('transform-bar-3');
 
   });
 
