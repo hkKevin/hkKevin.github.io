@@ -1,0 +1,50 @@
+/* About Me */
+#about-me {
+  padding: 20vh 0;
+  #skills {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .skill {
+      margin: 3vh;
+      padding: .5em .8em;
+      display: inline-block;
+      &:active {
+        transition-delay: 0s !important;
+        transform: scale(0.95) !important;
+      }
+      img {
+        width: 70px;
+      }
+    }
+    @media (max-width: 390px) {
+      .skill {
+        margin: 2vh 0;
+        padding: .2em 1.3em;
+      }
+    }
+    #react-logo {
+      width: 82px;
+    }
+    #jquery-logo {
+      width: 120px;
+    }
+    #firebase-logo {
+      width: 50px;
+    }
+    #php-logo {
+      width: 90px;
+    }
+    #html-logo {
+      width: 80px;
+    }
+    #css-logo {
+      width: 58px;
+    }
+    #mysql-logo {
+      width: 100px;
+    }
+  }
+}

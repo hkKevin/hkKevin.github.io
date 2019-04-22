@@ -1,0 +1,19 @@
+/* Footer */
+#main-footer {
+  padding: 1em;
+  background: $secondaryBg;
+  color: $color;
+  text-align: center;
+  #social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vh;
+    #linkedin-profile {
+      margin-right: 4vh;
+    }
+    #github-profile {
+      margin-left: 4vh;
+    }
+  }
+}

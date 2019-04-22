@@ -1,0 +1,631 @@
+/* Header */
+header #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  opacity: 1;
+  background-color: #f4f5f7 !important;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+header #home {
+  min-height: 100vh;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+header #home .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #home .heading h1 {
+  text-align: left;
+  line-height: 1.7;
+  font-size: calc(20px + (70 - 20) * ((100vw - 300px) / (1900 - 300)));
+  padding: 5vh 0;
+}
+
+header #home .heading h1 #my-name {
+  font-weight: bold;
+  color: #637089;
+  display: inline-block;
+}
+
+header #home #header-btn {
+  background: #f4f5f7;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+header #home #header-btn:hover {
+  background: #637089;
+  color: #fff;
+}
+
+/* About Me */
+#about-me {
+  padding: 20vh 0;
+}
+
+#about-me #skills {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-me #skills .skill {
+  margin: 3vh;
+  padding: .5em .8em;
+  display: inline-block;
+}
+
+#about-me #skills .skill:active {
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+  -webkit-transform: scale(0.95) !important;
+          transform: scale(0.95) !important;
+}
+
+#about-me #skills .skill img {
+  width: 70px;
+}
+
+@media (max-width: 390px) {
+  #about-me #skills .skill {
+    margin: 2vh 0;
+    padding: .2em 1.3em;
+  }
+}
+
+#about-me #skills #react-logo {
+  width: 82px;
+}
+
+#about-me #skills #jquery-logo {
+  width: 120px;
+}
+
+#about-me #skills #firebase-logo {
+  width: 50px;
+}
+
+#about-me #skills #php-logo {
+  width: 90px;
+}
+
+#about-me #skills #html-logo {
+  width: 80px;
+}
+
+#about-me #skills #css-logo {
+  width: 58px;
+}
+
+#about-me #skills #mysql-logo {
+  width: 100px;
+}
+
+/* Projects */
+#projects {
+  padding: 20vh 1em;
+}
+
+#projects .project-type {
+  margin-bottom: 5vh;
+}
+
+#projects ul {
+  padding: 0;
+}
+
+#projects li {
+  display: inline-block;
+}
+
+#projects #co-developed-projects {
+  margin-bottom: 10vh;
+}
+
+#projects #co-developed-projects .project-description {
+  list-style-type: disc;
+  margin: 1em 0 1em 2em;
+}
+
+#projects #co-developed-projects .project-description li {
+  display: list-item;
+}
+
+@media (max-width: 500px) {
+  #projects #co-developed-projects .project-description {
+    margin-left: 1em;
+  }
+}
+
+#projects .card {
+  border: none;
+  margin-bottom: 3em;
+  background: #fff;
+  color: #637089;
+  -webkit-box-shadow: 1px 1px 1px 1px #bbb;
+          box-shadow: 1px 1px 1px 1px #bbb;
+}
+
+#projects .card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 10px 1px #bbb;
+          box-shadow: 1px 1px 10px 1px #bbb;
+}
+
+#projects .card:active {
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+  -webkit-transform: scale(0.99) !important;
+          transform: scale(0.99) !important;
+}
+
+#projects .card .card-content {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects .card .card-content .card-title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Contact Me */
+#contact-me {
+  padding: 20vh 1em;
+  background: #fff;
+}
+
+#contact-me .contact-me-container {
+  text-align: center;
+}
+
+#contact-me .contact-me-container a {
+  color: #2690d4;
+  text-decoration: none;
+  font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1900 - 300)));
+}
+
+#contact-me .contact-me-container a:active {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#contact-me .contact-me-container div {
+  margin-left: 1.5em;
+}
+
+#contact-me .contact-me-container div .copy-icon {
+  color: #2690d4;
+  opacity: 0.7;
+  font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1900 - 300)));
+}
+
+#contact-me .contact-me-container div .copy-icon:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#contact-me .contact-me-container div .copy-icon:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media (max-width: 500px) {
+  .contact-me-container div {
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-me-container div {
+    margin-left: 0.6em;
+  }
+}
+
+/* Footer */
+#main-footer {
+  padding: 1em;
+  background: #f4f5f7;
+  color: #637089;
+  text-align: center;
+}
+
+#main-footer #social-media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2vh;
+}
+
+#main-footer #social-media-container #linkedin-profile {
+  margin-right: 4vh;
+}
+
+#main-footer #social-media-container #github-profile {
+  margin-left: 4vh;
+}
+
+.button {
+  display: block !important;
+  background: #fff;
+  color: #637089;
+  border: 1px solid #637089;
+  margin: 0.5em 0;
+  padding: .2em 1.2em;
+  text-decoration: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background: #637089;
+  color: #fff;
+}
+
+.button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+#burger-icon {
+  position: fixed;
+  padding-top: 10px;
+  cursor: pointer;
+  top: 0;
+  right: 2vh;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  z-index: 99;
+  /* Burger icon components */
+}
+
+#burger-icon:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#burger-icon #bar-1, #burger-icon #bar-2, #burger-icon #bar-3 {
+  width: 30px;
+  height: 3px;
+  background-color: #afb6c5;
+  margin: 6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-bar-hover {
+  background-color: #637089 !important;
+}
+
+/* Transformation effect for burger menu */
+.transform-bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+          transform: rotate(-45deg) translate(-8px, 7px);
+}
+
+.transform-bar-2 {
+  opacity: 0;
+}
+
+.transform-bar-3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
+}
+
+#sidenav {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  position: fixed;
+  z-index: 3;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
+#sidenav a {
+  display: block;
+  font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1900 - 300)));
+  text-decoration: none;
+  text-align: center;
+  color: #bbb;
+  opacity: 1;
+  padding: 5vh 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#sidenav a:first-child {
+  margin-top: 5vh;
+}
+
+#sidenav a:hover {
+  color: #fff;
+  background: black;
+}
+
+#sidenav a:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.modal {
+  padding-right: 0 !important;
+}
+
+.modal .modal-content .hint {
+  padding-left: 3vh;
+}
+
+.modal .modal-header {
+  padding: 1em 1em .5em 1em;
+}
+
+.modal .modal-header span {
+  line-height: 1.5;
+}
+
+.modal .project-features h5 {
+  margin: 5vh 0;
+  margin-left: 2vh;
+  text-align: left;
+}
+
+.modal .project-features li {
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+
+.modal .live-website {
+  display: block;
+  text-align: center;
+  margin-bottom: 1.3em;
+}
+
+.modal .carousel-control-prev,
+.modal .carousel-control-next,
+.modal .carousel-indicators {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+}
+
+.modal .modal-footer > .button {
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .modal-body ul {
+    -webkit-padding-start: 30px;
+            padding-inline-start: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-body ul {
+    -webkit-padding-start: 20px;
+            padding-inline-start: 20px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section:nth-child(even) {
+  background: #f4f5f7;
+}
+
+/* Cursor highlight */
+::-moz-selection {
+  background: #d2e9ff;
+}
+::selection {
+  background: #d2e9ff;
+}
+
+/* Scroll Bar */
+@media (min-width: 500px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f4f5f7;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #afb6c5;
+    border-radius: 5px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #637089;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #637089;
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
+  line-height: 2;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-title {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.content-wrap {
+  padding: 0 1.5em;
+}
+
+.icon {
+  margin-right: .5em;
+}
+
+.fa-github,
+.fa-linkedin {
+  color: rgba(116, 129, 154, 0.7);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+  color: #74819a;
+}
+
+.fa-github:active,
+.fa-linkedin:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+/* For screens wider than and equal to 700px */
+@media (min-width: 700px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr minmax(auto, 30em) minmax(auto, 30em) 1fr;
+        grid-template-columns: 1fr minmax(auto, 30em) minmax(auto, 30em) 1fr;
+  }
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: inline-block;
+  }
+  header .button {
+    margin-top: 6vh;
+  }
+  .more-btn {
+    margin-top: 2vh;
+  }
+  .content-text {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 5em;
+            column-gap: 5em;
+  }
+  #about-me .content-text p {
+    padding-top: 0;
+  }
+  #skills {
+    margin-top: 5vh;
+  }
+  #projects #personal-projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5em;
+  }
+  .modal-footer > .button {
+    width: inherit !important;
+  }
+  .content-wrap,
+  #projects ul,
+  #projects #personal-projects ul,
+  #projects h2,
+  #projects h4,
+  #projects p,
+  #contact-me div,
+  #main-footer div {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+}
+/*# sourceMappingURL=main.css.map */

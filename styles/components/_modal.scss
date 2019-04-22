@@ -1,0 +1,47 @@
+.modal {
+  padding-right: 0 !important;
+  .modal-content .hint {
+    padding-left: 3vh;
+  }
+  .modal-header {
+    padding: 1em 1em .5em 1em;
+    span {
+      line-height: 1.5;
+    }
+  }
+  .project-features h5 {
+    margin: 5vh 0;
+    margin-left: 2vh;
+    text-align: left;
+  }
+  .project-features li {
+    text-align: left;
+    margin-bottom: 1.5em;
+  }
+  .live-website {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.3em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-indicators {
+    filter: invert(50%);
+  }
+  .modal-footer > .button {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-body ul {
+    padding-inline-start: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-body ul {
+    padding-inline-start: 20px;
+  }
+}

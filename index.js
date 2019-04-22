@@ -16,44 +16,46 @@ $(document).ready(function () {
 
   // Burger icon clicked
   $('#burger-icon').click(function () {
-       
+    var offset = $("#sidenav").offset();
     // Show or Hide sidenav
-    var toggleWidth = "";
-    if ( $("#sidenav").width() != 0 ) {
-      toggleWidth = "0px"
+    if ( offset.left == 0 ) {  
+      // Hide sidenav
+      $('#sidenav').css( 
+        'transform', 'translateX(100vw)'
+      );
       $("#sidenav a").css({ opacity: 0 });
       // Display burger icon
       $('#bar-1').removeClass('transform-bar-1');
       $('#bar-2').removeClass('transform-bar-2');
       $('#bar-3').removeClass('transform-bar-3');
+      // Allow scrolling
+      $('body').css("overflow", "initial");
+
     } else {
-      toggleWidth = "100%"
+      // Show sidenav
+      $('#sidenav').css(
+        'transform', 'translateX(0vw)'
+      );
       $("#sidenav a").css({ opacity: 1 });
       // Display Times icon
       $('#bar-1').addClass('transform-bar-1');
       $('#bar-2').addClass('transform-bar-2');
       $('#bar-3').addClass('transform-bar-3');
-    }
-    
-    $('#sidenav').animate({ width: toggleWidth }, 100);
-
-    // Scrolling is prohibited when sidenav is displayed
-    if ($('body').css('overflow') != 'hidden') {
+      // Avoid scrolling
       $('body').css('overflow', 'hidden');
-    } else if ($('body').css('overflow') != 'initial') {
-      $('body').css("overflow", "initial");
     }
-
   });
 
 
   // SideNav link onClick
   $("#sidenav-home, #sidenav-about-me, #sidenav-projects, #sidenav-contact-me").click(function () {
     // Hide sidenav
-    $('#sidenav').animate({ width: 0 }, 100);
+    $('#sidenav').css( 
+      'transform', 'translateX(100vw)'
+    );
 
-    // Make the app scrollable again
-    $('body').css({ "overflow": "initial" });
+    // Make the web scrollable again
+    $('body').css("overflow", "initial");
 
     // Transform back to the burger icon
     $('#bar-1').removeClass('transform-bar-1');
