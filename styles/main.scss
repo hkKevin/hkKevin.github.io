@@ -30,28 +30,22 @@ section:nth-child(even) {
 }
 
 /* Scroll Bar */
-// @media (min-width: 500px) {
-//   /* width */
-//   ::-webkit-scrollbar {
-//     width: 10px;
-//   }
-
-//   /* Track */
-//   ::-webkit-scrollbar-track {
-//     background: $secondaryBg; 
-//   }
-
-//   /* Handle */
-//   ::-webkit-scrollbar-thumb {
-//     background: $secondaryColor;
-//     border-radius: 5px;
-//   }
-
-//   /* Handle on hover */
-//   ::-webkit-scrollbar-thumb:hover {
-//     background: $color;
-//   }
-// }
+@media (min-width: 500px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: $secondaryBg; // Track
+  }
+  ::-webkit-scrollbar-thumb { /* Handle */
+    background: $secondaryColor;
+    border-radius: 5px;
+    &:hover { /* Handle on hover */
+      background: #8793a9;
+    }
+    &:active {  /* Handle on drag */
+      background: $color;
+    }
+  }
+}
 
 img {
   display: block;
