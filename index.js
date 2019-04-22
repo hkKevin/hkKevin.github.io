@@ -17,9 +17,8 @@ $(document).ready(function () {
   // Burger icon clicked
   $('#burger-icon').click(function () {
     var offset = $("#sidenav").offset();
-    console.log(offset.left);
     // Show or Hide sidenav
-    if ( offset.left == 0 ) {  
+    if ( offset.left <= 0 ) {  
       // Hide sidenav
       $('#sidenav').css( 
         'transform', 'translateX(100vw)'
