@@ -11,7 +11,10 @@ A website that introduces myself as a Front-end Web Developer and demonstrates m
 * jQuery
 * Firebase
 * JavaScript
+* Sass
 * Bootstrap
+* PHP
+* Python
 * HTML
 * CSS
 * MySQL
