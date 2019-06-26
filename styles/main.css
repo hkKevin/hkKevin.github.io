@@ -52,7 +52,7 @@ header #home .heading h1 {
 
 header #home .heading h1 #my-name {
   font-weight: bold;
-  color: #637089;
+  color: #556075;
   display: inline-block;
 }
 
@@ -63,7 +63,7 @@ header #home #header-btn {
 }
 
 header #home #header-btn:hover {
-  background: #637089;
+  background: #556075;
   color: #fff;
 }
 
@@ -179,7 +179,7 @@ header #home #header-btn:hover {
   border: none;
   margin-bottom: 3em;
   background: #fff;
-  color: #637089;
+  color: #556075;
   -webkit-box-shadow: 1px 1px 1px 1px #bbb;
           box-shadow: 1px 1px 1px 1px #bbb;
 }
@@ -275,7 +275,7 @@ header #home #header-btn:hover {
 #main-footer {
   padding: 1em;
   background: #f4f5f7;
-  color: #637089;
+  color: #556075;
   text-align: center;
 }
 
@@ -304,8 +304,8 @@ header #home #header-btn:hover {
 .button {
   display: block !important;
   background: #fff;
-  color: #637089;
-  border: 1px solid #637089;
+  color: #556075;
+  border: 1px solid #556075;
   margin: 0.5em 0;
   padding: .2em 1.2em;
   text-decoration: none !important;
@@ -320,7 +320,7 @@ header #home #header-btn:hover {
 }
 
 .button:hover {
-  background: #637089;
+  background: #556075;
   color: #fff;
 }
 
@@ -356,7 +356,7 @@ header #home #header-btn:hover {
 }
 
 .burger-bar-hover {
-  background-color: #637089 !important;
+  background-color: #556075 !important;
 }
 
 /* Transformation effect for burger menu */
@@ -511,7 +511,7 @@ section:nth-child(even) {
   }
   ::-webkit-scrollbar-thumb:active {
     /* Handle on drag */
-    background: #637089;
+    background: #556075;
   }
 }
 
@@ -529,7 +529,7 @@ h1, h2, h3, p {
 body {
   margin: 0;
   background: #fff;
-  color: #637089;
+  color: #556075;
   font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
   line-height: 2;
   text-align: left;
