@@ -19,4 +19,4 @@ A website that introduces myself as a Front-end Web Developer and demonstrates m
 * CSS
 * MySQL
 
-I am studying a Bachelor of I.T. (Web Design & Development) at the University of Wollongong. The more I explore, the more I found myself lacking in technical skills. Therefore, I keep learning the latest technologies online to keep myself updated. I enjoy learning new technologies because my experience and confidence in web development can be boosted.
+I am studying a Bachelor of Information Technology (Web Design & Development) at the University of Wollongong. I enjoy learning the latest technologies online to keep myself updated because my experience and confidence in web development can be enhanced. The valuable experiences I acquired during the development of projects, really broaden my horizons in this industry.
