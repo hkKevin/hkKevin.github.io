@@ -8,6 +8,19 @@
     span {
       line-height: 1.5;
     }
+    .material-icons {
+      margin: -.3em -.3em 0 0;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: transparent;
+      transition: background-color 150ms;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+      &:active {
+        transform: scale(0.97);
+      }
+    }
   }
   .project-features h5 {
     margin: 5vh 0;

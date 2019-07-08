@@ -1,38 +1,29 @@
 #burger-icon {
   position: fixed;
-  padding-top: 10px;
   cursor: pointer;
-  top: 0;
-  right: 2vh;
-  transition: top 0.3s;
+  top: .5em;
+  right: .5em;
   z-index: 99;
   &:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
   }
-  /* Burger icon components */
-  #bar-1, #bar-2, #bar-3 {
-    width: 30px;
-    height: 3px;
-    background-color: $secondaryColor;
-    margin: 6px;
-    transition: 0.3s;
-    
+  .material-icons {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 150ms;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
   }
-}
+  .md-light {
+    color: rgba(255, 255, 255, 1);
+  }
+  .close {
+    display: none; // Hide Close icon at the beginning
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2)
+    }
+  }
 
-.burger-bar-hover {
-  background-color: $color !important;
-}
-
-/* Transformation effect for burger menu */
-.transform-bar-1 {
-  transform: rotate(-45deg) translate(-8px, 7px);
-}
-
-.transform-bar-2 {
-  opacity: 0;
-}
-
-.transform-bar-3 {
-  transform: rotate(45deg) translate(-5px, -5px);
 }

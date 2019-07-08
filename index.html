@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> <!-- Bootstrap -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- Font family: Open Sans -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- font awesome icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet"> <!-- Material icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!-- Hint.css -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Animation On Scroll library -->
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
@@ -29,10 +30,9 @@
     <div id="particles-js"></div>
     <div id="home" class="content-wrap">
       <!-- Burger Icon -->
-      <div id="burger-icon" class="hint hint--bottom hint--rounded" aria-label="Toggle Menu">
-        <div id="bar-1"></div>
-        <div id="bar-2"></div>
-        <div id="bar-3"></div>
+      <div id="burger-icon">
+        <i class="material-icons menu">menu</i>
+        <i class="material-icons close md-light">close</i>
       </div>
       <div class="heading">
         <h1>Hi! I'm <div id="my-name" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-delay="100">Pak Kiu Leung</div> - <br />
@@ -53,7 +53,7 @@
       <div class="content-wrap">
         <h2 class="content-title">About Me</h2>
           <p class="content-text" data-aos="fade" data-aos-anchor-placement="center-bottom">
-            I am studying a Bachelor of I.T. (Web Design & Development) at the University of Wollongong. The more I explore, the more I found myself lacking in technical skills. Therefore, I keep learning the latest technologies online to keep myself updated. I enjoy learning new technologies because my experience and confidence in web development can be boosted. I have experience working with below technologies:
+            I am studying a Bachelor of Information Technology (Web Design & Development) at the University of Wollongong. I enjoy learning the latest technologies online to keep myself updated because my experience and confidence in web development can be enhanced. I have experience with below technologies:
           </p>
         <div id="skills">
             <a href="https://reactjs.org/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="React" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -158,9 +158,7 @@
               <h4 class="modal-title">
                 Sydney Trains Data Visualisation System
               </h4>
-              <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </div>
+              <i class="material-icons close" data-dismiss="modal">close</i>
             </div>
             <div class="modal-body">
               <div id="carousel-controls" class="carousel slide" data-ride="carousel">
@@ -197,12 +195,10 @@
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                  <i class="material-icons">chevron_left</i>
                 </a>
                 <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                  <i class="material-icons">chevron_right</i>
                 </a>
               </div>
               <div class="project-features">
@@ -241,9 +237,7 @@
                   </a>
                 </span>
               </h4>
-              <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </div>
+              <i class="material-icons close" data-dismiss="modal">close</i>
             </div>
             <div class="modal-body">
               <a class="button live-website" href="https://vigilant-hawking-ade786.netlify.com/" target="_blank">
@@ -289,9 +283,7 @@
                   </a>
                 </span>
               </h4>
-              <div class="close hint hint--left hint--rounded" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </div>
+              <i class="material-icons close" data-dismiss="modal">close</i>
             </div>
             <div class="modal-body">
               <a class="button live-website" href="https://festive-curie-c1aab0.netlify.com/" target="_blank">
@@ -330,7 +322,7 @@
         <p data-aos="fade" data-aos-anchor-placement="center-bottom">I would love to hear from you. Please email me and I will get in touch ASAP.</p><br />
         <a class="hint hint--bottom hint--rounded" aria-label="Email me" data-aos="fade-up" data-aos-delay="500" href="mailto:pakkiuleung@gmail.com" target="_blank">pakkiuleung@gmail.com</a>
         <div id="copy-hint" class="hint hint--bottom hint--rounded" aria-label="Copy">
-          <i class="far fa-copy copy-icon" data-clipboard-text="pakkiuleung@gmail.com"></i>
+          <i class="material-icons-outlined copy-icon" data-clipboard-text="pakkiuleung@gmail.com">file_copy</i>    
         </div>
       </div>
     </section>

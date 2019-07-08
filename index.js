@@ -16,31 +16,46 @@ $(document).ready(function () {
 
   // Burger icon clicked
   $('#burger-icon').click(function () {
-    var offset = $("#sidenav").offset();
     // Show or Hide sidenav
-    if ( offset.left <= 0 ) {  
+    if ( $('#sidenav').css('display') == 'flex' ) {
       // Hide sidenav
-      $('#sidenav').css( 
-        'transform', 'translateX(100vw)'
+      $('#sidenav').animate({opacity: 0}, 400);
+      // display none after the sidenav animation is done
+      setTimeout(function(){
+        $("#sidenav, #sidenav a").css( 
+          'display', 'none' 
+        );
+      }, 400);
+
+      // Show Menu icon
+      $("#burger-icon .menu").css( 
+        'display', 'inline-block' 
       );
-      $("#sidenav a").css({ opacity: 0 });
-      // Display burger icon
-      $('#bar-1').removeClass('transform-bar-1');
-      $('#bar-2').removeClass('transform-bar-2');
-      $('#bar-3').removeClass('transform-bar-3');
+      // Hide Close icon
+      $("#burger-icon .close").css( 
+        'display', 'none' 
+      );
       // Allow scrolling
       $('body').css("overflow", "initial");
 
     } else {
       // Show sidenav
-      $('#sidenav').css(
-        'transform', 'translateX(0vw)'
+      $('#sidenav').animate({opacity: 1}, 400);
+      $("#sidenav a").css( 
+        'display', 'block' 
       );
-      $("#sidenav a").css({ opacity: 1 });
-      // Display Times icon
-      $('#bar-1').addClass('transform-bar-1');
-      $('#bar-2').addClass('transform-bar-2');
-      $('#bar-3').addClass('transform-bar-3');
+      $("#sidenav").css( 
+        'display', 'flex' 
+      );
+
+      // Hide Menu icon
+      $("#burger-icon .menu").css( 
+        'display', 'none' 
+      );
+      // Show Close icon
+      $("#burger-icon .close").css( 
+        'display', 'inline-block' 
+      );
       // Avoid scrolling
       $('body').css('overflow', 'hidden');
     }
@@ -50,24 +65,26 @@ $(document).ready(function () {
   // SideNav link onClick
   $("#sidenav-home, #sidenav-about-me, #sidenav-projects, #sidenav-contact-me").click(function () {
     // Hide sidenav
-    $('#sidenav').css( 
-      'transform', 'translateX(100vw)'
-    );
+    $('#sidenav').animate({opacity: 0}, 400);
+    // display none after the sidenav animation is done
+    setTimeout(function(){
+      $("#sidenav, #sidenav a").css( 
+        'display', 'none' 
+      );
+    }, 400);
 
     // Make the web scrollable again
     $('body').css("overflow", "initial");
 
-    // Transform back to the burger icon
-    $('#bar-1').removeClass('transform-bar-1');
-    $('#bar-2').removeClass('transform-bar-2');
-    $('#bar-3').removeClass('transform-bar-3');
+    // Show Menu icon
+    $("#burger-icon .menu").css( 
+      'display', 'inline-block' 
+    );
+    // Hide Close icon
+    $("#burger-icon .close").css( 
+      'display', 'none' 
+    );
 
-  });
-
-
-  // Burger icon on hover
-  $("#burger-icon").hover( function() {
-    $("#bar-1, #bar-2, #bar-3").toggleClass("burger-bar-hover");
   });
 
 

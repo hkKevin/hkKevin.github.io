@@ -177,11 +177,12 @@ header #home #header-btn:hover {
 
 #projects .card {
   border: none;
+  border-radius: 3px;
   margin-bottom: 3em;
   background: #fff;
   color: #556075;
-  -webkit-box-shadow: 1px 1px 1px 1px #bbb;
-          box-shadow: 1px 1px 1px 1px #bbb;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
 
 #projects .card:hover {
@@ -235,39 +236,44 @@ header #home #header-btn:hover {
 #contact-me .contact-me-container a:active {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
-#contact-me .contact-me-container div {
+#contact-me .contact-me-container #copy-hint {
   margin-left: 1.5em;
 }
 
-#contact-me .contact-me-container div .copy-icon {
-  color: #2690d4;
-  opacity: 0.7;
-  font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1900 - 300)));
+#contact-me .contact-me-container #copy-hint .copy-icon {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: background-color 150ms;
+  transition: background-color 150ms;
 }
 
-#contact-me .contact-me-container div .copy-icon:hover {
+#contact-me .contact-me-container #copy-hint .copy-icon:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+#contact-me .contact-me-container #copy-hint .copy-icon:hover {
   cursor: pointer;
-  opacity: 1;
 }
 
-#contact-me .contact-me-container div .copy-icon:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+#contact-me .contact-me-container #copy-hint .copy-icon:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
 @media (max-width: 500px) {
-  .contact-me-container div {
-    margin-left: 1em;
+  #copy-hint {
+    margin-left: 1em !important;
   }
 }
 
 @media (max-width: 400px) {
-  .contact-me-container div {
-    margin-left: 0.6em;
+  #copy-hint {
+    margin-left: 0.3em !important;
   }
 }
 
@@ -311,8 +317,8 @@ header #home #header-btn:hover {
   text-decoration: none !important;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 
 .button:focus {
@@ -325,74 +331,74 @@ header #home #header-btn:hover {
 }
 
 .button:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 #burger-icon {
   position: fixed;
-  padding-top: 10px;
   cursor: pointer;
-  top: 0;
-  right: 2vh;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
+  top: .5em;
+  right: .5em;
   z-index: 99;
-  /* Burger icon components */
 }
 
 #burger-icon:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
-#burger-icon #bar-1, #burger-icon #bar-2, #burger-icon #bar-3 {
-  width: 30px;
-  height: 3px;
-  background-color: #afb6c5;
-  margin: 6px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#burger-icon .material-icons {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: background-color 150ms;
+  transition: background-color 150ms;
 }
 
-.burger-bar-hover {
-  background-color: #556075 !important;
+#burger-icon .material-icons:hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
-/* Transformation effect for burger menu */
-.transform-bar-1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 7px);
-          transform: rotate(-45deg) translate(-8px, 7px);
+#burger-icon .md-light {
+  color: white;
 }
 
-.transform-bar-2 {
-  opacity: 0;
+#burger-icon .close {
+  display: none;
 }
 
-.transform-bar-3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -5px);
-          transform: rotate(45deg) translate(-5px, -5px);
+#burger-icon .close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #sidenav {
   height: 100%;
   min-height: 100vh;
   width: 100vw;
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  opacity: 0;
   position: fixed;
   z-index: 3;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: display 1.3s ease-out;
+  transition: display 1.3s ease-out;
 }
 
 #sidenav a {
-  display: block;
+  display: none;
   font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1900 - 300)));
   text-decoration: none;
   text-align: center;
@@ -431,6 +437,24 @@ header #home #header-btn:hover {
 
 .modal .modal-header span {
   line-height: 1.5;
+}
+
+.modal .modal-header .material-icons {
+  margin: -.3em -.3em 0 0;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: background-color 150ms;
+  transition: background-color 150ms;
+}
+
+.modal .modal-header .material-icons:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.modal .modal-header .material-icons:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
 .modal .project-features h5 {

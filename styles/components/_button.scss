@@ -8,7 +8,7 @@
   text-decoration: none !important;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 150ms;
   &:focus {
     outline: none;
   }
@@ -17,6 +17,6 @@
     color: #fff;
   }
   &:active {
-    transform: scale(0.98);
+    transform: scale(0.99);
   }
 }
