@@ -19,7 +19,7 @@
     @include dynamicFontSize(30, 50, 300, 1900);
     text-decoration: none;
     text-align: center;
-    color: #bbb;
+    color: #888;
     opacity: 1;
     padding: 5vh 0;
     transition: 0.1s;
@@ -28,7 +28,7 @@
     }
     &:hover {
       color: #fff;
-      background: black;
+      // background: black;
     }
     &:active {
       transform: scale(0.95);
