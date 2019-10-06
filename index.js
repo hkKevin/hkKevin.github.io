@@ -126,7 +126,7 @@ $(document).ready(function () {
       },
       "line_linked": {
         "enable": true,
-        "distance": 350,
+        "distance": 300,
         "color": "#637089",
         "opacity": 1,
         "width": 0.3
