@@ -124,23 +124,23 @@
       </ul>
 
       <h4 class="project-type" data-aos="fade" data-aos-offset="400">Personal Projects</h4>
-        <ul id="personal-projects" style="overflow-x: hidden">
-          <li class="card" data-toggle="modal" data-target="#modal-memo-app" data-aos="fade-right" data-aos-offset="500" data-aos-duration="1000">
+        <ul id="personal-projects" style="overflow: hidden">
+          <li class="card" data-toggle="modal" data-target="#modal-memo-app" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1000">
             <img src="./img/projects/memo.png" alt="Image of Memo Note">
             <div class="card-content">
               <h3 class="card-title">Memo Note</h3>
-              <p class="project-description">A React app that can resize, drag, filter, search, create, edit and delete memos.</p>
+              <p class="project-description">A React web app that can resize, drag, filter, search, create, edit and delete memos.</p>
               <button class="button more-btn" data-target="#modal-memo-app">
                 <i class="fas fa-angle-double-right icon"></i>
                 More
               </button>
             </div>
           </li>
-          <li class="card" data-toggle="modal" data-target="#modal-movie-world" data-aos="fade-left" data-aos-offset="500" data-aos-duration="1000">
+          <li class="card" data-toggle="modal" data-target="#modal-movie-world" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1000" data-aos-delay="400">
             <img src="./img/projects/movie-world.png" alt="Image of Movie World">
             <div class="card-content">
               <h3 class="card-title">Movie World</h3>
-              <p class="project-description">A React app for searching info of movies (using The Movie Database API).</p>
+              <p class="project-description">A React web app for searching info of movies (using The Movie Database API).</p>
               <button class="button more-btn" data-target="#modal-movie-world">
                 <i class="fas fa-angle-double-right icon"></i>
                 More
@@ -243,7 +243,7 @@
               <i class="material-icons close" data-dismiss="modal">close</i>
             </div>
             <div class="modal-body">
-              <a class="button live-website" href="https://vigilant-hawking-ade786.netlify.com/" target="_blank">
+              <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank">
                 <i class="fas fa-external-link-alt icon"></i>
                 Live Website
               </a>
@@ -351,6 +351,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> <!-- Popper.js -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> <!-- bootstrap.js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- animation on scroll -->
+  <script>
+    AOS.init(); // Initialize Animation On Scroll
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script> <!-- clipboard.js -->
   <script src="./index.js"></script>
 </body>
