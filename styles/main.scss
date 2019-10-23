@@ -36,13 +36,12 @@ section:nth-child(even) {
     background: $secondaryBg; // Track
   }
   ::-webkit-scrollbar-thumb { /* Handle */
-    background: $secondaryColor;
-    border-radius: 5px;
+    // background: $color;
+    background-color: $cursorHighlight;
+    border-radius: 4px;
     &:hover { /* Handle on hover */
-      background: #8793a9;
-    }
-    &:active {  /* Handle on drag */
-      background: $color;
+      // background: #8793a9;
+      background: $tertiaryColor;
     }
   }
 }
@@ -61,17 +60,20 @@ h1, h2, h3, p {
 body {
   margin: 0;
   background: $primaryBg;
+  // background-color: #d2dbe0;
   color: $color;
   // font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
   @include dynamicFontSize(14, 20, 300, 1900);
   line-height: 2;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .content-title {
   text-align: center;
   margin-bottom: 5vh;
+  color: $tertiaryColor;
 }
 
 .content-wrap {
@@ -116,10 +118,6 @@ body {
 
   header .button {
     margin-top: 6vh;
-  }
-
-  .more-btn {
-    margin-top: 2vh;
   }
 
   // Split paragraph into 2 cols

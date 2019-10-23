@@ -10,16 +10,15 @@
   position: fixed;
   z-index: 3;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: $color;
   overflow-x: hidden;
   transition: display 1.3s ease-out;
   a {
     display: none;
-    // font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1900 - 300)));
     @include dynamicFontSize(30, 50, 300, 1900);
     text-decoration: none;
     text-align: center;
-    color: #888;
+    color: #ccc;
     opacity: 1;
     padding: 5vh 0;
     transition: 0.1s;
@@ -27,8 +26,7 @@
       margin-top: 5vh;
     }
     &:hover {
-      color: #fff;
-      // background: black;
+      color: $tertiaryColor;
     }
     &:active {
       transform: scale(0.95);

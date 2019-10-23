@@ -34,12 +34,12 @@
   .live-website {
     display: block;
     text-align: center;
-    margin-bottom: 1.3em;
+    margin-bottom: 1em;
   }
   .carousel-control-prev,
   .carousel-control-next,
   .carousel-indicators {
-    filter: invert(50%);
+    color: $tertiaryColor;
   }
   .modal-footer > .button {
     text-align: center;

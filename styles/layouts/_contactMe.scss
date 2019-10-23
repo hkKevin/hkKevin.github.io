@@ -5,9 +5,9 @@
   .contact-me-container {
     text-align: center;
     a {
-      color: $email;
+      color: $tertiaryColor;
+      font-weight: 300;
       text-decoration: none;
-      // font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1900 - 300)));
       @include dynamicFontSize(18, 40, 300, 1900);
       &:active {
         transition-delay: 0s;

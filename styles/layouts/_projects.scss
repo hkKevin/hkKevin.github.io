@@ -48,7 +48,23 @@
       .card-title {
         margin-bottom: 0;
         text-align: center;
+        font-weight: bold;
+      }
+      .card-actions {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 2vh;
       }
     }
+  }
+  #thought {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-actions > .button {
+    font-size: .8rem;
   }
 }
