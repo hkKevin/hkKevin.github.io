@@ -140,6 +140,13 @@ body {
     grid-column-gap: 1.5em;
   }
 
+  .live-website {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .modal-footer > .button {
     width: inherit !important;
   }
