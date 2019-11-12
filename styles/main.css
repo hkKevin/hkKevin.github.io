@@ -239,6 +239,10 @@ header #home #header-btn {
   margin-top: 2vh;
 }
 
+#projects .card .card-content .button {
+  border: none;
+}
+
 #projects #thought {
   font-weight: 300;
 }
@@ -342,15 +346,26 @@ header #home #header-btn {
 }
 
 .button {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1rem;
   font-weight: bold;
   background: #f9aa33;
   color: #344955;
-  border: 2px solid #f9aa33;
   border-radius: 4px;
   margin: 0.5em 0;
-  padding: .1em 1.1em;
+  padding: .2em 1em;
   text-decoration: none !important;
   cursor: pointer;
   -webkit-transition: 150ms;
@@ -364,8 +379,7 @@ header #home #header-btn {
 }
 
 .button:hover {
-  -webkit-filter: brightness(95%);
-          filter: brightness(95%);
+  background: #fab44c;
   color: #344955;
 }
 
@@ -376,7 +390,7 @@ header #home #header-btn {
 
 .outlined-btn {
   background-color: transparent;
-  border: 1px solid #f9aa33;
+  border: 1px solid #fde1b7 !important;
   color: #344955;
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -384,6 +398,11 @@ header #home #header-btn {
 
 .outlined-btn:hover {
   background-color: #fde1b7;
+  border: 1px solid #f9aa33 !important;
+}
+
+.button-icon {
+  padding-right: 0.5em;
 }
 
 #burger-icon {
@@ -656,13 +675,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -ms-flex-item-align: center;
         align-self: center;
-    display: inline-block;
   }
   header .button {
     margin-top: 6vh;

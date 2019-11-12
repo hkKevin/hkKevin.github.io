@@ -1,13 +1,16 @@
 .button {
-  display: block;
+  // display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
   font-weight: bold;
   background: $tertiaryColor;
   color: $color;
-  border: 2px solid $tertiaryColor;
   border-radius: 4px;
   margin: 0.5em 0;
-  padding: .1em 1.1em;
+  padding: .2em 1em;
   text-decoration: none !important;
   cursor: pointer;
   transition: 150ms;
@@ -18,7 +21,7 @@
     outline: none;
   }
   &:hover {
-    filter: brightness(95%);
+    background: lighten($tertiaryColor, 5%);
     color: $color;
   }
   &:active {
@@ -28,10 +31,15 @@
 
 .outlined-btn {
   background-color: transparent;
-  border: 1px solid $tertiaryColor;
+  border: 1px solid $cursorHighlight !important;
   color: $color;
   box-shadow: unset;
   &:hover {
     background-color: $cursorHighlight;
+    border: 1px solid $tertiaryColor !important;
   }
+}
+
+.button-icon {
+  padding-right: 0.5em;
 }
