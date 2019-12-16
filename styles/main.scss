@@ -4,9 +4,9 @@
 
 // Layout related stylesheets
 @import './layouts/header';
-@import './layouts/aboutMe';
+@import './layouts/about';
 @import './layouts/projects';
-@import './layouts/contactMe';
+@import './layouts/contact';
 @import './layouts/footer';
 
 // Components
@@ -124,7 +124,7 @@ body {
     column-gap: 5em;
   }
 
-  #about-me .content-text p {
+  #about .content-text p {
     padding-top: 0;
   }
 
@@ -155,7 +155,7 @@ body {
   #projects h2,
   #projects h4,
   #projects p,
-  #contact-me div,
+  #contact div,
   #main-footer div {
     grid-column: 2/4;
   }

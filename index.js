@@ -61,7 +61,7 @@ $(document).ready(function () {
 
 
   // SideNav link onClick
-  $("#sidenav-home, #sidenav-about-me, #sidenav-projects, #sidenav-contact-me").click(function () {
+  $("#sidenav-home, #sidenav-about, #sidenav-projects, #sidenav-contact").click(function () {
     // Hide sidenav
     $('#sidenav').animate({opacity: 0}, 400);
     // display none after the sidenav animation is done

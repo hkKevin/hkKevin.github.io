@@ -71,12 +71,12 @@ header #home #header-btn {
   }
 }
 
-/* About Me */
-#about-me {
+/* About */
+#about {
   padding: 20vh 0;
 }
 
-#about-me #skills {
+#about #skills {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,59 +91,59 @@ header #home #header-btn {
           align-items: center;
 }
 
-#about-me #skills .skill {
+#about #skills .skill {
   margin: 3vh;
   padding: .5em .8em;
   display: inline-block;
 }
 
-#about-me #skills .skill:active {
+#about #skills .skill:active {
   -webkit-transition-delay: 0s !important;
           transition-delay: 0s !important;
   -webkit-transform: scale(0.95) !important;
           transform: scale(0.95) !important;
 }
 
-#about-me #skills .skill img {
+#about #skills .skill img {
   width: 70px;
 }
 
 @media (max-width: 390px) {
-  #about-me #skills .skill {
+  #about #skills .skill {
     margin: 2vh 0;
     padding: .2em 1.3em;
   }
 }
 
-#about-me #skills #react-logo {
+#about #skills #react-logo {
   width: 82px;
 }
 
-#about-me #skills #jquery-logo {
+#about #skills #jquery-logo {
   width: 120px;
 }
 
-#about-me #skills #firebase-logo {
+#about #skills #firebase-logo {
   width: 50px;
 }
 
-#about-me #skills #php-logo {
+#about #skills #php-logo {
   width: 90px;
 }
 
-#about-me #skills #html-logo {
+#about #skills #html-logo {
   width: 80px;
 }
 
-#about-me #skills #css-logo {
+#about #skills #css-logo {
   width: 58px;
 }
 
-#about-me #skills #mysql-logo {
+#about #skills #mysql-logo {
   width: 100px;
 }
 
-#about-me #skills #mongodb-logo {
+#about #skills #mongodb-logo {
   width: 80px;
 }
 
@@ -253,35 +253,35 @@ header #home #header-btn {
   }
 }
 
-/* Contact Me */
-#contact-me {
+/* Contact */
+#contact {
   padding: 20vh 1em;
   background: #fff;
 }
 
-#contact-me .contact-me-container {
+#contact .contact-container {
   text-align: center;
 }
 
-#contact-me .contact-me-container a {
+#contact .contact-container a {
   color: #f9aa33;
   font-weight: 300;
   text-decoration: none;
   font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1900 - 300)));
 }
 
-#contact-me .contact-me-container a:active {
+#contact .contact-container a:active {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
 
-#contact-me .contact-me-container #copy-hint {
+#contact .contact-container #copy-hint {
   margin-left: 1.5em;
 }
 
-#contact-me .contact-me-container #copy-hint .copy-icon {
+#contact .contact-container #copy-hint .copy-icon {
   padding: 10px;
   border-radius: 50%;
   background-color: transparent;
@@ -289,15 +289,15 @@ header #home #header-btn {
   transition: background-color 150ms;
 }
 
-#contact-me .contact-me-container #copy-hint .copy-icon:hover {
+#contact .contact-container #copy-hint .copy-icon:hover {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-#contact-me .contact-me-container #copy-hint .copy-icon:hover {
+#contact .contact-container #copy-hint .copy-icon:hover {
   cursor: pointer;
 }
 
-#contact-me .contact-me-container #copy-hint .copy-icon:active {
+#contact .contact-container #copy-hint .copy-icon:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
@@ -687,7 +687,7 @@ body {
     -webkit-column-gap: 5em;
             column-gap: 5em;
   }
-  #about-me .content-text p {
+  #about .content-text p {
     padding-top: 0;
   }
   #skills {
@@ -724,7 +724,7 @@ body {
   #projects h2,
   #projects h4,
   #projects p,
-  #contact-me div,
+  #contact div,
   #main-footer div {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
