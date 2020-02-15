@@ -5,11 +5,11 @@ A website that introduces myself as a Front-end Web Developer and demonstrates m
 
 ![Screenshot of my portfolio](https://raw.githubusercontent.com/hkKevin/hkKevin.github.io/master/images/projects/my-portfolio.png)
 
-#### Features:
+#### Utilizes:
 * SASS (CSS preprocessor)
 * CSS Grid Layout
 * CSS Flexbox
 * Responsive Web Design
 * Bootstrap
 * jQuery
-* Shows animation on scrolling
+* Animate On Scroll
