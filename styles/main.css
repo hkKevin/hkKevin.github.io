@@ -418,7 +418,7 @@ header #home #header-btn {
           transform: scale(0.97);
 }
 
-#burger-icon .material-icons {
+#burger-icon .material-icons-outlined {
   padding: 10px;
   border-radius: 50%;
   background-color: transparent;
@@ -426,7 +426,7 @@ header #home #header-btn {
   transition: background-color 150ms;
 }
 
-#burger-icon .material-icons:hover {
+#burger-icon .material-icons-outlined:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
@@ -515,7 +515,7 @@ header #home #header-btn {
   line-height: 1.5;
 }
 
-.modal .modal-header .material-icons {
+.modal .modal-header .material-icons-outlined {
   margin: -.3em -.3em 0 0;
   padding: 10px;
   border-radius: 50%;
@@ -524,11 +524,11 @@ header #home #header-btn {
   transition: background-color 150ms;
 }
 
-.modal .modal-header .material-icons:hover {
+.modal .modal-header .material-icons-outlined:hover {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.modal .modal-header .material-icons:active {
+.modal .modal-header .material-icons-outlined:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
