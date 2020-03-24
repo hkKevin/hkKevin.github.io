@@ -397,8 +397,7 @@ header #home #header-btn {
 }
 
 .outlined-btn:hover {
-  background-color: #fde1b7;
-  border: 1px solid #f9aa33 !important;
+  background-color: #f6f6f6;
 }
 
 .button-icon {

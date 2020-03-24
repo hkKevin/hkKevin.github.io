@@ -35,8 +35,7 @@
   color: $color;
   box-shadow: unset;
   &:hover {
-    background-color: $cursorHighlight;
-    border: 1px solid $tertiaryColor !important;
+    background-color: #f6f6f6;
   }
 }
 
