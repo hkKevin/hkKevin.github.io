@@ -1,41 +1,45 @@
 .button {
-  // display: block;
   display: flex;
+  align-self: center;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   font-weight: bold;
   background: $tertiaryColor;
-  color: $color;
+  color: #fff;
   border-radius: 4px;
   margin: 0.5em 0;
-  padding: .2em 1em;
+  padding: 0.4rem 1.7rem;
   text-decoration: none !important;
   cursor: pointer;
-  transition: 150ms;
+  transition: all 150ms;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 
               0px 2px 2px 0px rgba(0, 0, 0, 0.14), 
               0px 1px 5px 0px rgba(0,0,0,.12);
+  @media (max-width: 767px) {
+    width: fit-content;
+  }
   &:focus {
     outline: none;
   }
   &:hover {
-    background: lighten($tertiaryColor, 5%);
-    color: $color;
+    background: darken($tertiaryColor, 10%);
+    color: #fff;
   }
   &:active {
     transform: scale(0.99);
   }
 }
 
-.outlined-btn {
+.text-btn {
   background-color: transparent;
-  border: 1px solid $cursorHighlight !important;
+  border: none;
   color: $color;
   box-shadow: unset;
   &:hover {
     background-color: #f6f6f6;
+    color: $color;
   }
 }
 

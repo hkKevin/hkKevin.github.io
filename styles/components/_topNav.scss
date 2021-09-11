@@ -1,0 +1,145 @@
+#container {
+  position: relative;
+}
+
+#topNav {
+  position: relative;
+  z-index: 5;
+
+  .top-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 0;
+    width: 100%;
+    @media (max-width: 767px) {
+      display: none;
+    }
+    a {
+      padding: 0 1rem;
+      .logo {
+        position: relative;
+        .logo-border {
+          border: 3px solid $tertiaryColor;
+          border-top: hidden;
+          border-right: hidden;
+          width: 70px;
+          height: 29px;
+          .name {
+            color: $tertiaryColor;
+            font-weight: bold;
+            display: inline-block;
+            line-height: .8;
+            font-size: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+    
+
+    ul.menu-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      margin-left: auto;
+      padding: 0;
+      li {
+        list-style: none;
+        &:not(:last-of-type) {
+          padding-right: 2rem;
+        }
+        a {
+          color: $color;
+          text-decoration: none;
+          padding: 1rem;
+          &:hover {
+            color: $tertiaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Fixed Nav
+.fixed-nav-container {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  z-index: 6;
+  display: none;
+  opacity: 0;
+  height: 0;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+  &.grid:not(.show) {
+    pointer-events: none;
+  }
+  &.show {
+    opacity: 1;
+    display: grid;
+    position: fixed;
+    height: auto;
+  }
+
+  .fixed-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    position: relative;
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      .logo {
+        position: relative;
+        .logo-border {
+          border: 3px solid $tertiaryColor;
+          border-top: hidden;
+          border-right: hidden;
+          width: 70px;
+          height: 29px;
+          .name {
+            color: $tertiaryColor;
+            font-weight: bold;
+            display: inline-block;
+            line-height: .8;
+            font-size: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    .menu-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      margin-left: auto;
+      .link {
+        list-style: none;
+        &:not(:last-of-type) {
+          padding-right: 2rem;
+        }
+        a {
+          color: $color;
+          text-decoration: none;
+          padding: 1rem;
+          &:hover {
+            color: $tertiaryColor;
+          }
+        }
+      }
+    }
+  }
+}

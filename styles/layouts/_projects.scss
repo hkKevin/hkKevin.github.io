@@ -1,6 +1,10 @@
 /* Projects */
 #projects {
-  padding: 20vh 1em;
+  padding: 10vh 1.5rem;
+  background: $primaryBg;
+  @media (max-width: 575px) {
+    padding: 5vh 1.5rem;
+  }
   .project-type {
     margin-bottom: 5vh;
   }
@@ -19,6 +23,17 @@
         display: list-item;
       }
     }
+    .card > img {
+      border-radius: 5px 5px 0 0;
+    }
+    .tech-wrapper {
+      @media (min-width: 768px) and (max-width: 1000px) {
+        display: flex;
+      }
+    }
+    .button {
+      margin-top: calc(0.5em + 2vh);
+    }
   }
   @media (max-width: 500px) {
     #co-developed-projects .project-description {
@@ -36,38 +51,140 @@
       cursor: pointer;
       box-shadow: 1px 1px 10px 1px #bbb;
     }
-    &:active {
-      transition-delay: 0s !important;
-      transform: scale(0.99) !important;
+    .img-wrapper {
+      img {
+        border-radius: 5px 5px 0 0;
+        pointer-events: none;
+      }
     }
     .card-content {
       padding: 1em;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @media (min-width: 768px) {
+        padding: 0rem 2rem 2rem 2rem;
+      }
+      @media (min-width: 992px) {
+        padding: 0rem 3rem 2rem 3rem;
+      }
+      @media (min-width: 1201px) {
+        padding: 0rem 4rem 2rem 4rem;
+      }
       .card-title {
         margin-bottom: 0;
         text-align: center;
         font-weight: bold;
+      }
+      .tech-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        @media (min-width: 768px) and (max-width: 1000px) {
+          display: none;
+        }
+        @media (max-width: 575px) {
+          gap: .5rem;
+        }
+        .tech {
+          font-size: 1rem;
+          background-color: #f6f6f6;
+          color: #000;
+          border-radius: 10px;
+          padding: 0 0.8rem;
+        }
       }
       .card-actions {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         margin-top: 2vh;
+        @media (min-width: 768px) and (max-width: 992px) {
+          margin-top: 1rem;
+        }
+        @media (min-width: 1600px) {
+          margin-top: 5vh;
+        }
       }
       .button {
         border: none;
       }
     }
   }
-  #thought {
-    font-weight: 300;
+
+  #personal-projects {
+    .card {
+      &:not(:last-of-type) {
+        margin-bottom: 15vh;
+      }
+    }
   }
+
+  @media (min-width: 768px) {
+    #personal-projects {
+      .card {
+        display: flex;
+        margin-bottom: 7vh;
+        &:nth-of-type(odd) {
+          flex-direction: row;
+          .img-wrapper img {
+            border-radius: 5px 0 0 5px;
+            pointer-events: none;
+          }
+        }
+        &:nth-of-type(even) {
+          flex-direction: row-reverse;
+          .img-wrapper img {
+            border-radius: 0 5px 5px 0;
+            pointer-events: none;
+          }
+        }
+        .card-actions .button {
+          min-width: 146px;
+        }
+      }
+    }
+  }
+
+  
+  #personal-projects {
+    .card .card-content {
+      @media (min-width: 950px) {
+        padding: 2rem;
+      }
+      @media (min-width: 1600px) {
+        padding: 2rem 3rem;
+      }
+      @media (min-width: 1900px) {
+        padding: 2rem 4rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    #personal-projects .card .card-content .card-title {
+      padding-bottom: 0;
+      padding-top: 1rem;
+    }
+  }
+  
+
+  #thought {
+    text-align: center;
+  }
+}
+
+.projects-padding {
+  padding-top: 10vh;
+  background: $primaryBg;
+  display: none;
 }
 
 @media (max-width: 400px) {
   .card-actions > .button {
     font-size: .8rem;
+    padding: 0.4rem 1.2rem;
   }
 }

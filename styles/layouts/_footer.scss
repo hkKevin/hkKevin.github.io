@@ -1,20 +1,51 @@
 /* Footer */
 #main-footer {
-  padding: 1em;
-  background: $secondaryBg;
+  padding: 7rem 0 2rem 0;
+  background: $primaryBg;
   color: $color;
   text-align: center;
   font-weight: 300;
   #social-media-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 2vh;
-    #linkedin-profile {
-      margin-right: 4vh;
+    margin: 2vh auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    @media (max-width: 767px) {
+      max-width: 100px;
+      gap: 1rem;
+    }
+    #github-profile, #linkedin-profile {
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        text-decoration: unset;
+      }
     }
     #github-profile {
-      margin-left: 4vh;
+      &:active, &:hover {
+        .fa-github {
+          color: #000;
+        }
+      }
     }
+    #linkedin-profile {
+      &:active, &:hover {
+        .fa-linkedin {
+          color: #0a66c2;
+        }
+      }
+    }
+    
+    .fa-github, 
+    .fa-linkedin {
+      color: rgba(116, 129, 154, 0.7);
+      transition: all 0.2s;
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
   }
 }

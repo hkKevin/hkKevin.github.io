@@ -1,48 +1,53 @@
 /* Contact */
 #contact {
-  padding: 20vh 1em;
-  background: #fff;
+  padding: 10vh 1.5rem;
+  @media (max-width: 575px) {
+    padding: 5vh 1.5rem;
+  }
   .contact-container {
     text-align: center;
-    a {
-      color: $tertiaryColor;
-      font-weight: 300;
-      text-decoration: none;
-      @include dynamicFontSize(18, 40, 300, 1900);
-      &:active {
-        transition-delay: 0s;
-        transform: scale(0.97);
-      }
-    }
-    #copy-hint {
-      margin-left: 1.5em;
-      .copy-icon {
-        padding: 10px;
-        border-radius: 50%;
-        background-color: transparent;
-        transition: background-color 150ms;
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.08);
-        }
-        &:hover {
-          cursor: pointer;
-        }
+    .email {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: $tertiaryColor;
+        font-weight: 300;
+        text-decoration: none;
+        @include dynamicFontSize(18, 40, 300, 1900);
         &:active {
+          transition-delay: 0s;
           transform: scale(0.97);
         }
       }
+      #copy-hint {
+        margin-left: 1.25rem;
+        @media (max-width: 767px) {
+          margin-left: 1rem !important;
+        }
+        @media (max-width: 500px) {
+          margin-left: .6rem !important;
+        }
+        @media (max-width: 400px) {
+          margin-left: 0.3rem !important;
+        }
+        .copy-icon {
+          padding: 10px;
+          border-radius: 50%;
+          background-color: transparent;
+          transition: background-color 150ms;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.08);
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &:active {
+            transform: scale(0.97);
+          }
+        }
+      }
     }
-  }
-}
-
-@media (max-width: 500px) {
-  #copy-hint {
-    margin-left: 1em !important;
-  }
-}
-
-@media (max-width: 400px) {
-  #copy-hint {
-    margin-left: 0.3em !important;
   }
 }

@@ -12,7 +12,10 @@
   right: 0;
   background-color: $color;
   overflow-x: hidden;
-  transition: display 1.3s ease-out;
+  @media (min-width: 768px) {
+    display: none;
+  }
+
   a {
     display: none;
     @include dynamicFontSize(30, 50, 300, 1900);
@@ -21,7 +24,7 @@
     color: #ccc;
     opacity: 1;
     padding: 5vh 0;
-    transition: 0.1s;
+    transition: all 0.1s;
     &:first-child {
       margin-top: 5vh;
     }
@@ -30,6 +33,38 @@
     }
     &:active {
       transform: scale(0.95);
+    }
+  }
+}
+
+
+body.show-side-nav {
+  // Avoid scrolling
+  overflow: hidden;
+  #burger-icon {
+    .menu {
+      // Hide Menu icon
+      display: none;
+    }
+    .close {
+      // Show Close icon
+      display: inline-block;
+    }
+  }
+}
+
+
+body.hide-side-nav {
+  // Allow scrolling
+  overflow: initial;
+  #burger-icon {
+    .menu {
+      // Show Menu icon
+      display: inline-block;
+    }
+    .close {
+      // Hide Close icon
+      display: none;
     }
   }
 }

@@ -13,370 +13,525 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!-- Hint.css -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Animation On Scroll library -->
     <link rel="shortcut icon" type="image/ico" href="/images/logos/favicon.ico"/> <!-- Favicon -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!-- Swiper -->
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
   </head>
 
   <body>
     <div id="container">
-    <!-- Side Nav -->
-    <div id="sidenav">
-      <a id="sidenav-home" href="#home">Home</a>
-      <a id="sidenav-about" href="#about">About</a>
-      <a id="sidenav-projects" href="#projects">Projects</a>
-      <a id="sidenav-contact" href="#contact">Contact</a>
-    </div>
-
-    <!-- Home -->
-    <header class="grid">
-      <div id="particles-js"></div>
-      <div id="home" class="content-wrap">
-        <!-- Burger Icon -->
-        <div id="burger-icon">
-          <i class="material-icons-outlined menu">menu</i>
-          <i class="material-icons-outlined close md-light">close</i>
+      <header>
+        <!-- Side Nav -->
+        <div id="sidenav">
+          <a id="sidenav-home" href="#intro">Intro</a>
+          <a id="sidenav-about" href="#about">About</a>
+          <a id="sidenav-projects" href="#projects">Projects</a>
+          <a id="sidenav-contact" href="#contact">Contact</a>
         </div>
-        <div class="heading">
-          <img id="avatar" src="/images/logos/my-avatar.svg" alt="avatar" />
-          <h1>Hello! I'm <span id="my-name" data-aos="fade-down" data-aos-delay="100">Kevin Leung</span>, <br />
-            a Front-end Web Developer.
-          </h1>
-        </div>
-        <p class="content-text">Nice to meet you. I have a tremendous passion and proficient technical skills in front-end development. I am capable of building user-centered and responsive websites with dynamic contents. I am going to put all my effort into improving my technical and enterprise skills as a web developer every day.</p>
-        <a href="#projects" id="header-btn" class="button">
-          <i class="material-icons-outlined button-icon">laptop_chromebook</i>
-          PROJECTS
-        </a>
-      </div>
-    </header>
+      </header>
 
-    <!-- Main -->
-    <main id="main">
-      <!-- About -->
-      <section id="about" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title" data-aos="fade" data-aos-offset="300">About</h2>
-          <p class="content-text" data-aos="fade" data-aos-offset="300">
-            I am a recent I.T. graduate with Distinction, specializing in web development. I enjoy learning the latest web technologies online to keep myself updated because my experience and confidence in web development can be enhanced. I have experience with the following web technologies:
-          </p>
-          <div id="skills">
-            <a href="https://reactjs.org/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="React" data-aos="fade-up" data-aos-offset="100">
-              <img id="react-logo" src="images/logos/react.webp" alt="Logo of React" />
-            </a>
-            <a href="https://redux.js.org/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Redux" data-aos="fade-up" data-aos-delay="50" data-aos-offset="100">
-              <img id="redux-logo" src="images/logos/redux.webp" alt="Logo of Redux"/>
-            </a>
-            <a href="https://jquery.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="jQuery" data-aos="fade-up" data-aos-delay="100" data-aos-offset="100">
-              <img id="jquery-logo" src="images/logos/jquery.webp" alt="Logo of jQuery"/>
-            </a>
-            <a href="https://www.javascript.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="JavaScript" data-aos="fade-up" data-aos-delay="200" data-aos-offset="50">
-              <img id="js-logo" src="images/logos/javascript.webp" alt="Logo of JavaScript"/>
-            </a>
-            <a href="https://getbootstrap.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Bootstrap" data-aos="fade-up" data-aos-delay="300" data-aos-offset="100">
-              <img id="bootstrap-logo" src="images/logos/bootstrap.webp" alt="Logo of Bootstrap"/>
-            </a>
-            <a href="https://sass-lang.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Sass" data-aos="fade-up" data-aos-delay="250" data-aos-offset="100">
-              <img id="sass-logo" src="images/logos/sass.webp" alt="Logo of Sass"/>
-            </a>
-            <a href="https://firebase.google.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Firebase" data-aos="fade-up" data-aos-delay="150" data-aos-offset="100">
-              <img id="firebase-logo" src="images/logos/firebase.webp" alt="Logo of Firebase"/>
-            </a>
-            <a href="https://git-scm.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Git" data-aos="fade-up" data-aos-delay="350" data-aos-offset="100">
-              <img id="git-logo" src="images/logos/git.webp" alt="Logo of Git"/>
-            </a>
-            <a href="https://material-ui.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="Material UI" data-aos="fade-up" data-aos-delay="350" data-aos-offset="100">
-              <img id="material-ui-logo" src="images/logos/material-ui.svg" alt="Logo of Material UI"/>
-            </a>
-            <a href="https://www.w3schools.com/html/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="HTML" data-aos="fade-up" data-aos-delay="450" data-aos-offset="100">
-              <img id="html-logo" src="images/logos/html.webp" alt="Logo of HTML"/>
-            </a>
-            <a href="https://www.w3schools.com/css/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="CSS" data-aos="fade-up" data-aos-delay="500" data-aos-offset="100">
-              <img id="css-logo" src="images/logos/css.webp" alt="Logo of CSS"/>
-            </a>
-            <a href="https://www.mysql.com/" target="_blank" class="skill hint hint--bottom hint--rounded" aria-label="MySQL" data-aos="fade-up" data-aos-delay="550" data-aos-offset="100">
-              <img id="mysql-logo" src="images/logos/mysql.webp" alt="Logo of MySQL"/>
-            </a>
-          </div>
-        </div>
-      </section>
+      <!-- Main -->
+      <main id="main">
 
-      <!-- Projects -->
-      <section id="projects" class="grid">
-        <h2 class="content-title" data-aos="fade" data-aos-offset="300">Projects</h2>
-
-        <h4 class="project-type" data-aos="fade" data-aos-offset="300">Co-developed Project</h4>
-        <ul id="co-developed-projects">
-          <li class="card" data-toggle="modal" data-target="#modal-sydney-trains" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
-            <img src="./images/projects/sydney-trains-system-1.webp" alt="Image of Sydney Trains Data Visualisation System">
-            <div class="card-content">
-              <h3 class="card-title">Sydney Trains Data Visualisation System</h3>
-              <ul class="project-description">
-                <li>Received a Certificate of Appreciation from Sydney Trains</li>
-                <li>Awarded the Runner Up Prize at the University of Wollongong Tradeshow 2018</li>
-                <li>A web app that displays trains data (real-time & historical) as graphs and map for performance analysis in order to improve timetable scheduling for the client</li>
-                <li>I was responsible for the Front-end development</li>
-              </ul>
-              <button class="button" data-target="#modal-sydney-trains">
-                <i class="material-icons-outlined button-icon">double_arrow</i>
-                MORE
-              </button>
-            </div>
-          </li>
-        </ul>
-
-        <h4 class="project-type" data-aos="fade" data-aos-offset="300">Personal Projects</h4>
-          <ul id="personal-projects" style="overflow: hidden">
-            <li class="card" data-toggle="modal" data-target="#modal-memo-app" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
-              <img src="./images/projects/memo.webp" alt="Image of Memo Note">
-              <div class="card-content">
-                <h3 class="card-title">Memo Note</h3>
-                <p class="project-description">A React web app that can resize, drag, filter, archive, create, edit and delete memos.</p>
-                <div class="card-actions">
-                  <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank">
-                    <i class="material-icons-outlined button-icon">open_in_new</i>
-                    LIVE DEMO
-                  </a>
-                  <button class="button outlined-btn" data-target="#modal-memo-app">
-                    <i class="material-icons-outlined button-icon">double_arrow</i>
-                    MORE
-                  </button>
+        
+        <!-- Fixed Nav -->
+        <div class="fixed-nav-container grid">
+          <div class="fixed-nav">
+            <a class="logo-link" href="#intro">
+              <div class="logo">
+                <div class="logo-border">
+                  <span class="name">Kevin</span>
                 </div>
               </div>
-            </li>
-            <li class="card" data-toggle="modal" data-target="#modal-movie-world" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="400">
-              <img src="./images/projects/movie-world.webp" alt="Image of Movie World">
-              <div class="card-content">
-                <h3 class="card-title">Movie World</h3>
-                <p class="project-description">A React web app that can search info of movies (fetch from The Movie Database API).</p>
-                <div class="card-actions">
-                  <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank">
-                    <i class="material-icons-outlined button-icon">open_in_new</i>
-                    LIVE DEMO
-                  </a>
-                  <button class="button outlined-btn" data-target="#modal-movie-world">
-                    <i class="material-icons-outlined button-icon">double_arrow</i>
-                    MORE
-                  </button>
+            </a>
+
+            <div class="menu-wrapper">
+              <div class="link">
+                <a id="topNav-home" href="#intro">Intro</a>
+              </div>
+              <div class="link">
+                <a id="topNav-about" href="#about">About</a>
+              </div>
+              <div class="link">
+                <a id="topNav-projects" href="#projects">Projects</a>
+              </div>
+              <div class="link">
+                <a id="topNav-contact" href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Home -->
+        <section class="home grid">
+          <div id="intro" class="content-wrap">
+
+
+            <!-- Top Nav -->
+            <div id="topNav">
+              <div class="top-nav-container">
+                <a href="#intro">
+                  <div class="logo">
+                    <div class="logo-border">
+                      <span class="name">Kevin</span>
+                    </div>
+                  </div>
+                </a>
+                <ul class="menu-wrapper">
+                  <li>
+                    <a id="topNav-home" href="#intro">Intro</a>
+                  </li>
+                  <li>
+                    <a id="topNav-about" href="#about">About</a>
+                  </li>
+                  <li>
+                    <a id="topNav-projects" href="#projects">Projects</a>
+                  </li>
+                  <li>
+                    <a id="topNav-contact" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- Burger Icon -->
+            <div id="burger-icon">
+              <i class="material-icons-outlined menu">menu</i>
+              <i class="material-icons-outlined close md-light">close</i>
+            </div>
+            <div class="heading">
+              <h1>Hi! I'm <span id="my-name">Kevin Leung</span>, <br />a Front-end Web Developer.</h1>
+            </div>
+            <p class="content-text">Nice to meet you. With over 1 year of front-end experience. I'm capable of building responsive and scalable UI components, which improved the UX of global eCommerce web applications, and increased their conversion rate up to 40%.</p>
+            <a href="#projects" id="header-btn" class="button">
+              My Projects
+            </a>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="grid">
+          <div class="content-wrap">
+            <h2 class="content-title">About</h2>
+            <p class="content-text">I enjoy learning the latest web technologies so that my experience and confidence in web development can be enhanced. I have experience with the following web technologies:</p>
+            <div id="skills">
+              <div class="front-end-tech">
+                <h4>Front-End Tech</h4>
+                <div class="skills">
+                  <div class="skill">React</div>
+                  <div class="skill">Redux</div>
+                  <div class="skill">Vue</div>
+                  <div class="skill">Vuex</div>
+                  <div class="skill">JavaScript ES6</div>
+                  <div class="skill">jQuery</div>
+                  <div class="skill">Bootstrap</div>
+                  <div class="skill">Responsive Web Design</div>
+                  <div class="skill">SCSS</div>
+                  <div class="skill">HTML</div>
+                  <div class="skill">CSS</div>
                 </div>
+              </div>
+              <div class="others">
+                <div class="cms">
+                  <h4>Content Management System</h4>
+                  <div class="skills">
+                    <div class="skill">WordPress</div>
+                    <div class="skill">Storyblok</div>
+                    <div class="skill">Wistia</div>
+                  </div>
+                </div>
+                <div class="version-control">
+                  <h4>Version Control</h4>
+                  <div class="skills">
+                    <div class="skill">GitHub</div>
+                    <div class="skill">SourceTree</div>
+                  </div>
+                </div>
+                <div class="e-commerce">
+                  <h4>E-Commerce Platform</h4>
+                  <div class="skills">
+                    <div class="skill">PrestaShop</div>
+                  </div>
+                </div>
+                <div class="project-management">
+                  <h4>Project Management</h4>
+                  <div class="skills">
+                    <div class="skill">Trello</div>
+                    <div class="skill">Slack</div>
+                    <div class="skill">ClickUp</div>
+                  </div>
+                </div>
+                <div class="ide">
+                  <h4>Integrated Development Environment</h4>
+                  <div class="skills">
+                    <div class="skill">Visual Studio Code</div>
+                    <div class="skill">PhpStorm</div>
+                  </div>
+                </div>
+                <div class="ab-testing">
+                  <h4>A/B Testing Tool</h4>
+                  <div class="skills">
+                    <div class="skill">VWO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <div class="projects-padding"></div>
+
+        <section id="projects" class="grid">
+          <h2 class="content-title">Projects</h2>
+
+          <h4 class="project-type">Co-developed Project</h4>
+          <ul id="co-developed-projects">
+            <li class="card" data-toggle="modal" data-target="#modal-sydney-trains">
+              <div class="img-wrapper">
+                <img src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of Sydney Trains Data Visualisation System">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Sydney Trains Data Visualisation System</h3>
+                <ul class="project-description">
+                  <li>Received a Certificate of Appreciation from Sydney Trains</li>
+                  <li>Awarded the Runner Up Prize at the University of Wollongong Tradeshow 2018</li>
+                  <li>A web app that displays trains data (real-time & historical) as graphs and map for performance analysis in order to improve timetable scheduling for the client</li>
+                  <li>Responsible for the Front-end development</li>
+                </ul>
+                <div class="tech-wrapper">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">jQuery</div>
+                  <div class="tech">Chart.js</div>
+                  <div class="tech">Leaflet</div>
+                </div>
+                <button class="button" data-target="#modal-sydney-trains">
+                  View Details
+                </button>
               </div>
             </li>
           </ul>
-        <p id="thought" data-aos="fade-up" data-aos-delay="500">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p>
-      </section>
 
-      <!-- Modals -->
-      <section>
-        <!-- Modal of the Sydney Trains Data Visualisation System -->
-        <div class="modal fade" id="modal-sydney-trains" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">
-                  Sydney Trains Data Visualisation System
-                </h4>
-                <i class="material-icons-outlined close" data-dismiss="modal">close</i>
-              </div>
-              <div class="modal-body">
-                <div id="carousel-controls" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="./images/projects/Certificate-of-Appreciation.webp" alt="Photo of the Certificate of Appreciation">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="./images/projects/UOW-FYP-tradeshow-Runner-up.webp" alt="Photo of the Runner Up Best Project Prize">
+          <h4 class="project-type">Personal Projects</h4>
+            <ul id="personal-projects">
+              <li class="card" data-toggle="modal" data-target="#modal-memo-app">
+                <div class="img-wrapper">
+                  <img src="./images/projects/memo/on-load.png" alt="Image of Memo Note">
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Memo Note</h3>
+                  <p class="project-description">A React web app that can resize, drag, filter, archive, create, edit and delete memos.</p>
+                  <div class="tech-wrapper">
+                    <div class="tech">React</div>
+                    <div class="tech">Redux</div>
+                    <div class="tech">React Router</div>
+                    <div class="tech">Firebase</div>
+                    <div class="tech">Material-UI</div>
+                    <div class="tech">React-Grid-Layout</div>
                   </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/projects/photo-client.webp" alt="Photo of our project team and client">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/projects/photo-supervisors.webp" alt="Photo of our project team and supervisors">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="./images/projects/sydney-trains-system-1.webp" alt="Image of the Live Map">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-system-2.webp" alt="Image of the Current Network Performance">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-system-3.webp" alt="Image of the Time-Distance Diagram">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-system-4.webp" alt="Image of the Arrival Variance Analysis">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-system-5.webp" alt="Image of the Charting & Analysis">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-system-6.webp" alt="Image of the Charting & Analysis">
-                    </div>
+                  <div class="card-actions">
+                    <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank">
+                      Live Demo
+                    </a>
+                    <button class="button text-btn" data-target="#modal-memo-app">
+                      View Details
+                    </button>
                   </div>
-                  <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
-                    <i class="material-icons-outlined">chevron_left</i>
-                  </a>
-                  <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
-                    <i class="material-icons-outlined">chevron_right</i>
-                  </a>
                 </div>
-                <div class="project-features">
-                  <h5>Features:</h5>
-                  <ul>
-                    <li>Identifies current trends of the entire train's network</li>
-                    <li>Compares scheduled and actual performance to trace the starting point of delay</li>
-                    <li>Displays the patterns of delay for different times in each station</li>
-                    <li>Specific queries like "Most Frequently Late Trips" and "Number of Trains that Skipped Stops" can be searched by interpreting historical trains data</li>
-                    <li>Shows the whole real-time train's network in an interactive map by Leaflet.js and OpenStreetMap &#10132; bottleneck can be spotted instantly if formed</li>
-                    <li>Downloads datasets as CSV format</li>
-                    <li>Utilizes HTML, CSS, jQuery, Node.js, MySQL, Chart.js, Leaflet.js, etc.</li>
-                  </ul>
+              </li>
+              <li class="card" data-toggle="modal" data-target="#modal-movie-world">
+                <div class="img-wrapper">
+                  <img src="./images/projects/movie-world/movie-world-landing-page.png" alt="Image of Movie World">
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button class="button outlined-btn" data-dismiss="modal">
-                  <i class="material-icons-outlined button-icon" data-dismiss="modal">close</i>
-                  CLOSE
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal of the Memo Note -->
-        <div class="modal fade" id="modal-memo-app" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">
-                  Memo Note
-                  <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                    <a href="https://github.com/hkKevin/memo" target="_blank">
-                      <i class="fab fa-github"></i>
+                <div class="card-content">
+                  <h3 class="card-title">Movie World</h3>
+                  <p class="project-description">A React web app that can search info of movies (fetch from The Movie Database API).</p>
+                  <div class="tech-wrapper">
+                    <div class="tech">React</div>
+                    <div class="tech">Redux</div>
+                    <div class="tech">React Router</div>
+                    <div class="tech">Axios</div>
+                    <div class="tech">React Reveal</div>
+                  </div>
+                  <div class="card-actions">
+                    <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank">
+                      Live Demo
                     </a>
-                  </span>
-                </h4>
-                <i class="material-icons-outlined close" data-dismiss="modal">close</i>
-              </div>
-              <div class="modal-body">
-                <div class="live-website">
-                  <a class="button" href="https://hkkevin.github.io/memo" target="_blank">
-                    <i class="material-icons-outlined button-icon">open_in_new</i>
-                    LIVE DEMO
-                  </a>
+                    <button class="button text-btn" data-target="#modal-movie-world">
+                      View Details
+                    </button>
+                  </div>
                 </div>
-                <img src="./images/projects/memo.webp" alt="Image of Memo Note">
-                <div class="project-features">
-                  <h5>Features:</h5>
-                  <ul>
-                    <li>Utilizes React, Redux, React-router, Firebase, Material-UI, React-grid-layout, etc.</li>
-                    <li>Resizes memos to adjust the width and height manually</li>
-                    <li>Drags memos anywhere to reorder them</li>
-                    <li>Stores memos layout on Local Storage</li>
-                    <li>Sync. memos title, content and color on Firebase</li>
-                    <li>Sync. creation, update, deletion, and archive of memos on Firebase</li>
-                    <li>Notifies users when the above actions are completed</li>
-                    <li>Filters memos by color or text</li>
-                    <li>Applies Google's Material Design by using Material-UI</li>
-                    <li>Supports Responsive Web Design</li>
-                  </ul>
+              </li>
+            </ul>
+          <p id="thought">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p>
+        </section>
+
+        <div class="projects-padding"></div>
+
+        <!-- Modals -->
+        <section>
+          <!-- Modal of the Sydney Trains Data Visualisation System -->
+          <div class="modal fade" id="modal-sydney-trains" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">
+                    Sydney Trains Data Visualisation System
+                  </h4>
+                  <i class="material-icons-outlined close" data-dismiss="modal">close</i>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button class="button outlined-btn" data-dismiss="modal">
-                  <i class="material-icons-outlined button-icon" data-dismiss="modal">close</i>
-                  CLOSE
-                </button>
+                <div class="modal-body">
+                  <!-- Swiper -->
+                  <div class="swiper-container sydneyTrainsSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/Certificate-of-Appreciation.webp" alt="Photo of the Certificate of Appreciation">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-50" src="./images/projects/sydney-trains-project/UOW-FYP-tradeshow-Runner-up.webp" alt="Photo of the Runner Up Best Project Prize">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/photo-client.webp" alt="Photo of our project team and client">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/photo-supervisors.webp" alt="Photo of our project team and supervisors">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of the Live Map">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-2.webp" alt="Image of the Current Network Performance">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-3.webp" alt="Image of the Time-Distance Diagram">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-4.webp" alt="Image of the Arrival Variance Analysis">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-5.webp" alt="Image of the Charting & Analysis">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-6.webp" alt="Image of the Charting & Analysis">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="project-features">
+                    <h5>Features:</h5>
+                    <ul>
+                      <li>Identifies current trends of the entire train's network</li>
+                      <li>Compares scheduled and actual performance to trace the starting point of delay</li>
+                      <li>Displays the patterns of delay for different times in each station</li>
+                      <li>Specific queries like "Most Frequently Late Trips" and "Number of Trains that Skipped Stops" can be searched by interpreting historical trains data</li>
+                      <li>Shows the whole real-time train's network in an interactive map by Leaflet and OpenStreetMap &#10132; bottleneck can be spotted instantly if formed</li>
+                      <li>Downloads datasets as CSV format</li>
+                      <li>Utilizes HTML, CSS, jQuery, Node.js, MySQL, Chart.js, Leaflet, etc.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="button text-btn" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Modal of the Movie World -->
-        <div class="modal fade" id="modal-movie-world" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">
-                  Movie World
-                  <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                    <a href="https://github.com/hkKevin/movie-world" target="_blank">
-                      <i class="fab fa-github"></i>
+          <!-- Modal of the Memo Note -->
+          <div class="modal fade" id="modal-memo-app" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">
+                    Memo Note
+                    <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                      <a href="https://github.com/hkKevin/memo" target="_blank">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </span>
+                  </h4>
+                  <i class="material-icons-outlined close" data-dismiss="modal">close</i>
+                </div>
+                <div class="modal-body">
+                  <div class="live-website">
+                    <a class="button" href="https://hkkevin.github.io/memo" target="_blank">
+                      Live Demo
                     </a>
-                  </span>
-                </h4>
-                <i class="material-icons-outlined close" data-dismiss="modal">close</i>
-              </div>
-              <div class="modal-body">
-                <div class="live-website">
-                  <a class="button" href="https://hkkevin.github.io/movie-world" target="_blank">
-                    <i class="material-icons-outlined button-icon">open_in_new</i>
-                    LIVE DEMO
-                  </a>
+                  </div>
+                  <!-- Swiper -->
+                  <div class="swiper-container memoSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/memo/on-load.png" alt="Memo Web App on load">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/memo/filter-by-colour.png" alt="Filter memo by colour">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/memo/filter-by-text.png" alt="Filter memo by text">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/memo/edit-memo.png" alt="Edit memo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/memo/side-nav.png" alt="Side navigation of Memo Web App">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/memo/create-memo.png" alt="Create memo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/memo/delete-memo.png" alt="Delete memo">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="project-features">
+                    <h5>Features:</h5>
+                    <ul>
+                      <li>Utilizes React, Redux, React Router, Firebase, Material-UI, React-Grid-Layout, etc.</li>
+                      <li>Resizes memos to adjust the width and height manually</li>
+                      <li>Drags memos anywhere to reorder them</li>
+                      <li>Stores memos layout on Local Storage</li>
+                      <li>Sync. memos title, content and color on Firebase</li>
+                      <li>Sync. creation, update, deletion, and archive of memos on Firebase</li>
+                      <li>Notifies users when the above actions are completed</li>
+                      <li>Filters memos by color or text</li>
+                      <li>Applies Google's Material Design by using Material-UI</li>
+                      <li>Supports Responsive Web Design</li>
+                    </ul>
+                  </div>
                 </div>
-                <img src="./images/projects/movie-world.webp" alt="Image of Movie World">
-                <div class="project-features">
-                  <h5>Features:</h5>
-                  <ul>
-                    <li>Utilizes React, Redux, react-router, axios, CSS Grid Layout, react-reveal, etc.</li>
-                    <li>Fetches movie info with Async. HTTP Requests from an API</li>
-                    <li>Presents movie info (posters, trailers, reviews, etc.) in a responsive layout</li>
-                    <li>Offers pagination for multiple pages of search results</li>
-                    <li>Navigates the web app with React Router</li>
-                    <li>Rotates movie posters automatically through a carousel</li>
-                    <li>Reveals animations when scrolling</li>
-                    <li>Supports Responsive Web Design</li>
-                  </ul>
+                <div class="modal-footer">
+                  <button class="button text-btn" data-dismiss="modal">
+                    Close
+                  </button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button class="button outlined-btn" data-dismiss="modal">
-                  <i class="material-icons-outlined button-icon" data-dismiss="modal">close</i>
-                  CLOSE
-                </button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Contact -->
-      <section id="contact" class="grid">
-        <div class="contact-container">
-          <h2 class="content-title" data-aos="fade" data-aos-offset="200">Contact</h2>
-          <p data-aos="fade" data-aos-offset="200">I would like to hear from you. Please email me and I will get in touch soon.</p><br />
-          <a class="hint hint--bottom hint--rounded" aria-label="Email me" data-aos="fade-up" data-aos-offset="200" data-aos-delay="500" href="mailto:pakkiuleung@gmail.com" target="_blank">pakkiuleung@gmail.com</a>
-          <div id="copy-hint" class="hint hint--bottom hint--rounded" aria-label="Copy">
-            <i class="material-icons-outlined copy-icon" data-clipboard-text="pakkiuleung@gmail.com">file_copy</i>
+          <!-- Modal of the Movie World -->
+          <div class="modal fade" id="modal-movie-world" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">
+                    Movie World
+                    <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
+                      <a href="https://github.com/hkKevin/movie-world" target="_blank">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </span>
+                  </h4>
+                  <i class="material-icons-outlined close" data-dismiss="modal">close</i>
+                </div>
+                <div class="modal-body">
+                  <div class="live-website">
+                    <a class="button" href="https://hkkevin.github.io/movie-world" target="_blank">
+                      Live Demo
+                    </a>
+                  </div>
+                  <!-- Swiper -->
+                  <div class="swiper-container movieWorldSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/movie-world/movie-world-landing-page.png" alt="Movie World">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/movie-world/movie-overview.png" alt="Movie Overview">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/movie-world/related-YouTube-videos.png" alt="Related YouTube Viedos">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/movie-world/backdrops.png" alt="Movie Backdrops">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block w-100" src="./images/projects/movie-world/reviews.png" alt="Movie Reviews">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="project-features">
+                    <h5>Features:</h5>
+                    <ul>
+                      <li>Utilizes React, Redux, React Router, Axios, CSS Grid Layout, React Reveal, etc.</li>
+                      <li>Fetches movie info with Async. HTTP Requests from an API</li>
+                      <li>Presents movie info (posters, trailers, reviews, etc.) in a responsive layout</li>
+                      <li>Offers pagination for multiple pages of search results</li>
+                      <li>Navigates the web app with React Router</li>
+                      <li>Rotates movie posters automatically through a carousel</li>
+                      <li>Reveals animations when scrolling</li>
+                      <li>Supports Responsive Web Design</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="button text-btn" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <!-- Footer -->
-    <footer id="main-footer" class="grid">
-      <div>Created by Kevin Leung</div>
-      <div id="social-media-container">
-        <a id="linkedin-profile" href="https://www.linkedin.com/in/pakkiuleung/" class="hint hint--top hint--rounded" aria-label="LinkedIn Profile" target="_blank">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a id="github-profile" href="https://github.com/hkKevin" class="hint hint--top hint--rounded" aria-label="GitHub Profile" target="_blank">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
+        <!-- Contact -->
+        <section id="contact" class="grid">
+          <div class="contact-container">
+            <h2 class="content-title">Contact</h2>
+            <p>I would like to hear from you. Please email me and I will get in touch soon.</p><br />
+            <div class="email">
+              <a class="hint hint--bottom hint--rounded" aria-label="Email me" data-aos="fade-up" data-aos-offset="200" href="mailto:pakkiuleung@gmail.com" target="_blank">pakkiuleung@gmail.com</a>
+              <div id="copy-hint" class="hint hint--bottom hint--rounded" aria-label="Copy">
+                <i class="material-icons-outlined copy-icon" data-clipboard-text="pakkiuleung@gmail.com">file_copy</i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="main-footer" class="grid">
+        <div>Created by Kevin Leung</div>
+        <div id="social-media-container">
+          <a id="linkedin-profile" href="https://www.linkedin.com/in/pakkiuleung/" class="hint hint--bottom hint--rounded" aria-label="LinkedIn Profile" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a id="github-profile" href="https://github.com/hkKevin" class="hint hint--bottom hint--rounded" aria-label="GitHub Profile" target="_blank">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+        </div>
+      </footer>
+
+      <!-- Jump To Top -->
+      <div class="jump-to-top">
+        <i class="material-icons-outlined">arrow_upward</i>
       </div>
-    </footer>
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  <!-- particles.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <!-- jQuery -->
+    <script src="scripts/topNav.js"></script>
+    <script src="scripts/sidenav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> <!-- Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> <!-- bootstrap.js -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- animation on scroll -->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <!-- animation on scroll -->
     <script>
       AOS.init(); // Initialize Animation On Scroll
     </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- Swiper.js -->
+    <script src="scripts/swiper.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script> <!-- clipboard.js -->
     <script src="scripts/clipboard.js"></script>
-    <script src="scripts/burger-icon.js"></script>
-    <script src="scripts/sidenav-link.js"></script>
-    <script src="scripts/particles-animation.js"></script>
+    <script src="scripts/jumpToTop.js"></script>
   </body>
 
 </html>

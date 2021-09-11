@@ -1,0 +1,41 @@
+.sydneyTrainsSwiper, .memoSwiper, .movieWorldSwiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+  overflow-x: hidden;
+  position: relative;
+
+  .swiper-wrapper {
+    align-items: center;
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        cursor: grab;
+      }
+      &:active {
+        cursor: grabbing;
+      }
+      
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+    .swiper-pagination-bullet-active {
+      background-color: $color;
+    }
+  }
+}

@@ -3,7 +3,7 @@
 @import './helpers/variables';
 
 // Layout related stylesheets
-@import './layouts/header';
+@import './layouts/home';
 @import './layouts/about';
 @import './layouts/projects';
 @import './layouts/contact';
@@ -13,37 +13,50 @@
 @import './components/button';
 @import './components/burgerIcon';
 @import './components/sideNav';
+@import './components/topNav';
 @import './components/modal';
+@import './components/swiper';
 
 html {
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   box-sizing: border-box;
-}
-
-section:nth-child(even) {
-  background: $secondaryBg;
 }
 
 /* Cursor highlight */
 ::selection {
-  background: $cursorHighlight;
+  background-color: lighten($tertiaryColor, 50%);
 }
 
 /* Scroll Bar */
 @media (min-width: 500px) {
   ::-webkit-scrollbar {
     width: 10px;
-    background: $secondaryBg; // Track
+    background: #fff; // Track
   }
   ::-webkit-scrollbar-thumb { /* Handle */
-    // background: $color;
-    background-color: $cursorHighlight;
+    background-color: $color;
     border-radius: 4px;
     &:hover { /* Handle on hover */
-      // background: #8793a9;
-      background: $tertiaryColor;
+    background-color: $tertiaryColor;
     }
   }
+}
+
+// Tooltip
+[class*="hint--"]:after {
+  background-color: $color;
+}
+.hint--top:before {
+  border-top-color: $color;
+}
+.hint--bottom:before {
+  border-bottom-color: $color;
+}
+.hint--right:before {
+  border-right-color: $color;
+}
+.hint--left:before {
+  border-left-color: $color;
 }
 
 img {
@@ -57,10 +70,13 @@ h1, h2, h3, p {
   padding: 1em 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 2;
+}
+
 body {
   margin: 0;
   background: $primaryBg;
-  // background-color: #d2dbe0;
   color: $color;
   // font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
   @include dynamicFontSize(14, 20, 300, 1900);
@@ -74,25 +90,76 @@ body {
   text-align: center;
   margin-bottom: 5vh;
   color: $tertiaryColor;
+  font-weight: bold;
 }
 
 .content-wrap {
-  padding: 0 1.5em;
+  padding: 0 1.5rem;
 }
 
 .icon {
   margin-right: .5em;
 }
 
-.fa-github, 
-.fa-linkedin {
+.fa-github {
   color: rgba(116, 129, 154, 0.7);
-  transition: 0.3s;
+  transition: 0.2s;
   &:hover {
-    color: rgba(116, 129, 154, 1);
+    color: #000;
   }
   &:active {
+    color: #000;
     transform: scale(0.95);
+  }
+}
+
+#container {
+  &.show-icon {
+    .jump-to-top {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &.hide-icon {
+    .jump-to-top {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .jump-to-top {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-out;
+    @media screen and (max-width: 574px) {
+      bottom: 20px;
+      right: 20px;
+      width: 28px;
+        height: 28px;
+    }
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.3), 0 4px 6px 4px rgba(60, 64, 67, 0.15);
+    }
+    &:active {
+      box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 11px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 21px 3px rgba(0, 0, 0, 0.12);
+    }
+    i {
+      color: $color;
+    }
   }
 }
 
@@ -101,41 +168,31 @@ body {
 
 
 
-/* For screens wider than and equal to 700px */
-@media (min-width: 700px) {
+
+/* For screens wider than and equal to 768px */
+@media (min-width: 768px) {
   .grid {
     display: grid;
-    // grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
     grid-template-columns: 1fr minmax(auto, 30em) minmax(auto, 30em) 1fr;
-  }
-
-  .button {
-    display: flex;
-    align-self: center;
   }
 
   header .button {
     margin-top: 6vh;
   }
 
-  // Split paragraph into 2 cols
   .content-text {
-    columns: 2;
-    column-gap: 5em;
+    text-align: center;
+    max-width: 80ch;
+    margin: 0 auto;
   }
 
   #about .content-text p {
     padding-top: 0;
   }
 
-  #skills {
-    margin-top: 5vh;
-  }
-
   #projects #personal-projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.5em;
+    display: flex;
+    flex-direction: column;
   }
 
   .live-website {
@@ -156,8 +213,35 @@ body {
   #projects h4,
   #projects p,
   #contact div,
-  #main-footer div {
+  #main-footer div,
+  .fixed-nav-container .fixed-nav {
     grid-column: 2/4;
   }
 
+}
+
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 575px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
 }
