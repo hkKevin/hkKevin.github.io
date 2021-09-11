@@ -1,5 +1,5 @@
 # Leung Pak Kiu's Portfolio
-[Live Portfolio](https://hkkevin.github.io/)
+Live Portfolio: [https://hkkevin.github.io/](https://hkkevin.github.io/)
 
 A website that introduces myself as a Front-end Web Developer and demonstrates my skillks and projects.
 
