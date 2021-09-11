@@ -1,12 +1,12 @@
 # Leung Pak Kiu's Portfolio
 [Live Portfolio](https://hkkevin.github.io/)
 
-A website that introduces myself as a Front-end Web Developer and demonstrates my projects.
+A website that introduces myself as a Front-end Web Developer and demonstrates my skillks and projects.
 
-![Screenshot of my portfolio](https://raw.githubusercontent.com/hkKevin/hkKevin.github.io/master/images/projects/my-portfolio.webp)
+![Screenshot of my portfolio](https://raw.githubusercontent.com/hkKevin/hkKevin.github.io/master/images/projects/portfolio/portfolio-landing-page.png)
 
 #### Utilizes:
-* SASS (CSS preprocessor)
+* SCSS
 * CSS Grid Layout
 * CSS Flexbox
 * Responsive Web Design
