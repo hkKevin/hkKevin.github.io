@@ -1,0 +1,55 @@
+/* Testimonials */
+#testimonials {
+  padding: 10vh 0;
+  @media (max-width: 575px) {
+    margin: 0;
+    padding: 5vh 0;
+  }
+  .testimonial {
+    max-width: 700px;
+    margin: 0 auto;
+    &:not(:last-of-type) {
+      margin-bottom: 12rem;
+      @media (max-width: 767px) {
+        margin-bottom: 10rem;
+      }
+      @media (max-width: 575px) {
+        margin-bottom: 8rem;
+      }
+    }
+    .quote {
+      text-align: center;
+      font-style: italic;
+      font-size: 22px;
+      font-weight: 300;
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+      @media (max-width: 575px) {
+        font-size: 18px;
+      }
+      .open, .close {
+        opacity: 0.2;
+      }
+      .open {
+        margin: 0 auto 1rem;
+        display: block;
+      }
+      .close {
+        display: none;
+      }
+    }
+    .person {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 2rem;
+      .text {
+        text-align: center;
+        .name {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

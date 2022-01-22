@@ -5,14 +5,15 @@
 // Layout related stylesheets
 @import './layouts/home';
 @import './layouts/about';
+@import './layouts/testimonials';
 @import './layouts/projects';
 @import './layouts/contact';
 @import './layouts/footer';
 
 // Components
 @import './components/button';
-@import './components/burgerIcon';
-@import './components/sideNav';
+@import './components/mobileTopNav';
+@import './components/mobileNav';
 @import './components/topNav';
 @import './components/modal';
 @import './components/swiper';
@@ -93,6 +94,12 @@ body {
   font-weight: bold;
 }
 
+.content-text {
+  text-align: center;
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
 .content-wrap {
   padding: 0 1.5rem;
 }
@@ -114,7 +121,7 @@ body {
 }
 
 #container {
-  &.show-icon {
+  &.show-jump-to-top-icon {
     .jump-to-top {
       visibility: visible;
       opacity: 1;
@@ -142,8 +149,6 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    visibility: hidden;
-    opacity: 0;
     transition: all .3s ease-out;
     @media screen and (max-width: 574px) {
       bottom: 20px;
@@ -180,12 +185,6 @@ body {
     margin-top: 6vh;
   }
 
-  .content-text {
-    text-align: center;
-    max-width: 80ch;
-    margin: 0 auto;
-  }
-
   #about .content-text p {
     padding-top: 0;
   }
@@ -206,7 +205,9 @@ body {
     width: inherit !important;
   }
 
-  .content-wrap, 
+  .content-wrap,
+  #testimonials h2,
+  .testimonial,
   #projects ul,
   #projects #personal-projects ul,
   #projects h2,

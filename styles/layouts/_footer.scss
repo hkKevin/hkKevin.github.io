@@ -5,6 +5,9 @@
   color: $color;
   text-align: center;
   font-weight: 300;
+  .created-by {
+    font-weight: bold;
+  }
   #social-media-container {
     margin: 2vh auto;
     display: grid;

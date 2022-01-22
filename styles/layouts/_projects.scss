@@ -117,7 +117,10 @@
   #personal-projects {
     .card {
       &:not(:last-of-type) {
-        margin-bottom: 15vh;
+        margin-bottom: 20vh;
+        @media (max-width: 767px) {
+          margin-bottom: 15vh;
+        }
       }
     }
   }

@@ -13,4 +13,3 @@ A website that introduces myself as a Front-end Web Developer and demonstrates m
 * Responsive Web Design
 * Bootstrap
 * jQuery
-* Animate On Scroll

@@ -1,3 +1,7 @@
+body.modal-open {
+  overflow-y: hidden;
+}
+
 .modal {
   padding-right: 0 !important;
   .modal-content .hint {
@@ -6,6 +10,10 @@
   .modal-header {
     padding: 1em 1em .5em 1em;
     border-bottom: unset;
+    position: sticky;
+    top: 0;
+    background-color: inherit;
+    z-index: 11;
     span {
       line-height: 1.5;
     }
@@ -51,11 +59,13 @@
   }
   .modal-footer {
     border-top: unset;
+    position: sticky;
+    bottom: 0;
+    background-color: inherit;
     & > .button {
       text-align: center;
       width: 100%;
       @media (max-width: 767px) {
-        width: fit-content;
         margin: 0.5rem auto;
       }
     }

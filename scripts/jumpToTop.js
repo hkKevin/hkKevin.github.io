@@ -2,11 +2,9 @@ $(document).ready(function () {
 
   $(window).scroll(function() {
     if($(window).scrollTop() > 1000) {
-      // console.log("show Jump to Top");
-      $('#container').addClass('show-icon').removeClass('hide-icon')
+      $('#container').addClass('show-jump-to-top-icon').removeClass('hide-jump-to-top-icon')
     } else {
-      // console.log("hide Jump to Top");
-      $('#container').addClass('hide-icon').removeClass('show-icon')
+      $('#container').addClass('hide-jump-to-top-icon').removeClass('show-jump-to-top-icon')
     }
   });
 

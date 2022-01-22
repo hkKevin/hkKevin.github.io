@@ -6,26 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kevin Leung | Front-end Web Developer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> <!-- Bootstrap -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet"> <!-- Font family: Open Sans -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- font awesome icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> <!-- Material icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" /> <!-- Hint.css -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Animation On Scroll library -->
-    <link rel="shortcut icon" type="image/ico" href="/images/logos/favicon.ico"/> <!-- Favicon -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!-- Swiper -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Font family: Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Hint.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="/images/logos/favicon.ico"/>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
   </head>
 
   <body>
     <div id="container">
       <header>
-        <!-- Side Nav -->
-        <div id="sidenav">
-          <a id="sidenav-home" href="#intro">Intro</a>
-          <a id="sidenav-about" href="#about">About</a>
-          <a id="sidenav-projects" href="#projects">Projects</a>
-          <a id="sidenav-contact" href="#contact">Contact</a>
+        <div class="mobile-top-nav">
+          <!-- Logo -->
+          <a id="mobileNav-mobile-home" class="logo-link" href="#intro">
+            <div class="logo">
+              <div class="logo-border">
+                <span class="name">Kevin</span>
+              </div>
+            </div>
+          </a>
+          <!-- Burger Icon -->
+          <div id="burger-icon">
+            <i class="material-icons-outlined menu">menu</i>
+            <i class="material-icons-outlined close md-light">close</i>
+          </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div id="mobileNav">
+          <a id="mobileNav-home" href="#intro">Intro</a>
+          <a id="mobileNav-about" href="#about">About</a>
+          <a id="mobileNav-testimonials" href="#testimonials">Testimonials</a>
+          <a id="mobileNav-projects" href="#projects">Projects</a>
+          <a id="mobileNav-contact" href="#contact">Contact</a>
         </div>
       </header>
 
@@ -50,6 +74,9 @@
               </div>
               <div class="link">
                 <a id="topNav-about" href="#about">About</a>
+              </div>
+              <div class="link">
+                <a id="topNav-testimonials" href="#testimonials">Testimonials</a>
               </div>
               <div class="link">
                 <a id="topNav-projects" href="#projects">Projects</a>
@@ -84,6 +111,9 @@
                     <a id="topNav-about" href="#about">About</a>
                   </li>
                   <li>
+                    <a id="topNav-testimonials" href="#testimonials">Testimonials</a>
+                  </li>
+                  <li>
                     <a id="topNav-projects" href="#projects">Projects</a>
                   </li>
                   <li>
@@ -93,16 +123,10 @@
               </div>
             </div>
 
-
-            <!-- Burger Icon -->
-            <div id="burger-icon">
-              <i class="material-icons-outlined menu">menu</i>
-              <i class="material-icons-outlined close md-light">close</i>
-            </div>
             <div class="heading">
               <h1>Hi! I'm <span id="my-name">Kevin Leung</span>, <br />a Front-end Web Developer.</h1>
             </div>
-            <p class="content-text">Nice to meet you. With over 1 year of front-end experience. I'm capable of building responsive and scalable UI components, which improved the UX of global eCommerce web applications, and increased their conversion rate up to 40%.</p>
+            <p class="content-text">Nice to meet you. With around two years of front-end experience. I'm capable of building responsive and scalable UI components, which improved the UX of global eCommerce web applications, and increased their conversion rate up to 40%.</p>
             <a href="#projects" id="header-btn" class="button">
               My Projects
             </a>
@@ -121,6 +145,7 @@
                   <div class="skill">React</div>
                   <div class="skill">Redux</div>
                   <div class="skill">Vue</div>
+                  <div class="skill">Nuxt</div>
                   <div class="skill">Vuex</div>
                   <div class="skill">JavaScript ES6</div>
                   <div class="skill">jQuery</div>
@@ -172,6 +197,45 @@
                   <h4>A/B Testing Tool</h4>
                   <div class="skills">
                     <div class="skill">VWO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="grid">
+          <div class="content-wrap">
+            <h2 class="content-title">Testimonials</h2>
+            <div class="testimonial">
+              <div class="quote">
+                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                Kevin was a major contributor to the majority of our front-end projects, always making sure that the components and web pages he worked on were implemented in the highest quality. He is a hardworking team player who’s always ready to get going and complete the job as efficiently as possible.
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
+              </div>
+              <div class="person">
+                <div class="text">
+                  <div class="name">
+                    Alice Elizibeth Allen
+                  </div>
+                  <div class="role">
+                    Brand Manager @ Ecosa
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">
+                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                As a Web Designer, I have worked with a number of Web Developers. Kevin was easily one of the best. His ability to tackle any problem is remarkable and with a positive attitude. Kevin was a greatly appreciated member of our team.
+              </div>
+              <div class="person">
+                <div class="text">
+                  <div class="name">
+                    Sophie Rasmussen
+                  </div>
+                  <div class="role">
+                    Web Designer @ Ecosa
                   </div>
                 </div>
               </div>
@@ -497,7 +561,7 @@
 
       <!-- Footer -->
       <footer id="main-footer" class="grid">
-        <div>Created by Kevin Leung</div>
+        <div class="created-by">Created by Kevin Leung</div>
         <div id="social-media-container">
           <a id="linkedin-profile" href="https://www.linkedin.com/in/pakkiuleung/" class="hint hint--bottom hint--rounded" aria-label="LinkedIn Profile" target="_blank">
             <i class="fab fa-linkedin fa-lg"></i>
@@ -509,29 +573,49 @@
       </footer>
 
       <!-- Jump To Top -->
-      <div class="jump-to-top">
-        <i class="material-icons-outlined">arrow_upward</i>
+      <div class="jump-to-top hint hint--top hint--rounded" aria-label="Return to Top">
+        <i class="material-icons-outlined">keyboard_arrow_up</i>
       </div>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <!-- jQuery -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
     <script src="scripts/topNav.js"></script>
-    <script src="scripts/sidenav.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> <!-- Popper.js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> <!-- bootstrap.js -->
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <!-- animation on scroll -->
-    <script>
-      AOS.init(); // Initialize Animation On Scroll
-    </script>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- Swiper.js -->
+    <script src="scripts/mobileNav.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <!-- bootstrap.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/swiper.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script> <!-- clipboard.js -->
+    <!-- clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script src="scripts/clipboard.js"></script>
     <script src="scripts/jumpToTop.js"></script>
+    <script>
+      window.addEventListener('keydown', function( e ) {
+        if( e.keyCode == 34 ) {
+          window.scrollTo({
+            top: window.scrollY + (window.screen.height - 220),
+            left: 0,
+            behavior: 'smooth'
+          })
+        }
+      });
+      window.addEventListener('keyup', function( e ) {
+        if( e.keyCode == 33 ) {
+          window.scrollTo({
+            top: window.scrollY - (window.screen.height - 220),
+            left: 0,
+            behavior: 'smooth'
+          })
+        }
+      });
+    </script>
   </body>
 
 </html>
