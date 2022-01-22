@@ -38,7 +38,7 @@
 #main section.home #intro .heading h1 {
   text-align: left;
   line-height: 1.7;
-  font-size: calc(20px + (70 - 20) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1900 - 300)));
   padding: 5vh 0;
 }
 
@@ -69,7 +69,7 @@
   margin: 8rem auto 0;
 }
 
-#about #skills .front-end-tech h4 {
+#about #skills .front-end-tech h5 {
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -111,7 +111,7 @@
   }
 }
 
-#about #skills .others h4 {
+#about #skills .others h5 {
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -527,7 +527,7 @@
   color: #1070cc;
   font-weight: 300;
   text-decoration: none;
-  font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1900 - 300)));
 }
 
 #contact .contact-container .email a:active {

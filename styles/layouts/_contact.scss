@@ -15,7 +15,7 @@
         color: $tertiaryColor;
         font-weight: 300;
         text-decoration: none;
-        @include dynamicFontSize(18, 40, 300, 1900);
+        @include dynamicFontSize(18, 30, 300, 1900);
         &:active {
           transition-delay: 0s;
           transform: scale(0.97);
