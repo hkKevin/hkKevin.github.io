@@ -150,6 +150,21 @@
   }
 }
 
+#testimonials .caption {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+#testimonials .caption br {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  #testimonials .caption br {
+    display: block;
+  }
+}
+
 #testimonials .testimonial {
   max-width: 700px;
   margin: 0 auto;
