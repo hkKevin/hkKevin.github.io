@@ -5,15 +5,16 @@ body.modal-open {
 .modal {
   padding-right: 0 !important;
   .modal-content .hint {
-    padding-left: 3vh;
+    padding-left: 1.5rem;
   }
   .modal-header {
-    padding: 1em 1em .5em 1em;
+    padding: 1rem;
     border-bottom: unset;
     position: sticky;
     top: 0;
     background-color: inherit;
     z-index: 11;
+    align-items: center;
     span {
       line-height: 1.5;
     }
@@ -30,9 +31,29 @@ body.modal-open {
         transform: scale(0.97);
       }
     }
+    .live-website {
+      display: inline-block;
+      margin: 0 0 0 1.5rem;
+      line-height: 2;
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
   }
   .modal-body {
     padding-top: 0;
+    .live-website {
+      text-align: center;
+      margin-bottom: 1em;
+      @media (min-width: 576px) {
+        display: none;
+      }
+      .button {
+        @media (max-width: 767px) {
+          margin: 0.5rem auto;
+        }
+      }
+    }
   }
   .project-features h5 {
     margin: 5vh 0;
@@ -42,15 +63,6 @@ body.modal-open {
   .project-features li {
     text-align: left;
     margin-bottom: .7rem;
-  }
-  .live-website {
-    text-align: center;
-    margin-bottom: 1em;
-    .button {
-      @media (max-width: 767px) {
-        margin: 0.5rem auto;
-      }
-    }
   }
   .carousel-control-prev,
   .carousel-control-next,
@@ -62,12 +74,32 @@ body.modal-open {
     position: sticky;
     bottom: 0;
     background-color: inherit;
-    & > .button {
+    z-index: 11;
+    .close-btn {
       text-align: center;
       width: 100%;
       @media (max-width: 767px) {
         margin: 0.5rem auto;
       }
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
+    .live-website {
+      width: 100%;
+      margin: 0;
+      @media (min-width: 576px) {
+        display: none;
+      }
+    }
+  }
+}
+
+#modal-sydney-trains {
+  .modal-footer {
+    .close-btn {
+      display: block;
+      margin: 0;
     }
   }
 }
