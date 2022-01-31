@@ -29,17 +29,16 @@ html {
 }
 
 /* Scroll Bar */
-@media (min-width: 500px) {
-  ::-webkit-scrollbar {
-    width: 10px;
-    background: #fff; // Track
-  }
-  ::-webkit-scrollbar-thumb { /* Handle */
-    background-color: $color;
-    border-radius: 4px;
-    &:hover { /* Handle on hover */
-    background-color: $tertiaryColor;
-    }
+::-webkit-scrollbar {
+  width: 16px; // Track
+}
+::-webkit-scrollbar-thumb { /* Handle */
+  background-color: #ccc;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  &:hover { /* Handle on hover */
+  background-color: #aaa;
   }
 }
 
