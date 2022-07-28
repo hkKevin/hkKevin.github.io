@@ -1,3 +1,5 @@
+@use '../helpers/variables' as var;
+
 #container {
   position: relative;
 }
@@ -20,13 +22,13 @@
       .logo {
         position: relative;
         .logo-border {
-          border: 3px solid $tertiaryColor;
+          border: 3px solid var.$tertiaryColor;
           border-top: hidden;
           border-right: hidden;
           width: 70px;
           height: 29px;
           .name {
-            color: $tertiaryColor;
+            color: var.$tertiaryColor;
             font-weight: bold;
             display: inline-block;
             line-height: .8;
@@ -52,11 +54,11 @@
           padding-right: 2rem;
         }
         a {
-          color: $color;
+          color: var.$color;
           text-decoration: none;
           padding: 1rem;
           &:hover {
-            color: $tertiaryColor;
+            color: var.$tertiaryColor;
           }
         }
       }
@@ -102,13 +104,13 @@
       .logo {
         position: relative;
         .logo-border {
-          border: 3px solid $tertiaryColor;
+          border: 3px solid var.$tertiaryColor;
           border-top: hidden;
           border-right: hidden;
           width: 70px;
           height: 29px;
           .name {
-            color: $tertiaryColor;
+            color: var.$tertiaryColor;
             font-weight: bold;
             display: inline-block;
             line-height: .8;
@@ -132,11 +134,11 @@
           padding-right: 2rem;
         }
         a {
-          color: $color;
+          color: var.$color;
           text-decoration: none;
           padding: 1rem;
           &:hover {
-            color: $tertiaryColor;
+            color: var.$tertiaryColor;
           }
         }
       }

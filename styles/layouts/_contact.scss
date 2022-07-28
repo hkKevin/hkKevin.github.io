@@ -1,4 +1,8 @@
 /* Contact */
+
+@use '../helpers/variables' as var;
+@use '../helpers/mixins';
+
 #contact {
   padding: 10vh 1.5rem;
   @media (max-width: 575px) {
@@ -12,10 +16,10 @@
       justify-content: center;
       align-items: center;
       a {
-        color: $tertiaryColor;
+        color: var.$tertiaryColor;
         font-weight: 300;
         text-decoration: none;
-        @include dynamicFontSize(18, 30, 300, 1900);
+        @include mixins.dynamicFontSize(18, 30, 300, 1900);
         &:active {
           transition-delay: 0s;
           transform: scale(0.97);

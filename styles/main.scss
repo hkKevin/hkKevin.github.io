@@ -1,22 +1,22 @@
 // Sass utilities
-@import './helpers/mixins';
-@import './helpers/variables';
+@use 'helpers/variables' as var;
+@use 'helpers/mixins';
 
 // Layout related stylesheets
-@import './layouts/home';
-@import './layouts/about';
-@import './layouts/testimonials';
-@import './layouts/projects';
-@import './layouts/contact';
-@import './layouts/footer';
+@use './layouts/home';
+@use './layouts/about';
+@use './layouts/testimonials';
+@use './layouts/projects';
+@use './layouts/contact';
+@use './layouts/footer';
 
 // Components
-@import './components/button';
-@import './components/mobileTopNav';
-@import './components/mobileNav';
-@import './components/topNav';
-@import './components/modal';
-@import './components/swiper';
+@use './components/button';
+@use './components/mobileTopNav';
+@use './components/mobileNav';
+@use './components/topNav';
+@use './components/modal';
+@use './components/swiper';
 
 html {
   // scroll-behavior: smooth;
@@ -25,7 +25,7 @@ html {
 
 /* Cursor highlight */
 ::selection {
-  background-color: lighten($tertiaryColor, 50%);
+  background-color: lighten(var.$tertiaryColor, 50%);
 }
 
 /* Scroll Bar */
@@ -44,19 +44,19 @@ html {
 
 // Tooltip
 [class*="hint--"]:after {
-  background-color: $color;
+  background-color: var.$color;
 }
 .hint--top:before {
-  border-top-color: $color;
+  border-top-color: var.$color;
 }
 .hint--bottom:before {
-  border-bottom-color: $color;
+  border-bottom-color: var.$color;
 }
 .hint--right:before {
-  border-right-color: $color;
+  border-right-color: var.$color;
 }
 .hint--left:before {
-  border-left-color: $color;
+  border-left-color: var.$color;
 }
 
 img {
@@ -76,10 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   margin: 0;
-  background: $primaryBg;
-  color: $color;
+  background: var.$primaryBg;
+  color: var.$color;
   // font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
-  @include dynamicFontSize(14, 20, 300, 1900);
+  @include mixins.dynamicFontSize(14, 20, 300, 1900);
   line-height: 2;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
@@ -89,7 +89,7 @@ body {
 .content-title {
   text-align: center;
   margin-bottom: 5vh;
-  color: $tertiaryColor;
+  color: var.$tertiaryColor;
   font-weight: bold;
 }
 
@@ -140,7 +140,7 @@ body {
     right: 30px;
     width: 40px;
     height: 40px;
-    border: 2px solid $color;
+    border: 2px solid var.$color;
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
@@ -162,7 +162,7 @@ body {
       box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 11px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 21px 3px rgba(0, 0, 0, 0.12);
     }
     i {
-      color: $color;
+      color: var.$color;
     }
   }
 }

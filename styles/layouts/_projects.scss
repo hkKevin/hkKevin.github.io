@@ -1,7 +1,10 @@
 /* Projects */
+
+@use '../helpers/variables' as var;
+
 #projects {
   padding: 10vh 1.5rem;
-  background: $primaryBg;
+  background: var.$primaryBg;
   @media (max-width: 575px) {
     padding: 5vh 1.5rem;
   }
@@ -45,7 +48,7 @@
     border-radius: 5px;
     margin-bottom: 3em;
     background: #fff;
-    color: $color;
+    color: var.$color;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
     &:hover {
       cursor: pointer;
@@ -181,7 +184,7 @@
 
 .projects-padding {
   padding-top: 10vh;
-  background: $primaryBg;
+  background: var.$primaryBg;
   display: none;
 }
 

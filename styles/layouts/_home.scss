@@ -1,6 +1,10 @@
 /* Header */
+
+@use '../helpers/variables' as var;
+@use '../helpers/mixins';
+
 #main section.home {
-  background-color: $primaryBg;
+  background-color: var.$primaryBg;
   position: relative;
 
   #intro {
@@ -17,11 +21,11 @@
       h1 {
         text-align: left;
         line-height: 1.7;
-        @include dynamicFontSize(20, 50, 300, 1900);
+        @include mixins.dynamicFontSize(20, 50, 300, 1900);
         padding: 5vh 0;
         #my-name {
           font-weight: bolder;
-          color: $tertiaryColor;
+          color: var.$tertiaryColor;
           display: inline-block;
         }
       }

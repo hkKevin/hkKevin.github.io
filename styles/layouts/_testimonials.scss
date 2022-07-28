@@ -1,4 +1,7 @@
 /* Testimonials */
+
+@use '../helpers/variables' as var;
+
 #testimonials {
   padding: 10vh 0;
   @media (max-width: 575px) {
@@ -75,7 +78,7 @@
         }
         .role {
           .title {
-            color: $tertiaryColor;
+            color: var.$tertiaryColor;
           }
         }
       }

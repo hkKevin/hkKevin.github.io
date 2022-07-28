@@ -1,8 +1,11 @@
 /* Footer */
+
+@use '../helpers/variables' as var;
+
 #main-footer {
   padding: 7rem 0 2rem 0;
-  background: $primaryBg;
-  color: $color;
+  background: var.$primaryBg;
+  color: var.$color;
   text-align: center;
   font-weight: 300;
   .created-by {

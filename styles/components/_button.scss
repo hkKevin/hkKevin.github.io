@@ -1,3 +1,5 @@
+@use '../helpers/variables' as var;
+
 .button {
   display: flex;
   align-self: center;
@@ -6,7 +8,7 @@
   align-items: center;
   font-size: 1rem;
   font-weight: bold;
-  background: $tertiaryColor;
+  background: var.$tertiaryColor;
   color: #fff;
   border-radius: 4px;
   margin: 0.5em 0;
@@ -24,7 +26,7 @@
     outline: none;
   }
   &:hover {
-    background: darken($tertiaryColor, 10%);
+    background: darken(var.$tertiaryColor, 10%);
     color: #fff;
   }
   &:active {
@@ -35,11 +37,11 @@
 .text-btn {
   background-color: transparent;
   border: none;
-  color: $color;
+  color: var.$color;
   box-shadow: unset;
   &:hover {
     background-color: #f6f6f6;
-    color: $color;
+    color: var.$color;
   }
 }
 

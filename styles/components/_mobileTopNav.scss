@@ -1,3 +1,5 @@
+@use '../helpers/variables' as var;
+
 .mobile-top-nav {
   position: fixed;
   background-color: #fff;
@@ -20,13 +22,13 @@
     .logo {
       position: relative;
       .logo-border {
-        border: 3px solid $tertiaryColor;
+        border: 3px solid var.$tertiaryColor;
         border-top: hidden;
         border-right: hidden;
         width: 70px;
         height: 29px;
         .name {
-          color: $tertiaryColor;
+          color: var.$tertiaryColor;
           font-weight: bold;
           display: inline-block;
           line-height: .8;
@@ -66,7 +68,7 @@
   }
 
   .menu {
-    color: $tertiaryColor;
+    color: var.$tertiaryColor;
   }
 
   .md-light {
@@ -75,7 +77,7 @@
 
   .close {
     display: none; // Hide Close icon by default
-    color: $tertiaryColor;
+    color: var.$tertiaryColor;
     opacity: 1;
     text-shadow: unset;
     &:hover {
