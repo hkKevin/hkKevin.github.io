@@ -17,7 +17,7 @@
   }
   .testimonial {
     max-width: 700px;
-    margin: 0 auto;
+    margin-inline: auto;
     &:not(:last-of-type) {
       margin-bottom: 12rem;
       @media (max-width: 767px) {
