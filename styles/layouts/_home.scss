@@ -14,10 +14,34 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
+    @media (max-width: 500px) {
+      min-height: unset;
+    }
+
     .heading {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      justify-content: space-evenly;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin-inline: auto;
+      }
+      @media (max-width: 500px) {
+        margin-top: 85px;
+      }
+
+      img {
+        width: 200px;
+        border-radius: 50%;
+        @media (min-width: 768px) and (max-width: 1200px) {
+          width: 16vw;
+        }
+        @media (max-width: 768px) {
+          width: 30vw;
+        }
+      }
+
       h1 {
         text-align: left;
         line-height: 1.7;
