@@ -5,12 +5,10 @@ body.modal-open {
 }
 
 .modal {
-  padding-right: 0 !important;
-  &.show {
-    padding: 0 !important;
-    .modal-dialog {
-      margin: .5rem !important;
-    }
+  // padding-right: 0 !important;
+  padding: 0 !important;
+  .modal-dialog {
+    margin: .5rem !important;
   }
   .modal-content .hint {
     padding-left: 1.5rem;

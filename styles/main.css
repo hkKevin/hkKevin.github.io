@@ -902,12 +902,9 @@ body.modal-open {
 }
 
 .modal {
-  padding-right: 0 !important;
-}
-.modal.show {
   padding: 0 !important;
 }
-.modal.show .modal-dialog {
+.modal .modal-dialog {
   margin: 0.5rem !important;
 }
 .modal .modal-content .hint {
