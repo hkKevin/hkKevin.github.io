@@ -44,7 +44,7 @@ html {
 
 body.modal-open {
   ::-webkit-scrollbar {
-    width: 0; // Track
+    width: 0px; // Track
   }
   ::-webkit-scrollbar-thumb { /* Handle */
     background-color: unset;

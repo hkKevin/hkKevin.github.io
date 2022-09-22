@@ -904,6 +904,12 @@ body.modal-open {
 .modal {
   padding-right: 0 !important;
 }
+.modal.show {
+  padding: 0 !important;
+}
+.modal.show .modal-dialog {
+  margin: 0.5rem !important;
+}
 .modal .modal-content .hint {
   padding-left: 1.5rem;
 }
@@ -1095,7 +1101,7 @@ html {
 }
 
 body.modal-open ::-webkit-scrollbar {
-  width: 0;
+  width: 0px;
 }
 body.modal-open ::-webkit-scrollbar-thumb { /* Handle */
   background-color: unset;
