@@ -9,6 +9,9 @@ body.modal-open {
   padding: 0 !important;
   .modal-dialog {
     margin: .5rem !important;
+    @media (min-width: 576px) {
+      margin: 1.75rem auto !important;
+    }
   }
   .modal-content .hint {
     padding-left: 1.5rem;
