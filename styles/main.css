@@ -57,6 +57,13 @@
   font-weight: bolder;
   color: #1070cc;
   display: inline-block;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 1s;
+}
+#main section.home #intro .heading h1 #my-name.animation-showed {
+  opacity: 1;
+  transform: translateY(0);
 }
 #main section.home #intro #header-btn {
   margin-top: 5vh;
@@ -118,6 +125,13 @@
   padding: 2px 1rem;
   background-color: #f6f6f6;
   color: #000;
+  opacity: 0;
+  transform: translateY(200%);
+  transition: all 1s;
+}
+#about #skills .skill.animation-showed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Testimonials */
@@ -164,6 +178,13 @@
   font-style: italic;
   font-size: 22px;
   font-weight: 300;
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s 0.2s;
+}
+#testimonials .testimonial .quote.animation-showed {
+  opacity: 1;
+  filter: blur(0);
 }
 @media (max-width: 767px) {
   #testimonials .testimonial .quote {
@@ -268,6 +289,11 @@
   background: #fff;
   color: #05223e;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transition: all 1s;
+}
+#projects .card.animation-showed {
+  opacity: 1;
 }
 #projects .card:hover {
   cursor: pointer;
@@ -436,7 +462,14 @@
   color: #1070cc;
   font-weight: 300;
   text-decoration: none;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 1s;
   font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1900 - 300)));
+}
+#contact .contact-container .email a.animation-showed {
+  opacity: 1;
+  transform: translateY(0);
 }
 #contact .contact-container .email a:active {
   transition-delay: 0s;

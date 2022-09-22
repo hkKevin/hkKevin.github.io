@@ -19,6 +19,13 @@
         color: var.$tertiaryColor;
         font-weight: 300;
         text-decoration: none;
+        opacity: 0;
+        transform: translateY(50%);
+        transition: all 1s;
+        &.animation-showed {
+          opacity: 1;
+          transform: translateY(0);
+        }
         @include mixins.dynamicFontSize(18, 30, 300, 1900);
         &:active {
           transition-delay: 0s;

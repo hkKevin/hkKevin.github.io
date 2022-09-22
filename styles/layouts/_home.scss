@@ -51,6 +51,13 @@
           font-weight: bolder;
           color: var.$tertiaryColor;
           display: inline-block;
+          opacity: 0;
+          transform: translateY(-50%);
+          transition: all 1s;
+          &.animation-showed {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
       }
     }

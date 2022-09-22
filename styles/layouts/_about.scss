@@ -49,6 +49,13 @@
       padding: 2px 1rem;
       background-color: #f6f6f6;
       color: #000;
+      opacity: 0;
+      transform: translateY(200%);
+      transition: all 1s;
+      &.animation-showed {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
 }
