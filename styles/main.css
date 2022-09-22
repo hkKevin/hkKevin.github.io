@@ -180,7 +180,7 @@
   font-weight: 300;
   opacity: 0;
   filter: blur(5px);
-  transition: all 1s 0.2s;
+  transition: all 1s;
 }
 #testimonials .testimonial .quote.animation-showed {
   opacity: 1;
@@ -1092,6 +1092,19 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover { /* Handle on hover */
   background-color: #aaa;
+}
+
+body.modal-open ::-webkit-scrollbar {
+  width: 0;
+}
+body.modal-open ::-webkit-scrollbar-thumb { /* Handle */
+  background-color: unset;
+  border-radius: unset;
+  border: unset;
+  background-clip: unset;
+}
+body.modal-open ::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+  background-color: unset;
 }
 
 [class*=hint--]:after {
