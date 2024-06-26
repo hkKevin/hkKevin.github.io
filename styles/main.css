@@ -577,7 +577,6 @@
 }
 @media (max-width: 767px) {
   .button {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -918,7 +917,6 @@ body.modal-open {
 .modal .modal-header {
   padding: 1rem;
   border-bottom: unset;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: inherit;
@@ -984,7 +982,6 @@ body.modal-open {
 }
 .modal .modal-footer {
   border-top: unset;
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   background-color: inherit;
@@ -1021,8 +1018,7 @@ body.modal-open {
 
 @media (max-width: 500px) {
   .modal .modal-body ul {
-    -webkit-padding-start: 30px;
-            padding-inline-start: 30px;
+    padding-inline-start: 30px;
   }
   .modal .project-features h5 {
     margin: 3vh 0px 2vh 1vh;
@@ -1030,8 +1026,7 @@ body.modal-open {
 }
 @media (max-width: 400px) {
   .modal .modal-body ul {
-    -webkit-padding-start: 20px;
-            padding-inline-start: 20px;
+    padding-inline-start: 20px;
   }
 }
 .sydneyTrainsSwiper, .memoSwiper, .movieWorldSwiper {
@@ -1054,11 +1049,9 @@ body.modal-open {
   align-items: center;
 }
 .sydneyTrainsSwiper .swiper-wrapper .swiper-slide:hover, .memoSwiper .swiper-wrapper .swiper-slide:hover, .movieWorldSwiper .swiper-wrapper .swiper-slide:hover {
-  cursor: -webkit-grab;
   cursor: grab;
 }
 .sydneyTrainsSwiper .swiper-wrapper .swiper-slide:active, .memoSwiper .swiper-wrapper .swiper-slide:active, .movieWorldSwiper .swiper-wrapper .swiper-slide:active {
-  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 .sydneyTrainsSwiper .swiper-wrapper .swiper-slide img, .memoSwiper .swiper-wrapper .swiper-slide img, .movieWorldSwiper .swiper-wrapper .swiper-slide img {
@@ -1264,16 +1257,16 @@ body {
     width: inherit !important;
   }
   .content-wrap,
-#testimonials h2,
-.testimonial,
-#projects ul,
-#projects #personal-projects ul,
-#projects h2,
-#projects h4,
-#projects p,
-#contact div,
-#main-footer div,
-.fixed-nav-container .fixed-nav {
+  #testimonials h2,
+  .testimonial,
+  #projects ul,
+  #projects #personal-projects ul,
+  #projects h2,
+  #projects h4,
+  #projects p,
+  #contact div,
+  #main-footer div,
+  .fixed-nav-container .fixed-nav {
     grid-column: 2/4;
   }
 }
