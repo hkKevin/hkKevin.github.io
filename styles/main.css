@@ -50,7 +50,7 @@
 #main section.home #intro .heading h1 {
   text-align: left;
   line-height: 1.7;
-  font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(20px + (50 - 20) * (100vw - 300px) / (1900 - 300));
   padding: 5vh 0;
 }
 #main section.home #intro .heading h1 #my-name {
@@ -465,7 +465,7 @@
   opacity: 0;
   transform: translateY(50%);
   transition: all 1s;
-  font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(18px + (30 - 18) * (100vw - 300px) / (1900 - 300));
 }
 #contact .contact-container .email a.animation-showed {
   opacity: 1;
@@ -715,7 +715,7 @@
 }
 #mobileNav a {
   display: none;
-  font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(24px + (50 - 24) * (100vw - 300px) / (1900 - 300));
   text-decoration: none;
   text-align: center;
   color: #ccc;
@@ -1147,7 +1147,7 @@ body {
   margin: 0;
   background: #fff;
   color: #05223e;
-  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(14px + (20 - 14) * (100vw - 300px) / (1900 - 300));
   line-height: 2;
   text-align: left;
   font-family: "Open Sans", sans-serif;
