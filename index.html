@@ -8,13 +8,16 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-137810903-1');
     </script>
+    <title>Kevin Leung | Front-end Web Developer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kevin Leung | Front-end Web Developer</title>
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Kevin Leung | Front-end Web Developer" />
+    <meta name="description" content="Kevin is a client-focused web developer with solid front-end experience crafting responsive and intuitive UI, seeking to enhance UX and elevate brand value."/>
+    <link rel="canonical" href="https://hkkevin.github.io/" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Font family: Open Sans -->
@@ -34,16 +37,15 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#myScrollSpy" data-offset="500">
+  <!-- <body> -->
     <div id="container">
       <header>
         <div class="mobile-top-nav">
           <!-- Logo -->
           <a id="mobileNav-mobile-home" class="logo-link" href="#intro">
             <div class="logo">
-              <div class="logo-border">
-                <span class="name">Kevin</span>
-              </div>
+              <img src="./images/logos/site-logo.png"/>
             </div>
           </a>
           <!-- Burger Icon -->
@@ -53,102 +55,68 @@
           </div>
         </div>
         <!-- Mobile Nav -->
-        <div id="mobileNav">
+        <nav id="mobileNav">
           <a id="mobileNav-home" href="#intro">Intro</a>
-          <a id="mobileNav-about" href="#about">About</a>
+          <a id="mobileNav-skills" href="#skills">Skills</a>
           <a id="mobileNav-testimonials" href="#testimonials">Testimonials</a>
           <a id="mobileNav-projects" href="#projects">Projects</a>
           <a id="mobileNav-contact" href="#contact">Contact</a>
-        </div>
+        </nav>
       </header>
 
       <!-- Main -->
       <main id="main">
 
-        
-        <!-- Fixed Nav -->
-        <div class="fixed-nav-container grid">
-          <div class="fixed-nav">
+        <!-- Top Nav -->
+        <div class="top-nav-container grid">
+          <nav class="top-nav navbar">
             <a class="logo-link" href="#intro">
               <div class="logo">
-                <div class="logo-border">
-                  <span class="name">Kevin</span>
-                </div>
+                <img src="./images/logos/site-logo.png" alt="Site Logo"/>
               </div>
             </a>
-
-            <div class="menu-wrapper">
-              <div class="link">
-                <a id="topNav-home" href="#intro">Intro</a>
-              </div>
-              <div class="link">
-                <a id="topNav-about" href="#about">About</a>
-              </div>
-              <div class="link">
-                <a id="topNav-testimonials" href="#testimonials">Testimonials</a>
-              </div>
-              <div class="link">
-                <a id="topNav-projects" href="#projects">Projects</a>
-              </div>
-              <div class="link">
-                <a id="topNav-contact" href="#contact">Contact</a>
-              </div>
-            </div>
-          </div>
+            <ul id="myScrollSpy" class="menu-wrapper">
+              <li class="link nav-item">
+                <a id="topNav-intro" href="#intro" class="nav-link">Intro</a>
+              </li>
+              <li class="link nav-item">
+                <a id="topNav-skills" href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="link nav-item">
+                <a id="topNav-testimonials" href="#testimonials" class="nav-link">Testimonials</a>
+              </li>
+              <li class="link nav-item">
+                <a id="topNav-projects" href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="link nav-item">
+                <a id="topNav-contact" href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <!-- Home -->
-        <section class="home grid">
-          <div id="intro" class="content-wrap">
-
-
-            <!-- Top Nav -->
-            <div id="topNav">
-              <div class="top-nav-container">
-                <a href="#intro">
-                  <div class="logo">
-                    <div class="logo-border">
-                      <span class="name">Kevin</span>
-                    </div>
-                  </div>
-                </a>
-                <ul class="menu-wrapper">
-                  <li>
-                    <a id="topNav-home" href="#intro">Intro</a>
-                  </li>
-                  <li>
-                    <a id="topNav-about" href="#about">About</a>
-                  </li>
-                  <li>
-                    <a id="topNav-testimonials" href="#testimonials">Testimonials</a>
-                  </li>
-                  <li>
-                    <a id="topNav-projects" href="#projects">Projects</a>
-                  </li>
-                  <li>
-                    <a id="topNav-contact" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <!-- Intro -->
+        <section id="intro" class="grid">
+          <div class="content-wrap">
 
             <div class="heading">
               <img src="./images/projects/portfolio/picture-of-Kevin.jpg" alt="Picture of Kevin Leung">
-              <h1>Hi! I'm <span id="my-name">Kevin Leung</span>, <br />a Front-end Web Developer.</h1>
+              <h1>Hi! I'm <span id="my-name">Pak Kiu (Kevin) Leung</span>, <br />a Front-end Web Developer <br />based in Toronto.</h1>
             </div>
-            <p class="content-text">Nice to meet you. I'm an user-focused web developer with 4 years of front-end experience in crafting dynamic and responsive UI components, which optimized the UX of a global document management web app, E-Commerce websites, and more. I had boosted 40% of the conversion rate by building a mobile-friendly feature on product pages. I'm seeking opportunities to increase customer satisfaction and deliver innovative front-end solutions to elevate brand value. I'm strongly dedicated to improving my front-end technical and enterprise skills while contributing my expertise to drive organizational growth.</p>
+            
+            <p class="content-text">Nice to meet you. I'm a client-focused web developer with 4 years of front-end experience crafting responsive and intuitive UI, optimizing the UX of a global document management web app, E-Commerce websites, and more. I had boosted 40% of the conversion rate by adopting a mobile-friendly strategy on E-Commerce product pages. I'm seeking opportunities to enhance customer satisfaction and deliver innovative front-end solutions to elevate brand value. I'm strongly dedicated to improving my front-end technical and enterprise skills while contributing my expertise to drive organizational growth.</p>
+
             <a href="#projects" id="header-btn" class="button">
               My Projects
             </a>
           </div>
         </section>
 
-        <!-- About -->
-        <section id="about" class="grid">
+        <!-- Skills -->
+        <section id="skills" class="grid">
           <div class="content-wrap">
-            <h2 class="content-title">About</h2>
-            <p class="content-text">I enjoy learning the latest web technologies and have experience with the following:</p>
-            <div id="skills">
+            <h2 class="content-title">Skills</h2>
+            <div id="tech-skills">
               <div class="front-end-tech">
                 <h5>Front-End Tech</h5>
                 <div class="skills">
@@ -168,12 +136,11 @@
                 </div>
               </div>
               <div class="others">
-                <div class="cms">
-                  <h5>Content Management System</h5>
+                <div class="design-tools">
+                  <h5>UI Design Tool</h5>
                   <div class="skills">
-                    <div class="skill">WordPress</div>
-                    <div class="skill">Storyblok</div>
-                    <div class="skill">Wistia</div>
+                    <div class="skill">Figma</div>
+                    <div class="skill">Canva</div>
                   </div>
                 </div>
                 <div class="version-control">
@@ -184,10 +151,13 @@
                     <div class="skill">SourceTree</div>
                   </div>
                 </div>
-                <div class="e-commerce">
-                  <h5>E-Commerce Platform</h5>
+                <div class="cms">
+                  <h5>Content Management System</h5>
                   <div class="skills">
+                    <div class="skill">WordPress</div>
                     <div class="skill">PrestaShop</div>
+                    <div class="skill">Storyblok</div>
+                    <div class="skill">Wistia</div>
                   </div>
                 </div>
                 <div class="project-management">
@@ -216,6 +186,67 @@
                 </div>
               </div>
             </div>
+
+            <hr>
+
+            <div class="english">
+              <h5 class="heading">English Proficiency Test</h5>
+              <div class="others">
+
+                <div class="celpip">
+                  <h5 class="sub-heading">CELPIP - General</h5>
+                  <div class="headline">
+                    <div class="overall">Overall Score: <span class="highlighted">8.75</span> / 12</div>
+                    <div class="date">Sep 2023</div>
+                  </div>
+                  <div class="score">
+                    <div class="item">
+                      <span>Listening:</span>
+                      <span><span class="highlighted">8</span> / 12</span>
+                    </div>
+                    <div class="item">
+                      <span>Reading:</span>
+                      <span><span class="highlighted">10</span> / 12</span>
+                    </div>
+                    <div class="item">
+                      <span>Writing:</span>
+                      <span><span class="highlighted">9</span> / 12</span>
+                    </div>
+                    <div class="item">
+                      <span>Speaking:</span>
+                      <span><span class="highlighted">8</span> / 12</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ielts">
+                  <h5 class="sub-heading">IELTS - Academic</h5>
+                  <div class="headline">
+                    <div class="overall">Overall Score: <span class="highlighted">7</span> / 9</div>
+                    <div class="date">Sep 2016</div>
+                  </div>
+                  <div class="score">
+                    <div class="item">
+                      <span>Listening:</span>
+                      <span><span class="highlighted">7.5</span> / 9</span>
+                    </div>
+                    <div class="item">
+                      <span>Reading:</span>
+                      <span><span class="highlighted">6.5</span> / 9</span>
+                    </div>
+                    <div class="item">
+                      <span>Writing:</span>
+                      <span><span class="highlighted">7.0</span> / 9</span>
+                    </div>
+                    <div class="item">
+                      <span>Speaking:</span>
+                      <span><span class="highlighted">6.5</span> / 9</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </section>
 
@@ -224,171 +255,235 @@
           <div class="content-wrap">
             <h2 class="content-title">Testimonials</h2>
             <div class="caption">Colleagues I've worked with<br> have something to say:</div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                I've always been able to rely on Kevin's expertise in the field of front-end development. He's really proficient with the whole process - from creating frontend mockups in Figma, to implementing them with technologies like React.js and MUI, to tweaking the styles of existing User Interface components with custom CSS, to redesigning pages and interactions to enhance their overall User Experience.
-                <br><br>
-                Kevin can also create a full design language for an application so that all the interface components (text, buttons, forms, etc.) have a consistent, predictable, logical style. I think that's a real gift, and I've had the benefit of relying on him to give a consistent style to the user interfaces I've developed.
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
+
+            <nav id="testimonial-nav" class="nav js-nav">
+              <ul class="nav-list">
+                 <li class="nav-item">
+                    <button class="nav-link all" data-transform="0" data-display="all" data-count="">All</button>
+                 </li>
+                 <li class="nav-item">
+                    <button class="nav-link dcm active" data-transform="100" data-display="dcm" data-count="">DCM Inc.</button>
+                 </li>
+                 <li class="nav-item">
+                    <button class="nav-link ecosa" data-transform="200" data-display="ecosa" data-count="">Ecosa</button>
+                 </li>
+              </ul>
+              <div class="nav-slider">
+                 <div class="nav-slider-item"></div>
               </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Matthew.png" alt="Picture of Matthew">
+           </nav>
+           
+            <div class="testimonials">
+              <div class="testimonial dcm">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  I've always been able to rely on Kevin's expertise in the field of front-end development. He's really proficient with the whole process - from creating frontend mockups in Figma, to implementing them with technologies like React.js and MUI, to tweaking the styles of existing User Interface components with custom CSS, to redesigning pages and interactions to enhance their overall User Experience.
+                  <br><br>
+                  Kevin can also create a full design language for an application so that all the interface components (text, buttons, forms, etc.) have a consistent, predictable, logical style. I think that's a real gift, and I've had the benefit of relying on him to give a consistent style to the user interfaces I've developed.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
                 </div>
-                <div class="text">
-                  <div class="name">
-                    Matthew Piercey
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Matthew.png" alt="Picture of Matthew" loading="lazy">
                   </div>
-                  <div class="role">
-                    <span class="title">Full-stack Developer</span> @ DCM Inc.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                During Kevin's time at DCM Inc., he has demonstrated himself to be both a creative thinker and a highly effective problem solver. He consistently provides innovative and forward-thinking UI/UX solutions to fulfill the requirements of our clients and stakeholders. 
-                <br><br>
-                He has proven himself to be adaptable to our fast-paced work environment, quickly integrating himself into our team and becoming a valued contributor to our products. His motivation and optimism are a credit to our development team.
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
-              </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Eric.png" alt="Picture of Eric">
-                </div>
-                <div class="text">
-                  <div class="name">
-                    Eric Smolander
-                  </div>
-                  <div class="role">
-                    <span class="title">Lead Developer</span> @ DCM Inc.
+                  <div class="text">
+                    <div class="name">
+                      Matthew Piercey
+                    </div>
+                    <div class="role">
+                      <span class="title">Full-stack Developer</span> @ DCM Inc.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                I had the opportunity to collaborate closely with Kevin on a data-driven dashboard project. Kevin's role as a key contributor, consistently upholding the highest standards for the implementation of UI components and web pages. His expertise in web development was evident through his exceptional design sensibility and unwavering commitment to enhancing the user experience.
-                <br><br>
-                Kevin's dedication to our team was remarkable; he consistently brought the energy and efficiency needed to complete tasks swiftly and effectively.
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
-              </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Chetan.png" alt="Picture of Chetan">
+              <div class="testimonial dcm">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  During Kevin's time at DCM Inc., he has demonstrated himself to be both a creative thinker and a highly effective problem solver. He consistently provides innovative and forward-thinking UI/UX solutions to fulfill the requirements of our clients and stakeholders. 
+                  <br><br>
+                  He has proven himself to be adaptable to our fast-paced work environment, quickly integrating himself into our team and becoming a valued contributor to our products. His motivation and optimism are a credit to our development team.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
                 </div>
-                <div class="text">
-                  <div class="name">
-                    Chetan Kumar
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Eric.png" alt="Picture of Eric" loading="lazy">
                   </div>
-                  <div class="role">
-                    <span class="title">Data Specialist</span> @ DCM Inc.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                Working with Kevin has been a pleasure. He consistently responds promptly and is eager to collaborate on projects, offering wise insights and suggestions to improve the front end of our final product.
-                <br><br>
-                I have had the honour of collaborating directly with Kevin on the creation of an in-application training material aimed at enhancing our user experience. Kevin is gracious when giving or receiving feedback, and demonstrates proficiency in applying top-notch enrichment in a timely manner while striving to build the best possible user experience.
-                <br><br>
-                Kevin's ability to contribute effectively to projects, his proficiency in delivering high-quality User-interface enhancements, and his commitment to crafting excellent user experience set him apart as a dependable and outstanding team member.
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
-              </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Diane.png" alt="Picture of Diane">
-                </div>
-                <div class="text">
-                  <div class="name">
-                    Diane Watson
-                  </div>
-                  <div class="role">
-                    <span class="title">Client Success Specialist</span> @ DCM Inc.
+                  <div class="text">
+                    <div class="name">
+                      Eric Smolander
+                    </div>
+                    <div class="role">
+                      <span class="title">Lead Developer</span> @ DCM Inc.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                Kevin is not shy to improve himself and focuses his time on completing projects in the most careful manner. His dedication is commendable. Kevin is one of the members who assisted our product (Rio Sofa Bed) in achieving a record-breaking +560% day-on-day sales growth in March 2022. Kevin will be a valuable asset to any company he works for, a committed developer, and a thoughtful employee. As a supervisor, Kevin earns my trust and sincere recommendation.
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
-              </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Zyggy.jpg" alt="Picture of Zyggy">
+              <div class="testimonial dcm">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  I had the opportunity to collaborate closely with Kevin on a data-driven dashboard project. Kevin's role as a key contributor, consistently upholding the highest standards for the implementation of UI components and web pages. His expertise in web development was evident through his exceptional design sensibility and unwavering commitment to enhancing the user experience.
+                  <br><br>
+                  Kevin's dedication to our team was remarkable; he consistently brought the energy and efficiency needed to complete tasks swiftly and effectively.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
                 </div>
-                <div class="text">
-                  <div class="name">
-                    Zyggy Lau
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Chetan.png" alt="Picture of Chetan" loading="lazy">
                   </div>
-                  <div class="role">
-                    <span class="title">Analyst Programmer</span> @ Ecosa
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                Kevin always worked his magic with code to turn our design into functional and beautiful interfaces. He made sure all the implementations on our websites responsive and consistent. Kevin is a hardworking and dedicated member who will complete the tasks in a given time frame and communicate well with his cross-functional team. He is truly a gem!
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
-              </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Thy.jpg" alt="Picture of Thy">
-                </div>
-                <div class="text">
-                  <div class="name">
-                    Thy Hà
-                  </div>
-                  <div class="role">
-                    <span class="title">UX/UI Designer</span> @ Ecosa
+                  <div class="text">
+                    <div class="name">
+                      Chetan Kumar
+                    </div>
+                    <div class="role">
+                      <span class="title">Data Specialist</span> @ DCM Inc.
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                As a Web Designer, I have worked with a number of Web Developers. Kevin was easily one of the best. His ability to tackle any problem is remarkable and with a positive attitude. Kevin was a greatly appreciated member of our team.
-              </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Sophie.jpg" alt="Picture of Sophie">
+              </div>            
+              <div class="testimonial dcm">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  I had the pleasure of working with Kevin on several key projects and he is an outstanding front-end web developer. Kevin is highly skilled in translating complex designs into clean, efficient, and responsive code. His attention to detail ensures that every project he works on is pixel-perfect and performs flawlessly across all devices that truly elevated the user experience.
+                  <br><br>
+                  Kevin's ability to collaborate effectively with designers, product managers, and back-end developers, makes him a valuable asset to any team. He consistently delivers high-quality work on time, and his problem-solving skills are top-notch.
+                  <br><br>
+                  Kevin has a keen eye for detail and a deep understanding of design principles, which allows him to create intuitive, aesthetically pleasing, and highly functional interfaces. Whether it’s crafting wireframes, designing prototypes, or conducting user testing, Kevin approaches each task with a blend of creativity, technical skill, and a user-first mindset.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
                 </div>
-                <div class="text">
-                  <div class="name">
-                    Sophie Rasmussen
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Marci.jpg" alt="Picture of Marci" loading="lazy">
                   </div>
-                  <div class="role">
-                    <span class="title">Web Designer</span> @ Ecosa
+                  <div class="text">
+                    <div class="name">
+                      Marci Peters
+                    </div>
+                    <div class="role">
+                      <span class="title">Head of Growth Client Relations</span> @ DCM Inc.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="testimonial">
-              <div class="quote">
-                <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                Kevin was a major contributor to the majority of our front-end projects, always making sure that the components and web pages he worked on were implemented in the highest quality. He is a hardworking team player who’s always ready to get going and complete the job as efficiently as possible.
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
-              </div>
-              <div class="person">
-                <div class="image">
-                  <img src="./images/projects/portfolio/picture-of-Alice.jpg" alt="Picture of Alice">
+              <div class="testimonial dcm">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  Working with Kevin has been a pleasure. He consistently responds promptly and is eager to collaborate on projects, offering wise insights and suggestions to improve the front end of our final product.
+                  <br><br>
+                  I have had the honour of collaborating directly with Kevin on the creation of an in-application training material aimed at enhancing our user experience. Kevin is gracious when giving or receiving feedback, and demonstrates proficiency in applying top-notch enrichment in a timely manner while striving to build the best possible user experience.
+                  <br><br>
+                  Kevin's ability to contribute effectively to projects, his proficiency in delivering high-quality User-interface enhancements, and his commitment to crafting excellent user experience set him apart as a dependable and outstanding team member.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
                 </div>
-                <div class="text">
-                  <div class="name">
-                    Alice Elizibeth Allen
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Diane.png" alt="Picture of Diane" loading="lazy">
                   </div>
-                  <div class="role">
-                    <span class="title">Brand Manager</span> @ Ecosa
+                  <div class="text">
+                    <div class="name">
+                      Diane Watson
+                    </div>
+                    <div class="role">
+                      <span class="title">Client Success Manager</span> @ DCM Inc.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial dcm">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  I worked on several projects with Kevin and was always impressed with his positive attitude and his ability to finish tasks quickly. Every time I brought a technical issue to his attention, it ended up being addressed and resolved that same day. He always brought a positive energy to our weekly social meetings and was always willing to take a 1-on-1 call, which was very helpful for people working remotely.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
+                </div>
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Jon.png" alt="Picture of Jon" loading="lazy">
+                  </div>
+                  <div class="text">
+                    <div class="name">
+                      Jon Lowe
+                    </div>
+                    <div class="role">
+                      <span class="title">Product Education &<br> Adoption Specialist</span> @ DCM Inc.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial ecosa">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  Kevin is not shy to improve himself and focuses his time on completing projects in the most careful manner. His dedication is commendable. Kevin is one of the members who assisted our product (Rio Sofa Bed) in achieving a record-breaking +560% day-on-day sales growth in March 2022. Kevin will be a valuable asset to any company he works for, a committed developer, and a thoughtful employee. As a supervisor, Kevin earns my trust and sincere recommendation.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
+                </div>
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Zyggy.jpg" alt="Picture of Zyggy" loading="lazy">
+                  </div>
+                  <div class="text">
+                    <div class="name">
+                      Zyggy Lau
+                    </div>
+                    <div class="role">
+                      <span class="title">Analyst Programmer</span> @ Ecosa
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial ecosa">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  Kevin always worked his magic with code to turn our design into functional and beautiful interfaces. He made sure all the implementations on our websites responsive and consistent. Kevin is a hardworking and dedicated member who will complete the tasks in a given time frame and communicate well with his cross-functional team. He is truly a gem!
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
+                </div>
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Thy.jpg" alt="Picture of Thy" loading="lazy">
+                  </div>
+                  <div class="text">
+                    <div class="name">
+                      Thy Hà
+                    </div>
+                    <div class="role">
+                      <span class="title">UX/UI Designer</span> @ Ecosa
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial ecosa">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  As a Web Designer, I have worked with a number of Web Developers. Kevin was easily one of the best. His ability to tackle any problem is remarkable and with a positive attitude. Kevin was a greatly appreciated member of our team.
+                </div>
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Sophie.jpg" alt="Picture of Sophie" loading="lazy">
+                  </div>
+                  <div class="text">
+                    <div class="name">
+                      Sophie Rasmussen
+                    </div>
+                    <div class="role">
+                      <span class="title">Web Designer</span> @ Ecosa
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial ecosa">
+                <div class="quote">
+                  <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
+                  Kevin was a major contributor to the majority of our front-end projects, always making sure that the components and web pages he worked on were implemented in the highest quality. He is a hardworking team player who’s always ready to get going and complete the job as efficiently as possible.
+                  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
+                </div>
+                <div class="person">
+                  <div class="image">
+                    <img src="./images/projects/portfolio/picture-of-Alice.jpg" alt="Picture of Alice" loading="lazy">
+                  </div>
+                  <div class="text">
+                    <div class="name">
+                      Alice Xerri
+                    </div>
+                    <div class="role">
+                      <span class="title">Brand Manager</span> @ Ecosa
+                    </div>
                   </div>
                 </div>
               </div>
@@ -406,7 +501,7 @@
           <ul id="co-developed-projects">
             <li class="card" data-toggle="modal" data-target="#modal-sydney-trains">
               <div class="img-wrapper">
-                <img src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of Sydney Trains Data Visualisation System">
+                <img src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of Sydney Trains Data Visualisation System" loading="lazy">
               </div>
               <div class="card-content">
                 <h3 class="card-title">Sydney Trains Data Visualisation System</h3>
@@ -434,7 +529,7 @@
             <ul id="personal-projects">
               <li class="card" data-toggle="modal" data-target="#modal-memo-app">
                 <div class="img-wrapper">
-                  <img src="./images/projects/memo/on-load.png" alt="Image of Memo Note">
+                  <img src="./images/projects/memo/on-load.png" alt="Image of Memo Note" loading="lazy">
                 </div>
                 <div class="card-content">
                   <h3 class="card-title">Memo Note</h3>
@@ -448,7 +543,7 @@
                     <div class="tech">React-Grid-Layout</div>
                   </div>
                   <div class="card-actions">
-                    <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank">
+                    <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank" rel="noopener noreferrer">
                       Live Demo
                     </a>
                     <button class="button text-btn" data-target="#modal-memo-app">
@@ -459,7 +554,7 @@
               </li>
               <li class="card" data-toggle="modal" data-target="#modal-movie-world">
                 <div class="img-wrapper">
-                  <img src="./images/projects/movie-world/movie-world-landing-page.png" alt="Image of Movie World">
+                  <img src="./images/projects/movie-world/movie-world-landing-page.png" alt="Image of Movie World" loading="lazy">
                 </div>
                 <div class="card-content">
                   <h3 class="card-title">Movie World</h3>
@@ -472,7 +567,7 @@
                     <div class="tech">React Reveal</div>
                   </div>
                   <div class="card-actions">
-                    <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank">
+                    <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank" rel="noopener noreferrer">
                       Live Demo
                     </a>
                     <button class="button text-btn" data-target="#modal-movie-world">
@@ -482,7 +577,7 @@
                 </div>
               </li>
             </ul>
-          <p id="thought">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p>
+          <!-- <p id="thought">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p> -->
         </section>
 
         <div class="projects-padding"></div>
@@ -504,7 +599,7 @@
                   <div class="swiper-container sydneyTrainsSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/Certificate-of-Appreciation.webp" alt="Photo of the Certificate of Appreciation">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/Certificate-of-Appreciation.webp" alt="Photo of the Certificate of Appreciation" loading="lazy">
                       </div>
                       <div class="swiper-slide">
                         <img class="d-block w-50" src="./images/projects/sydney-trains-project/UOW-FYP-tradeshow-Runner-up.webp" alt="Photo of the Runner Up Best Project Prize">
@@ -513,25 +608,25 @@
                         <img class="d-block w-100" src="./images/projects/sydney-trains-project/photo-client.webp" alt="Photo of our project team and client">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/photo-supervisors.webp" alt="Photo of our project team and supervisors">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/photo-supervisors.webp" alt="Photo of our project team and supervisors" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of the Live Map">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of the Live Map" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-2.webp" alt="Image of the Current Network Performance">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-2.webp" alt="Image of the Current Network Performance" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-3.webp" alt="Image of the Time-Distance Diagram">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-3.webp" alt="Image of the Time-Distance Diagram" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-4.webp" alt="Image of the Arrival Variance Analysis">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-4.webp" alt="Image of the Arrival Variance Analysis" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-5.webp" alt="Image of the Charting & Analysis">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-5.webp" alt="Image of the Charting & Analysis" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-6.webp" alt="Image of the Charting & Analysis">
+                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-6.webp" alt="Image of the Charting & Analysis" loading="lazy">
                       </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -566,11 +661,11 @@
                   <h4 class="modal-title">
                     Memo Note
                     <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                      <a href="https://github.com/hkKevin/memo" target="_blank">
+                      <a href="https://github.com/hkKevin/memo" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                       </a>
                     </span>
-                    <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank">
+                    <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank" rel="noopener noreferrer">
                       Live Demo
                     </a>
                   </h4>
@@ -581,25 +676,25 @@
                   <div class="swiper-container memoSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/on-load.png" alt="Memo Web App on load">
+                        <img class="d-block w-100" src="./images/projects/memo/on-load.png" alt="Memo Web App on load" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/filter-by-colour.png" alt="Filter memo by colour">
+                        <img class="d-block w-100" src="./images/projects/memo/filter-by-colour.png" alt="Filter memo by colour" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/filter-by-text.png" alt="Filter memo by text">
+                        <img class="d-block w-100" src="./images/projects/memo/filter-by-text.png" alt="Filter memo by text" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/edit-memo.png" alt="Edit memo">
+                        <img class="d-block w-100" src="./images/projects/memo/edit-memo.png" alt="Edit memo" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/side-nav.png" alt="Side navigation of Memo Web App">
+                        <img class="d-block w-100" src="./images/projects/memo/side-nav.png" alt="Side navigation of Memo Web App" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/create-memo.png" alt="Create memo">
+                        <img class="d-block w-100" src="./images/projects/memo/create-memo.png" alt="Create memo" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/delete-memo.png" alt="Delete memo">
+                        <img class="d-block w-100" src="./images/projects/memo/delete-memo.png" alt="Delete memo" loading="lazy">
                       </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -613,7 +708,7 @@
                       <li>Stores memos layout on Local Storage</li>
                       <li>Sync. memos title, content and color on Firebase</li>
                       <li>Sync. creation, update, deletion, and archive of memos on Firebase</li>
-                      <li>Notifies users when the above actions are completed</li>
+                      <li>Shows Toast to notify users when the above actions are completed</li>
                       <li>Filters memos by color or text</li>
                       <li>Applies Google's Material Design by using Material-UI</li>
                       <li>Supports Responsive Web Design</li>
@@ -621,7 +716,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank">
+                  <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank" rel="noopener noreferrer">
                     Live Demo
                   </a>
                   <button class="button text-btn close-btn" data-dismiss="modal">
@@ -640,11 +735,11 @@
                   <h4 class="modal-title">
                     Movie World
                     <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
-                      <a href="https://github.com/hkKevin/movie-world" target="_blank">
+                      <a href="https://github.com/hkKevin/movie-world" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                       </a>
                     </span>
-                    <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank">
+                    <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank" rel="noopener noreferrer">
                       Live Demo
                     </a>
                   </h4>
@@ -655,19 +750,19 @@
                   <div class="swiper-container movieWorldSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/movie-world/movie-world-landing-page.png" alt="Movie World">
+                        <img class="d-block w-100" src="./images/projects/movie-world/movie-world-landing-page.png" alt="Movie World" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/movie-world/movie-overview.png" alt="Movie Overview">
+                        <img class="d-block w-100" src="./images/projects/movie-world/movie-overview.png" alt="Movie Overview" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/movie-world/related-YouTube-videos.png" alt="Related YouTube Viedos">
+                        <img class="d-block w-100" src="./images/projects/movie-world/related-YouTube-videos.png" alt="Related YouTube Viedos" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/movie-world/backdrops.png" alt="Movie Backdrops">
+                        <img class="d-block w-100" src="./images/projects/movie-world/backdrops.png" alt="Movie Backdrops" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/movie-world/reviews.png" alt="Movie Reviews">
+                        <img class="d-block w-100" src="./images/projects/movie-world/reviews.png" alt="Movie Reviews" loading="lazy">
                       </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -687,7 +782,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank">
+                  <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank" rel="noopener noreferrer">
                     Live Demo
                   </a>
                   <button class="button text-btn close-btn" data-dismiss="modal">
@@ -705,9 +800,9 @@
             <h2 class="content-title">Contact</h2>
             <p>I would like to hear from you. Please email me and I will get in touch soon.</p><br />
             <div class="email">
-              <a class="hint hint--bottom hint--rounded" aria-label="Email me" data-aos="fade-up" data-aos-offset="200" href="mailto:kevin2022leung@gmail.com" target="_blank">kevin2022leung@gmail.com</a>
-              <div id="copy-hint" class="hint hint--bottom hint--rounded" aria-label="Copy">
-                <i class="material-icons-outlined copy-icon" data-clipboard-text="kevin2022leung@gmail.com">file_copy</i>
+              <a class="hint hint--bottom hint--rounded" aria-label="Email me" data-aos="fade-up" data-aos-offset="200" href="mailto:kevin2022leung@gmail.com" target="_blank" rel="noopener noreferrer">kevin2022leung@gmail.com</a>
+              <div id="copy-hint">
+                <i class="material-icons-outlined copy-icon hint hint--bottom hint--rounded" aria-label="Copy" data-clipboard-text="kevin2022leung@gmail.com">file_copy</i>
               </div>
             </div>
           </div>
@@ -718,10 +813,10 @@
       <footer id="main-footer" class="grid">
         <div class="created-by">Created by Pak Kiu (Kevin) Leung</div>
         <div id="social-media-container">
-          <a id="linkedin-profile" href="https://www.linkedin.com/in/pakkiuleung/" class="hint hint--bottom hint--rounded" aria-label="LinkedIn Profile" target="_blank">
+          <a id="linkedin-profile" href="https://www.linkedin.com/in/pakkiuleung/" class="hint hint--bottom hint--rounded" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-linkedin fa-lg"></i>
           </a>
-          <a id="github-profile" href="https://github.com/hkKevin" class="hint hint--bottom hint--rounded" aria-label="GitHub Profile" target="_blank">
+          <a id="github-profile" href="https://github.com/hkKevin" class="hint hint--bottom hint--rounded" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github fa-lg"></i>
           </a>
         </div>
@@ -733,7 +828,8 @@
       </div>
 
     </div>
-
+    
+    <script src="scripts/animation-on-scroll.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- jQuery UI -->
@@ -745,14 +841,15 @@
     <!-- bootstrap.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- Swiper.js -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts/swiper.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="scripts/swiper.js"></script>
     <!-- clipboard.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-    <script src="scripts/clipboard.js"></script>
-    <script src="scripts/jumpToTop.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script defer src="scripts/clipboard.js"></script>
+    <script defer src="scripts/jumpToTop.js"></script>
     <script defer src="scripts/page-up-down.js"></script>
-    <script defer src="scripts/animation-on-scroll.js"></script>
+    <script defer src="scripts/testimonialNav.js"></script>
+
   </body>
 
 </html>

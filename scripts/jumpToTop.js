@@ -9,7 +9,8 @@ $(document).ready(function () {
   });
 
   $('#container .jump-to-top').click(function () {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0) // Scroll to top
+    history.pushState(null, null, '/'); // Reset the URL
   })
   
 })

@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 
   // mobileNav link onClick
-  $("#mobileNav-home, #mobileNav-about, #mobileNav-testimonials, #mobileNav-projects, #mobileNav-contact, #mobileNav-mobile-home").click(function () {
+  $("#mobileNav-home, #mobileNav-skills, #mobileNav-testimonials, #mobileNav-projects, #mobileNav-contact, #mobileNav-mobile-home").click(function () {
     hideMobileNav()
     showedMobileNav = false
   });
@@ -52,7 +52,7 @@ $(document).ready(function () {
   
   function showMobileNav () {
     $('#mobileNav').animate({opacity: 1}, 200)
-    $('.mobile-top-nav').animate({backgroundColor: '#05223e'}, 200)
+    $('.mobile-top-nav').animate({backgroundColor: '#08194f'}, 200)
 
     $('body').removeClass('hide-mobile-nav').addClass('show-mobile-nav')
     $("#mobileNav").css( 

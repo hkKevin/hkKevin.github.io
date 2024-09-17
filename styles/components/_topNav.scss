@@ -1,95 +1,25 @@
 @use '../helpers/variables' as var;
 
-#container {
-  position: relative;
-}
-
-#topNav {
-  position: relative;
-  z-index: 5;
-
-  .top-nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem 0;
-    width: 100%;
-    @media (max-width: 767px) {
-      display: none;
-    }
-    a {
-      padding: 0 1rem;
-      .logo {
-        position: relative;
-        .logo-border {
-          border: 3px solid var.$tertiaryColor;
-          border-top: hidden;
-          border-right: hidden;
-          width: 70px;
-          height: 29px;
-          .name {
-            color: var.$tertiaryColor;
-            font-weight: bold;
-            display: inline-block;
-            line-height: .8;
-            font-size: 24px;
-            position: absolute;
-            top: 0;
-            right: 0;
-          }
-        }
-      }
-    }
-    
-
-    ul.menu-wrapper {
-      display: flex;
-      flex-direction: row;
-      margin: 0;
-      margin-left: auto;
-      padding: 0;
-      li {
-        list-style: none;
-        &:not(:last-of-type) {
-          padding-right: 2rem;
-        }
-        a {
-          color: var.$color;
-          text-decoration: none;
-          padding: 1rem;
-          &:hover {
-            color: var.$tertiaryColor;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Fixed Nav
-.fixed-nav-container {
-  position: relative;
+.top-nav-container {
   background-color: #fff;
   width: 100%;
   z-index: 6;
-  display: none;
-  opacity: 0;
-  height: 0;
-  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: unset;
+  top: 0;
+  transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  margin-top: 100px;
+  display: grid;
+  position: sticky;
+  opacity: 1;
+  height: auto;
   @media (max-width: 767px) {
     display: none !important;
   }
-  &.grid:not(.show) {
-    pointer-events: none;
-  }
-  &.show {
-    opacity: 1;
-    display: grid;
-    position: fixed;
-    height: auto;
+  &.stick-to-top {
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.15);
   }
 
-  .fixed-nav {
+  .top-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -100,25 +30,11 @@
     .logo-link {
       display: flex;
       align-items: center;
-      padding: 0 1rem;
+      margin: auto 1rem;
       .logo {
         position: relative;
-        .logo-border {
-          border: 3px solid var.$tertiaryColor;
-          border-top: hidden;
-          border-right: hidden;
-          width: 70px;
-          height: 29px;
-          .name {
-            color: var.$tertiaryColor;
-            font-weight: bold;
-            display: inline-block;
-            line-height: .8;
-            font-size: 24px;
-            position: absolute;
-            top: 0;
-            right: 0;
-          }
+        img {
+          width: 200px;
         }
       }
     }
@@ -138,8 +54,14 @@
           text-decoration: none;
           padding: 1rem;
           &:hover {
-            color: var.$tertiaryColor;
+            color: var.$lightColor400;
           }
+        }
+      }
+      .nav-link {
+        display: inline;
+        &.active {
+          color: var.$lightColor400;
         }
       }
     }

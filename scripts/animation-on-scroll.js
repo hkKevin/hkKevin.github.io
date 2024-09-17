@@ -8,5 +8,5 @@ const observer = new IntersectionObserver((entries) => {
     })
   })
 
-  const animatedEl = document.querySelectorAll('#skills .skill, #my-name, .testimonial .quote, #projects .card, .email a')
+  const animatedEl = document.querySelectorAll('#my-name, #tech-skills .skill, .celpip, .ielts, .testimonial .quote, #projects .card, .email a')
   animatedEl.forEach((el) => observer.observe(el))

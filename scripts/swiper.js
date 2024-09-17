@@ -5,6 +5,7 @@ $(document).ready(function () {
     observeParents: true,
     spaceBetween: 100,
     loop: true,
+    slidesPerView: 1,
     pagination: {
       el: ".swiper-pagination",
       clickable: true

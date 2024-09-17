@@ -3,7 +3,7 @@
 @use '../helpers/variables' as var;
 
 #main-footer {
-  padding: 7rem 0 2rem 0;
+  padding: 7rem 0 10vh 0;
   background: var.$primaryBg;
   color: var.$color;
   text-align: center;
@@ -47,7 +47,7 @@
     .fa-github, 
     .fa-linkedin {
       color: rgba(116, 129, 154, 0.7);
-      transition: all 0.2s;
+      transition: all .4s;
       &:active {
         transform: scale(0.95);
       }

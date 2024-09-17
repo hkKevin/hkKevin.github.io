@@ -3,8 +3,8 @@
 @use 'helpers/mixins';
 
 // Layout related stylesheets
-@use './layouts/home';
-@use './layouts/about';
+@use './layouts/intro';
+@use './layouts/skills';
 @use './layouts/testimonials';
 @use './layouts/projects';
 @use './layouts/contact';
@@ -25,7 +25,7 @@ html {
 
 /* Cursor highlight */
 ::selection {
-  background-color: lighten(var.$tertiaryColor, 50%);
+  background-color: lighten(var.$lightColor400, 50%);
 }
 
 /* Scroll Bar */
@@ -99,12 +99,17 @@ body {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  position: relative;
+}
+
+#container {
+  position: relative;
 }
 
 .content-title {
   text-align: center;
   margin-bottom: 5vh;
-  color: var.$tertiaryColor;
+  color: var.$lightColor400;
   font-weight: bold;
 }
 
@@ -124,7 +129,7 @@ body {
 
 .fa-github {
   color: rgba(116, 129, 154, 0.7);
-  transition: 0.2s;
+  transition: 0.4s;
   &:hover {
     color: #000;
   }
@@ -182,6 +187,11 @@ body {
   }
 }
 
+// Disallow users highlighting the link or button text
+a, button, .jump-to-top {
+  user-select: none;
+}
+
 
 
 
@@ -199,7 +209,7 @@ body {
     margin-top: 6vh;
   }
 
-  #about .content-text p {
+  #skills .content-text p {
     padding-top: 0;
   }
 
@@ -229,7 +239,7 @@ body {
   #projects p,
   #contact div,
   #main-footer div,
-  .fixed-nav-container .fixed-nav {
+  .top-nav-container .top-nav {
     grid-column: 2/4;
   }
 

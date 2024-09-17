@@ -10,7 +10,7 @@
   }
   .caption {
     text-align: center;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     br {
       display: none;
       @media (max-width: 400px) {
@@ -18,6 +18,7 @@
       }
     }
   }
+
   .testimonial {
     max-width: 700px;
     margin-inline: auto;
@@ -84,8 +85,103 @@
         }
         .role {
           .title {
-            color: var.$tertiaryColor;
+            color: var.$lightColor400;
           }
+        }
+      }
+    }
+  }
+
+  .nav {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: var.$lightColor200;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .1);
+    margin-inline: auto;
+    margin-bottom: 5vh;
+    position: sticky;
+    top: 70px;
+    z-index: 5;
+    @media (min-width: 768px) {
+      top: 80px;
+      width: 700px;
+      height: 55px;
+      border-radius: 40px;
+    }
+    &-list {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    &-item {
+      position: relative;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      z-index: 1;
+    }
+    &-link {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-decoration: none;
+      transition: color .3s ease-in-out;
+      background-color: transparent;
+      color: var.$lightColor400;
+      border: unset;
+      outline: 0;
+      cursor: pointer;
+      user-select: none;
+      &::after {
+        margin-left: 1rem;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        padding: 5.5px;
+        line-height: 1;
+        font-size: 0.7rem;
+        background: #fff;
+      color: var.$lightColor400;
+      }
+      &.all::after {
+        content: attr(data-count); // Total # of testimonials
+      }
+      &.dcm::after {
+        content: attr(data-count); // # of DCM testimonials
+      }
+      &.ecosa::after {
+        content: attr(data-count); // # of Ecosa testimonials
+      }
+    }
+    .active {
+      color: white;
+    }
+    &-slider {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 0;
+      &-item {
+        width: 33.3%;
+        height: 100%;
+        background-color: var.$lightColor400;
+        border-radius: 30px;
+        transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, .1);
+        @media (min-width: 576px) {
+          border-radius: 40px;
         }
       }
     }

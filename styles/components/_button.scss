@@ -8,7 +8,7 @@
   align-items: center;
   font-size: 1rem;
   font-weight: bold;
-  background: var.$tertiaryColor;
+  background: var.$lightColor400;
   color: #fff;
   border-radius: 4px;
   margin: 0.5em 0;
@@ -26,7 +26,7 @@
     outline: none;
   }
   &:hover {
-    background: darken(var.$tertiaryColor, 10%);
+    background: darken(var.$lightColor400, 10%);
     color: #fff;
   }
   &:active {

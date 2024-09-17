@@ -65,8 +65,7 @@ body.modal-open {
     }
   }
   .project-features h5 {
-    margin: 5vh 0;
-    margin-left: 2vh;
+    margin: 2vh;
     text-align: left;
   }
   .project-features li {
@@ -76,7 +75,7 @@ body.modal-open {
   .carousel-control-prev,
   .carousel-control-next,
   .carousel-indicators {
-    color: var.$tertiaryColor;
+    color: var.$lightColor400;
   }
   .modal-footer {
     border-top: unset;
@@ -120,7 +119,7 @@ body.modal-open {
     }
     .project-features {
       h5 {
-        margin: 3vh 0px 2vh 1vh;
+        margin: 2vh 1vh;
       }
     }
   }

@@ -1,0 +1,108 @@
+/* Skills */
+
+@use '../helpers/variables' as var;
+
+#skills {
+  padding: 10vh 0;
+  @media (max-width: 575px) {
+    margin: 0;
+    padding: 5vh 0;
+  }
+  #tech-skills {
+    margin: 5rem auto 0;
+    .front-end-tech {
+      h5 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .skills {
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 50rem;
+        gap: 1rem;
+        margin: 0 auto;
+      }
+    }
+    .skill {
+      font-size: 1rem;
+      border-radius: 10px;
+      padding: 2px 1rem;
+      background-color: var.$lightColor100;
+      color: var.$lightColor400;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(200%);
+      transition: all 1s;
+      &.animation-showed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 6rem;
+    margin: 8vh 0;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+    h5 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .skills {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .headline {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .9rem;
+      margin-bottom: 2vh;
+    }
+    .score {
+      font-size: 1rem;
+      margin-inline: auto;
+      text-align: center;
+      .item {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .english {
+    .heading {
+      text-align: center;
+      margin-top: 5vh;
+    }
+    .sub-heading {
+      font-size: 18px;
+    }
+    .celpip, .ielts {
+      opacity: 0;
+      transform: translateY(50%);
+      transition: all 1s;
+      width: 250px;
+      margin-inline: auto;
+      &.animation-showed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .highlighted {
+      color: var.$lightColor400;
+      font-weight: 600;
+    }
+  }
+}
