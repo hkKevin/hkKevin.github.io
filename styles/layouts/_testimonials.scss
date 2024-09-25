@@ -141,17 +141,24 @@
       outline: 0;
       cursor: pointer;
       user-select: none;
+      @media (max-width: 449px) {
+        justify-content: space-evenly;
+      }
       &::after {
-        margin-left: 1rem;
         width: 24px;
         height: 24px;
         border-radius: 50%;
         padding-top: 6px;
-        padding-left: 1px;
         line-height: 1;
         font-size: 0.7rem;
         background: #fff;
-      color: var.$lightColor400;
+        color: var.$lightColor400;
+        @media (min-width: 768px) {
+          margin-left: 1rem;
+        }
+        @media (min-width: 450px) and (max-width: 767px) {
+          margin-left: .5rem;
+        }
       }
       &.all::after {
         content: attr(data-count); // Total # of testimonials

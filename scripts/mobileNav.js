@@ -8,9 +8,10 @@ $(document).ready(function () {
   // Bind with onResize listener
   $(window).resize(detectWidth);
 
-  const originalLogo = document.querySelector(".mobile-top-nav .logo .original")
-  const SkyBlueLogo = document.querySelector(".mobile-top-nav .logo .sky-blue")
-  SkyBlueLogo.style.display = "none"
+  // Hide the Skyblue logo by default
+  $('.mobile-top-nav .logo .sky-blue').css(
+    'display', 'none'
+  )
 
   // Burger icon clicked
   $('#burger-icon').click(function () {
@@ -44,8 +45,12 @@ $(document).ready(function () {
     $('body').removeClass('show-mobile-nav').addClass('hide-mobile-nav')
     $('#mobileNav').animate({opacity: 0}, 200);
     $('.mobile-top-nav').animate({backgroundColor: '#fff'}, 200)
-    SkyBlueLogo.style.display = "none"
-    originalLogo.style.display = "block"
+    $('.mobile-top-nav .logo .sky-blue').css(
+      'display', 'none'
+    )
+    $('.mobile-top-nav .logo .original').css(
+      'display', 'block'
+    )
   
     // display none after the mobileNav animation is done
     setTimeout(function(){
@@ -66,7 +71,11 @@ $(document).ready(function () {
     $("#mobileNav a").css( 
       'display', 'block' 
     );
-    originalLogo.style.display = "none"
-    SkyBlueLogo.style.display = "block"
+    $('.mobile-top-nav .logo .sky-blue').css(
+      'display', 'block'
+    )
+    $('.mobile-top-nav .logo .original').css(
+      'display', 'none'
+    )
   }
 });

@@ -35,6 +35,9 @@
         position: relative;
         img {
           width: 200px;
+          @media (min-width: 768px) and (max-width: 899px) {
+            width: 160px;
+          }
         }
       }
     }
@@ -44,10 +47,14 @@
       flex-direction: row;
       margin: 0;
       margin-left: auto;
+      padding: 0;
       .link {
         list-style: none;
         &:not(:last-of-type) {
           padding-right: 2rem;
+          @media (min-width: 768px) and (max-width: 899px) {
+            padding-right: 1rem;
+          }
         }
         a {
           color: var.$color;

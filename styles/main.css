@@ -337,17 +337,30 @@
      -moz-user-select: none;
           user-select: none;
 }
+@media (max-width: 449px) {
+  #testimonials .nav-link {
+    justify-content: space-evenly;
+  }
+}
 #testimonials .nav-link::after {
-  margin-left: 1rem;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   padding-top: 6px;
-  padding-left: 1px;
   line-height: 1;
   font-size: 0.7rem;
   background: #fff;
   color: #1070cc;
+}
+@media (min-width: 768px) {
+  #testimonials .nav-link::after {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 767px) {
+  #testimonials .nav-link::after {
+    margin-left: 0.5rem;
+  }
 }
 #testimonials .nav-link.all::after {
   content: attr(data-count);
@@ -927,17 +940,28 @@ body.hide-mobile-nav #burger-icon .close {
 .top-nav-container .top-nav .logo-link .logo img {
   width: 200px;
 }
+@media (min-width: 768px) and (max-width: 899px) {
+  .top-nav-container .top-nav .logo-link .logo img {
+    width: 160px;
+  }
+}
 .top-nav-container .top-nav .menu-wrapper {
   display: flex;
   flex-direction: row;
   margin: 0;
   margin-left: auto;
+  padding: 0;
 }
 .top-nav-container .top-nav .menu-wrapper .link {
   list-style: none;
 }
 .top-nav-container .top-nav .menu-wrapper .link:not(:last-of-type) {
   padding-right: 2rem;
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .top-nav-container .top-nav .menu-wrapper .link:not(:last-of-type) {
+    padding-right: 1rem;
+  }
 }
 .top-nav-container .top-nav .menu-wrapper .link a {
   color: #08194f;
