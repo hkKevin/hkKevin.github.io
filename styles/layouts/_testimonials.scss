@@ -23,12 +23,12 @@
     max-width: 700px;
     margin-inline: auto;
     &:not(:last-of-type) {
-      margin-bottom: 12rem;
+      margin-bottom: 20rem;
       @media (max-width: 767px) {
-        margin-bottom: 10rem;
+        margin-bottom: 16rem;
       }
       @media (max-width: 575px) {
-        margin-bottom: 8rem;
+        margin-bottom: 12rem;
       }
     }
     .quote {

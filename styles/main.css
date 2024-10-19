@@ -207,16 +207,16 @@
   margin-inline: auto;
 }
 #testimonials .testimonial:not(:last-of-type) {
-  margin-bottom: 12rem;
+  margin-bottom: 20rem;
 }
 @media (max-width: 767px) {
   #testimonials .testimonial:not(:last-of-type) {
-    margin-bottom: 10rem;
+    margin-bottom: 16rem;
   }
 }
 @media (max-width: 575px) {
   #testimonials .testimonial:not(:last-of-type) {
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
   }
 }
 #testimonials .testimonial .quote {

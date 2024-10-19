@@ -16,7 +16,7 @@ const nav = () => {
   dcmNavLink.setAttribute("data-count", dcmTestimonials.length);
   ecosaNavLink.setAttribute("data-count", ecosaTestimonials.length);
   sliderItem.style.transform = "translateX(100%)"; // Highlight DCM in the nav
-  // Only show DCM's testimonials
+  // Hide all and show DCM's testimonials only
   testimonials.forEach((item) => {
     item.style.display = "none";
   })
