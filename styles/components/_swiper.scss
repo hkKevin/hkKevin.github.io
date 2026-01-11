@@ -6,12 +6,6 @@
   padding-bottom: 2rem;
   overflow-x: hidden;
   position: relative;
-  @media (max-width: 991px) {
-    height: 40%;
-  }
-  @media (max-width: 767px) {
-    height: 30%;
-  }
 
   .swiper-wrapper {
     align-items: center;
@@ -45,11 +39,5 @@
     .swiper-pagination-bullet-active {
       background-color: var.$color;
     }
-  }
-}
-
-.swiper-container.memoSwiper {
-  @media (max-width: 767px) {
-    height: 40%;
   }
 }

@@ -1127,16 +1127,6 @@ div.modal-backdrop.show {
   overflow-x: hidden;
   position: relative;
 }
-@media (max-width: 991px) {
-  .sydneyTrainsSwiper, .memoSwiper, .movieWorldSwiper {
-    height: 40%;
-  }
-}
-@media (max-width: 767px) {
-  .sydneyTrainsSwiper, .memoSwiper, .movieWorldSwiper {
-    height: 30%;
-  }
-}
 .sydneyTrainsSwiper .swiper-wrapper, .memoSwiper .swiper-wrapper, .movieWorldSwiper .swiper-wrapper {
   align-items: center;
 }
@@ -1167,12 +1157,6 @@ div.modal-backdrop.show {
 }
 .sydneyTrainsSwiper .swiper-pagination .swiper-pagination-bullet-active, .memoSwiper .swiper-pagination .swiper-pagination-bullet-active, .movieWorldSwiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #08194f;
-}
-
-@media (max-width: 767px) {
-  .swiper-container.memoSwiper {
-    height: 40%;
-  }
 }
 
 html {
