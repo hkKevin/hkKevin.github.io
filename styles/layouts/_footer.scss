@@ -25,9 +25,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      &:hover {
-        text-decoration: unset;
-      }
+      text-decoration: unset;
+      color: rgba(0, 0, 0, 0);
     }
     #github-profile {
       &:active, &:hover {

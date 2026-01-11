@@ -2,10 +2,16 @@
 
 .sydneyTrainsSwiper, .memoSwiper, .movieWorldSwiper {
   width: 100%;
-  height: 100%;
+  height: 50%;
   padding-bottom: 2rem;
   overflow-x: hidden;
   position: relative;
+  @media (max-width: 991px) {
+    height: 40%;
+  }
+  @media (max-width: 767px) {
+    height: 30%;
+  }
 
   .swiper-wrapper {
     align-items: center;
@@ -29,7 +35,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
   }
@@ -39,5 +45,11 @@
     .swiper-pagination-bullet-active {
       background-color: var.$color;
     }
+  }
+}
+
+.swiper-container.memoSwiper {
+  @media (max-width: 767px) {
+    height: 40%;
   }
 }

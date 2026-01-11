@@ -19,7 +19,7 @@
     <meta name="description" content="Kevin is a client-focused web developer with solid front-end experience crafting responsive and intuitive UI, seeking to enhance UX and elevate brand value."/>
     <link rel="canonical" href="https://hkkevin.github.io/" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Font family: Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,7 +102,11 @@
 
             <div class="heading">
               <img src="./images/projects/portfolio/picture-of-myself.png" alt="Picture of Kevin Leung">
-              <h1>Hi! I'm <span id="my-name">Pak Kiu (Kevin) Leung</span>, <br />a Front-end Web Developer.</h1>
+              <h1>
+                Hi! I'm <span id="my-name">Pak Kiu (Kevin) Leung</span>, 
+                <br />a Front-end Web Developer
+                <br /> + UX/UI Specialist.
+              </h1>
             </div>
             
             <p class="content-text">Nice to meet you. I'm a client-focused web developer with 4 years of front-end experience crafting responsive and intuitive UI, optimizing the UX of a global document management web app, E-Commerce websites, and more. I had boosted 40% of the conversion rate by adopting a mobile-friendly strategy on E-Commerce product pages. I'm seeking opportunities to enhance customer satisfaction and deliver innovative front-end solutions to elevate brand value. I'm strongly dedicated to improving my front-end technical and enterprise skills while contributing my expertise to drive organizational growth.</p>
@@ -500,7 +504,7 @@
 
           <h4 class="project-type">Co-developed Project</h4>
           <ul id="co-developed-projects">
-            <li class="card" data-toggle="modal" data-target="#modal-sydney-trains">
+            <li class="card" data-bs-toggle="modal" data-bs-target="#modal-sydney-trains">
               <div class="img-wrapper">
                 <img src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of Sydney Trains Data Visualisation System" loading="lazy">
               </div>
@@ -519,7 +523,7 @@
                   <div class="tech">Chart.js</div>
                   <div class="tech">Leaflet</div>
                 </div>
-                <button class="button" data-target="#modal-sydney-trains">
+                <button class="button" data-bs-toggle="modal" data-bs-target="#modal-sydney-trains">
                   View Details
                 </button>
               </div>
@@ -528,7 +532,7 @@
 
           <h4 class="project-type">Personal Projects</h4>
             <ul id="personal-projects">
-              <li class="card" data-toggle="modal" data-target="#modal-memo-app">
+              <li class="card" data-bs-toggle="modal" data-bs-target="#modal-memo-app">
                 <div class="img-wrapper">
                   <img src="./images/projects/memo/on-load.png" alt="Image of Memo Note" loading="lazy">
                 </div>
@@ -547,13 +551,13 @@
                     <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank" rel="noopener noreferrer">
                       Live Demo
                     </a>
-                    <button class="button text-btn" data-target="#modal-memo-app">
+                    <button class="button text-btn" data-bs-toggle="modal" data-bs-target="#modal-memo-app">
                       View Details
                     </button>
                   </div>
                 </div>
               </li>
-              <li class="card" data-toggle="modal" data-target="#modal-movie-world">
+              <li class="card" data-bs-toggle="modal" data-bs-target="#modal-movie-world">
                 <div class="img-wrapper">
                   <img src="./images/projects/movie-world/movie-world-landing-page.png" alt="Image of Movie World" loading="lazy">
                 </div>
@@ -571,7 +575,7 @@
                     <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank" rel="noopener noreferrer">
                       Live Demo
                     </a>
-                    <button class="button text-btn" data-target="#modal-movie-world">
+                    <button class="button text-btn" data-bs-toggle="modal" data-bs-target="#modal-movie-world">
                       View Details
                     </button>
                   </div>
@@ -587,13 +591,13 @@
         <section>
           <!-- Modal of the Sydney Trains Data Visualisation System -->
           <div class="modal fade" id="modal-sydney-trains" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h4 class="modal-title">
                     Sydney Trains Data Visualisation System
                   </h4>
-                  <i class="material-icons-outlined close" data-dismiss="modal">close</i>
+                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close">close</i>
                 </div>
                 <div class="modal-body">
                   <!-- Swiper -->
@@ -646,7 +650,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button class="button text-btn close-btn" data-dismiss="modal">
+                  <button class="button text-btn close-btn" data-bs-dismiss="modal" aria-label="Close">
                     Close
                   </button>
                 </div>
@@ -656,7 +660,7 @@
 
           <!-- Modal of the Memo Note -->
           <div class="modal fade" id="modal-memo-app" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h4 class="modal-title">
@@ -670,7 +674,7 @@
                       Live Demo
                     </a>
                   </h4>
-                  <i class="material-icons-outlined close" data-dismiss="modal">close</i>
+                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close">close</i>
                 </div>
                 <div class="modal-body">
                   <!-- Swiper -->
@@ -720,7 +724,7 @@
                   <a class="button live-website" href="https://hkkevin.github.io/memo" target="_blank" rel="noopener noreferrer">
                     Live Demo
                   </a>
-                  <button class="button text-btn close-btn" data-dismiss="modal">
+                  <button class="button text-btn close-btn" data-bs-dismiss="modal" aria-label="Close">
                     Close
                   </button>
                 </div>
@@ -730,7 +734,7 @@
 
           <!-- Modal of the Movie World -->
           <div class="modal fade" id="modal-movie-world" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h4 class="modal-title">
@@ -744,7 +748,7 @@
                       Live Demo
                     </a>
                   </h4>
-                  <i class="material-icons-outlined close" data-dismiss="modal">close</i>
+                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close">close</i>
                 </div>
                 <div class="modal-body">
                   <!-- Swiper -->
@@ -786,7 +790,7 @@
                   <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank" rel="noopener noreferrer">
                     Live Demo
                   </a>
-                  <button class="button text-btn close-btn" data-dismiss="modal">
+                  <button class="button text-btn close-btn" data-bs-dismiss="modal" aria-label="Close">
                     Close
                   </button>
                 </div>
@@ -824,7 +828,7 @@
       </footer>
 
       <!-- Jump To Top -->
-      <div class="jump-to-top hint hint--left hint--rounded" aria-label="Return to Top">
+      <div class="jump-to-top hint hint--left hint--rounded" type="button" aria-label="Return to Top">
         <i class="material-icons-outlined">keyboard_arrow_up</i>
       </div>
 
@@ -840,7 +844,7 @@
     <!-- Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <!-- bootstrap.js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!-- Swiper.js -->
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="scripts/swiper.js"></script>

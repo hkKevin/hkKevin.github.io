@@ -5,16 +5,13 @@ body.modal-open {
 }
 
 .modal {
-  // padding-right: 0 !important;
   padding: 0 !important;
-  .modal-dialog {
-    margin: .5rem !important;
-    @media (min-width: 576px) {
-      margin: 1.75rem auto !important;
+  .modal-content {
+    border: unset;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
+    .hint {
+      padding-left: 1.5rem;
     }
-  }
-  .modal-content .hint {
-    padding-left: 1.5rem;
   }
   .modal-header {
     padding: 1rem;
@@ -33,6 +30,9 @@ body.modal-open {
       border-radius: 50%;
       background-color: transparent;
       transition: background-color 150ms;
+      &.close{
+        margin: -.3em -.3em 0 auto;
+      }
       &:hover {
         background-color: rgba(0, 0, 0, 0.08);
       }
@@ -101,6 +101,17 @@ body.modal-open {
       }
     }
   }
+}
+
+div.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  transition: opacity .17s linear;
+}
+
+div.modal-backdrop.show {
+  opacity: 1;
 }
 
 #modal-sydney-trains {
