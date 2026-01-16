@@ -89,11 +89,14 @@
 #skills #tech-skills {
   margin: 5rem auto 0;
 }
-#skills #tech-skills .front-end-tech h5 {
+#skills #tech-skills .front-end-tech, #skills #tech-skills .design-ux {
+  margin-bottom: 10vh;
+}
+#skills #tech-skills .front-end-tech h5, #skills #tech-skills .design-ux h5 {
   text-align: center;
   margin-bottom: 2rem;
 }
-#skills #tech-skills .front-end-tech .skills {
+#skills #tech-skills .front-end-tech .skills, #skills #tech-skills .design-ux .skills {
   text-align: center;
   display: flex;
   flex-flow: row wrap;
@@ -1259,7 +1262,7 @@ body {
 
 .content-text {
   text-align: center;
-  max-width: 80ch;
+  max-width: 82ch;
   margin: 0 auto;
 }
 
