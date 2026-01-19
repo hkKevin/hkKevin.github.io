@@ -57,7 +57,8 @@
     }
     &:hover {
       cursor: pointer;
-      box-shadow: 1px 1px 10px 1px #bbb;
+      // box-shadow: 1px 1px 10px 1px #bbb;
+      box-shadow: 1px 1px 10px 6px #ddd;
     }
     .img-wrapper {
       img {

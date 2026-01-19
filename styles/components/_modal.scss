@@ -63,6 +63,119 @@ body.modal-open {
         }
       }
     }
+
+    .headline {
+      font-style: italic;
+    }
+
+    .section-title {
+      margin-top: 5rem;
+    }
+
+    .project-challenge {
+      .inner-thought {
+        text-align: center;
+        white-space: pre-wrap;
+        max-width: 70ch;
+        margin-inline: auto;
+        font-style: italic;
+      }
+    }
+
+    .project-user-empathy {
+      > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        > li {
+          margin-top: 2rem;
+        }
+      }
+
+      .persona-list {
+        .card-header {
+          > span {
+            display: inline-flex;
+          }
+        }
+        > li:nth-child(odd) {
+          padding-left: 0;
+          padding-right: .5rem;
+        }
+        > li:nth-child(even) {
+          padding-left: .5rem;
+          padding-right: 0;
+        }
+        > li.col-xs-12 {
+          @media (max-width: 575px) {
+            padding: 0;
+          }
+        }
+      }
+
+      > h5 {
+        margin-top: 2rem;
+      }
+    }
+
+    .project-design-prototype {
+      > h5 {
+        margin-top: 2rem;
+      }
+      .wireframing {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+          width: 16px;
+          margin-left: 8px;
+        }
+      }
+      .wireframes {
+        > div {
+          margin-top: 5rem;
+        }
+        > :nth-of-type(1) {
+          margin-top: 4rem;
+        }
+        .scroll-container {
+          display: flex;             /* Aligns images in a single row */
+          width: 100%;               /* Takes up the full screen width */
+          height: 57vw;             /* Define the consistent height */
+          overflow-x: auto;          /* Enables horizontal scrolling if content overflows */
+          overflow-y: hidden;
+          @media (min-width: 1400px) {
+            height: 37vw;
+          }
+          @media (min-width: 1800px) {
+            height: 27vw;
+          }
+          @media (min-width: 2400px) {
+            height: 22vw;
+          }
+          @media (min-width: 2920px) {
+            height: 18vw;
+          }
+          @media (min-width: 3800px) {
+            height: 14vw;
+          }
+          img {
+            height: 100%;              /* Makes every image exactly 250px tall */
+            width: auto;               /* CRITICAL: Preserves the image's original aspect ratio */
+            flex-shrink: 0;            /* CRITICAL: Prevents images from squeezing to fit the screen */
+            object-fit: contain;       /* Ensures the entire image is visible within the height constraint */
+          }
+        }
+      }
+    }
+
+    .project-reflection {
+      > h5 {
+        margin-top: 2rem;
+      }
+    }
   }
   .project-features h5 {
     margin: 2vh;
@@ -104,7 +217,7 @@ body.modal-open {
 }
 
 div.modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(20px);
   opacity: 0;
   transition: opacity .17s linear;

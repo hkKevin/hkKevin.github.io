@@ -42,20 +42,20 @@ html {
   }
 }
 
-body.modal-open {
-  ::-webkit-scrollbar {
-    width: 0px; // Track
-  }
-  ::-webkit-scrollbar-thumb { /* Handle */
-    background-color: unset;
-    border-radius: unset;
-    border: unset;
-    background-clip: unset;
-    &:hover { /* Handle on hover */
-    background-color: unset;
-    }
-  }
-}
+// body.modal-open {
+//   ::-webkit-scrollbar {
+//     width: 0px; // Track
+//   }
+//   ::-webkit-scrollbar-thumb { /* Handle */
+//     background-color: unset;
+//     border-radius: unset;
+//     border: unset;
+//     background-clip: unset;
+//     &:hover { /* Handle on hover */
+//     background-color: unset;
+//     }
+//   }
+// }
 
 // Tooltip
 [class*="hint--"]:after {

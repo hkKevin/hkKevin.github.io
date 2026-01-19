@@ -56,13 +56,13 @@
         font-weight: bolder;
         color: var.$lightColor400;
         display: inline-block;
-        opacity: 0;
-        transform: translateY(-50%);
+        // opacity: 0;
+        // transform: translateY(-50%);
         transition: all 1s;
-        &.animation-showed {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        // &.animation-showed {
+        //   opacity: 1;
+        //   transform: translateY(0);
+        // }
       }
     }
   }

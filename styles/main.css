@@ -63,13 +63,7 @@
   font-weight: bolder;
   color: #1070cc;
   display: inline-block;
-  opacity: 0;
-  transform: translateY(-50%);
   transition: all 1s;
-}
-#intro .heading h1 #my-name.animation-showed {
-  opacity: 1;
-  transform: translateY(0);
 }
 #intro #header-btn {
   margin-top: 5vh;
@@ -460,7 +454,7 @@
 }
 #projects .card:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 10px 1px #bbb;
+  box-shadow: 1px 1px 10px 6px #ddd;
 }
 #projects .card .img-wrapper img {
   border-radius: 5px 5px 0 0;
@@ -1049,6 +1043,108 @@ body.modal-open {
     margin: 0.5rem auto;
   }
 }
+.modal .modal-body .headline {
+  font-style: italic;
+}
+.modal .modal-body .section-title {
+  margin-top: 5rem;
+}
+.modal .modal-body .project-challenge .inner-thought {
+  text-align: center;
+  white-space: pre-wrap;
+  max-width: 70ch;
+  margin-inline: auto;
+  font-style: italic;
+}
+.modal .modal-body .project-user-empathy > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.modal .modal-body .project-user-empathy > ul > li {
+  margin-top: 2rem;
+}
+.modal .modal-body .project-user-empathy .persona-list .card-header > span {
+  display: inline-flex;
+}
+.modal .modal-body .project-user-empathy .persona-list > li:nth-child(odd) {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+.modal .modal-body .project-user-empathy .persona-list > li:nth-child(even) {
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+@media (max-width: 575px) {
+  .modal .modal-body .project-user-empathy .persona-list > li.col-xs-12 {
+    padding: 0;
+  }
+}
+.modal .modal-body .project-user-empathy > h5 {
+  margin-top: 2rem;
+}
+.modal .modal-body .project-design-prototype > h5 {
+  margin-top: 2rem;
+}
+.modal .modal-body .project-design-prototype .wireframing {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.modal .modal-body .project-design-prototype .wireframing img {
+  width: 16px;
+  margin-left: 8px;
+}
+.modal .modal-body .project-design-prototype .wireframes > div {
+  margin-top: 5rem;
+}
+.modal .modal-body .project-design-prototype .wireframes > :nth-of-type(1) {
+  margin-top: 4rem;
+}
+.modal .modal-body .project-design-prototype .wireframes .scroll-container {
+  display: flex; /* Aligns images in a single row */
+  width: 100%; /* Takes up the full screen width */
+  height: 57vw; /* Define the consistent height */
+  overflow-x: auto; /* Enables horizontal scrolling if content overflows */
+  overflow-y: hidden;
+}
+@media (min-width: 1400px) {
+  .modal .modal-body .project-design-prototype .wireframes .scroll-container {
+    height: 37vw;
+  }
+}
+@media (min-width: 1800px) {
+  .modal .modal-body .project-design-prototype .wireframes .scroll-container {
+    height: 27vw;
+  }
+}
+@media (min-width: 2400px) {
+  .modal .modal-body .project-design-prototype .wireframes .scroll-container {
+    height: 22vw;
+  }
+}
+@media (min-width: 2920px) {
+  .modal .modal-body .project-design-prototype .wireframes .scroll-container {
+    height: 18vw;
+  }
+}
+@media (min-width: 3800px) {
+  .modal .modal-body .project-design-prototype .wireframes .scroll-container {
+    height: 14vw;
+  }
+}
+.modal .modal-body .project-design-prototype .wireframes .scroll-container img {
+  height: 100%; /* Makes every image exactly 250px tall */
+  width: auto; /* CRITICAL: Preserves the image's original aspect ratio */
+  flex-shrink: 0; /* CRITICAL: Prevents images from squeezing to fit the screen */
+  -o-object-fit: contain;
+     object-fit: contain; /* Ensures the entire image is visible within the height constraint */
+}
+.modal .modal-body .project-reflection > h5 {
+  margin-top: 2rem;
+}
 .modal .project-features h5 {
   margin: 2vh;
   text-align: left;
@@ -1094,7 +1190,7 @@ body.modal-open {
 }
 
 div.modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.03);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   opacity: 0;
@@ -1127,6 +1223,7 @@ div.modal-backdrop.show {
   width: 100%;
   height: 50%;
   padding-bottom: 2rem;
+  margin: 2rem 0;
   overflow-x: hidden;
   position: relative;
 }
@@ -1189,19 +1286,6 @@ html {
   background-color: #aaa;
 }
 
-body.modal-open ::-webkit-scrollbar {
-  width: 0px;
-}
-body.modal-open ::-webkit-scrollbar-thumb { /* Handle */
-  background-color: unset;
-  border-radius: unset;
-  border: unset;
-  background-clip: unset;
-}
-body.modal-open ::-webkit-scrollbar-thumb:hover { /* Handle on hover */
-  background-color: unset;
-}
-
 [class*=hint--]:after {
   background-color: #08194f;
 }
@@ -1262,7 +1346,7 @@ body {
 
 .content-text {
   text-align: center;
-  max-width: 82ch;
+  max-width: 80ch;
   margin: 0 auto;
 }
 
