@@ -24,6 +24,17 @@ body.modal-open {
     span {
       line-height: 1.5;
     }
+    svg.github {
+      width: 32px;
+      fill: rgba(116, 129, 154, 0.7);
+      transition: all .4s;
+      &:active, &:hover {
+        fill: #000;
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
     .material-icons-outlined {
       margin: -.3em -.3em 0 0;
       padding: 10px;

@@ -468,6 +468,11 @@
 }
 @media (min-width: 768px) {
   #projects .card .card-content {
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+@media (min-width: 796px) {
+  #projects .card .card-content {
     padding: 0rem 2rem 2rem 2rem;
   }
 }
@@ -493,7 +498,7 @@
   justify-content: center;
   gap: 1rem;
 }
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1160px) {
   #projects .card .card-content .tech-wrapper {
     display: none;
   }
@@ -698,20 +703,19 @@
   text-decoration: unset;
   color: rgba(0, 0, 0, 0);
 }
-#main-footer #social-media-container #github-profile:active .fa-github, #main-footer #social-media-container #github-profile:hover .fa-github {
-  color: #000;
-}
-#main-footer #social-media-container #linkedin-profile:active .fa-linkedin, #main-footer #social-media-container #linkedin-profile:hover .fa-linkedin {
-  color: #0a66c2;
-}
-#main-footer #social-media-container .fa-github,
-#main-footer #social-media-container .fa-linkedin {
-  color: rgba(116, 129, 154, 0.7);
+#main-footer #social-media-container #github-profile svg, #main-footer #social-media-container #linkedin-profile svg {
+  width: 32px;
+  fill: rgba(116, 129, 154, 0.7);
   transition: all 0.4s;
 }
-#main-footer #social-media-container .fa-github:active,
-#main-footer #social-media-container .fa-linkedin:active {
+#main-footer #social-media-container #github-profile svg:active, #main-footer #social-media-container #linkedin-profile svg:active {
   transform: scale(0.95);
+}
+#main-footer #social-media-container #github-profile:active svg, #main-footer #social-media-container #github-profile:hover svg {
+  fill: #000;
+}
+#main-footer #social-media-container #linkedin-profile:active svg, #main-footer #social-media-container #linkedin-profile:hover svg {
+  fill: #0a66c2;
 }
 
 .button {
@@ -1000,6 +1004,17 @@ body.modal-open {
 .modal .modal-header span {
   line-height: 1.5;
 }
+.modal .modal-header svg.github {
+  width: 32px;
+  fill: rgba(116, 129, 154, 0.7);
+  transition: all 0.4s;
+}
+.modal .modal-header svg.github:active, .modal .modal-header svg.github:hover {
+  fill: #000;
+}
+.modal .modal-header svg.github:active {
+  transform: scale(0.95);
+}
 .modal .modal-header .material-icons-outlined {
   margin: -0.3em -0.3em 0 0;
   padding: 10px;
@@ -1260,6 +1275,7 @@ div.modal-backdrop.show {
 }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -1331,6 +1347,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 #container {

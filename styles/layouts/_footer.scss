@@ -27,30 +27,28 @@
       align-items: center;
       text-decoration: unset;
       color: rgba(0, 0, 0, 0);
+      svg {
+        width: 32px;
+        fill: rgba(116, 129, 154, 0.7);
+        transition: all .4s;
+        &:active {
+          transform: scale(0.95);
+        }
+      }
     }
     #github-profile {
       &:active, &:hover {
-        .fa-github {
-          color: #000;
+        svg {
+          fill: #000;
         }
       }
     }
     #linkedin-profile {
       &:active, &:hover {
-        .fa-linkedin {
-          color: #0a66c2;
+        svg {
+          fill: #0a66c2;
         }
       }
     }
-    
-    .fa-github, 
-    .fa-linkedin {
-      color: rgba(116, 129, 154, 0.7);
-      transition: all .4s;
-      &:active {
-        transform: scale(0.95);
-      }
-    }
-
   }
 }
