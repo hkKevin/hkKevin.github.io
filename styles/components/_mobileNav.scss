@@ -22,7 +22,7 @@
   a {
     display: none;
     // @include dynamicFontSize(30, 50, 300, 1900);
-    @include mixins.dynamicFontSize(24, 50, 300, 1900);
+    @include mixins.dynamicFontSize(16, 50, 300, 1900);
     text-decoration: none;
     text-align: center;
     color: #ccc;

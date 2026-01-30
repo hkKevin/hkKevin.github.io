@@ -13,8 +13,25 @@ body.modal-open {
       padding-left: 1.5rem;
     }
   }
+  .illustration-wrapper {
+    width: fit-content;
+    margin: 2rem auto 0;
+    svg {
+      max-width: 200px;
+      height: auto;
+      @media (max-width: 1399px) {
+        max-width: 20vw;
+      }
+      @media (max-width: 767px) {
+        max-width: 30vw;
+      }
+      @media (max-width: 575px) {
+        max-width: 40vw;
+      }
+    }
+  }
   .modal-header {
-    padding: 1rem;
+    padding: .5rem 1rem;
     border-bottom: unset;
     position: sticky;
     top: 0;
@@ -54,7 +71,8 @@ body.modal-open {
     .live-website {
       display: inline-block;
       margin: 0 0 0 1.5rem;
-      line-height: 2;
+      line-height: 1.5;
+      padding: 0.4rem 1rem;
       @media (max-width: 575px) {
         display: none;
       }
@@ -77,10 +95,11 @@ body.modal-open {
 
     .headline {
       font-style: italic;
+      margin-top: 1rem;
     }
 
     .section-title {
-      margin-top: 5rem;
+      margin-top: 10rem;
     }
 
     .project-challenge {
@@ -109,6 +128,30 @@ body.modal-open {
             display: inline-flex;
           }
         }
+        .persona-card {
+          font-size: 0.8rem;
+          border-radius: 20px;
+          /* Shadow for depth */
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+          /* Sizing and spacing */
+          padding: 30px;
+          // max-width: 400px;
+          /* Optional: subtle inner glow */
+          position: relative;
+          overflow: hidden;
+          @media (max-width: 767px) {
+            padding: 20px;
+          }
+          @media (max-width: 575px) {
+            font-size: .7rem;
+          }
+          &:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+          }
+        }
         > li:nth-child(odd) {
           padding-left: 0;
           padding-right: .5rem;
@@ -125,16 +168,57 @@ body.modal-open {
       }
 
       > h5 {
-        margin-top: 2rem;
+        margin-top: 5rem;
+      }
+    }
+
+    .project-functionalities {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+          flex-direction: row-reverse;
+        }
+        ul {
+          flex: 2;
+        }
+        .illustration-wrapper {
+          margin: auto;
+          flex: 1;
+          text-align: center;
+          @media (max-width: 767px) {
+            margin: 2rem auto 0;
+          }
+        }
       }
     }
 
     .project-design-prototype {
       > h5 {
-        margin-top: 2rem;
+        margin-top: 5rem;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+        > .text {
+          flex: 2;
+        }
+        .illustration-wrapper {
+          margin: auto;
+          flex: 1;
+          text-align: center;
+          @media (max-width: 767px) {
+            margin: 2rem auto 0;
+          }
+        }
       }
       .wireframing {
-        margin-top: 2rem;
+        margin-top: 5rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -173,18 +257,69 @@ body.modal-open {
             height: 14vw;
           }
           img {
-            height: 100%;              /* Makes every image exactly 250px tall */
+            height: 100%;
             width: auto;               /* CRITICAL: Preserves the image's original aspect ratio */
             flex-shrink: 0;            /* CRITICAL: Prevents images from squeezing to fit the screen */
             object-fit: contain;       /* Ensures the entire image is visible within the height constraint */
           }
         }
       }
+      .gif {
+        width: 40vw;
+        margin: 1rem auto 4rem;
+        @media (min-width: 1400px) {
+          width: 240px;
+        }
+        @media (max-width: 1399px) {
+          width: 20vw;
+        }
+        @media (max-width: 500px) {
+          width: 40vw;
+        }
+      }
     }
 
     .project-reflection {
       > h5 {
-        margin-top: 2rem;
+        margin-top: 5rem;
+      }
+      .wrapper.next {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+          flex-direction: row-reverse;
+        }
+        ul {
+          flex: 2;
+        }
+        .illustration-wrapper {
+          margin: auto;
+          flex: 1;
+          text-align: center;
+          @media (max-width: 767px) {
+            margin: 2rem auto 0;
+          }
+        }
+      }
+      .wrapper.takeaways {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+        > .text {
+          flex: 2;
+        }
+        .illustration-wrapper {
+          margin: auto;
+          flex: 1;
+          text-align: center;
+          @media (max-width: 767px) {
+            margin: 2rem auto 0;
+          }
+        }
       }
     }
   }
@@ -207,9 +342,12 @@ body.modal-open {
     bottom: 0;
     background-color: inherit;
     z-index: 11;
+    padding: 0.4rem 1rem;
     .close-btn {
       text-align: center;
       width: 100%;
+      padding: 0.4rem 1rem;
+      margin: 0;
       @media (max-width: 767px) {
         margin: 0.5rem auto;
       }
@@ -220,6 +358,7 @@ body.modal-open {
     .live-website {
       width: 100%;
       margin: 0;
+      padding: 0.1rem 1rem;
       @media (min-width: 576px) {
         display: none;
       }

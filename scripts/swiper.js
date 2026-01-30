@@ -1,5 +1,5 @@
-$(document).ready(function () {
-
+// $(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function() {
   const swiperSettings = {
     observer: true,
     observeParents: true,
@@ -12,12 +12,14 @@ $(document).ready(function () {
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      // onlyInViewport: false,
+      onlyInViewport: true,
+      pageUpDown: false,
     }
   }
 
   const sydneyTrainsSwiper = new Swiper(".sydneyTrainsSwiper", swiperSettings)
   const memoSwiper = new Swiper(".memoSwiper", swiperSettings)
   const movieWorldSwiper = new Swiper(".movieWorldSwiper", swiperSettings)
-
 })
+// })
