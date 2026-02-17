@@ -1,4 +1,5 @@
 @use '../helpers/variables' as var;
+@use "sass:color";
 
 .button {
   display: flex;
@@ -10,7 +11,7 @@
   font-weight: bold;
   background: var.$lightColor400;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 12px;
   margin: 0.5em 0;
   padding: 0.4rem 1.7rem;
   text-decoration: none !important;
@@ -22,15 +23,18 @@
   @media (max-width: 767px) {
     width: fit-content;
   }
-  &:focus {
-    outline: none;
-  }
+  // &:focus {
+  //   outline: none;
+  // }
   &:hover {
-    background: darken(var.$lightColor400, 10%);
+    background: color.scale(var.$lightColor400, $lightness: -10%);
     color: #fff;
   }
   &:active {
-    transform: scale(0.99);
+    // transform: scale(0.99);
+    // box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.3), 0 4px 6px 4px rgba(60, 64, 67, 0.15);
+    box-shadow: 0 2px 10px 0 rgba(60, 64, 67, 0.3);
+    // box-shadow: 0 4px 6px 4px rgba(60, 64, 67, 0.15);
   }
 }
 

@@ -1,6 +1,7 @@
 // Sass utilities
 @use 'helpers/variables' as var;
 @use 'helpers/mixins';
+@use "sass:color";
 
 // Layout related stylesheets
 @use './layouts/intro';
@@ -18,14 +19,33 @@
 @use './components/modal';
 @use './components/swiper';
 
+:root {
+  --card-border-radius: 20px;
+  font-size: 16px;
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: 4px solid #C2DBFE !important; /* Thick, high-contrast color */
+  outline-offset: 2px;        /* Spacing between link and outline */
+  border-radius: 12px;         /* Optional: rounds the corners */
+  box-shadow: unset !important;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Cursor highlight */
 ::selection {
-  background-color: lighten(var.$lightColor400, 50%);
+  background-color: color.scale(var.$lightColor400, $lightness: 90%);
 }
 
 /* Scroll Bar */
@@ -40,6 +60,31 @@ html {
   &:hover { /* Handle on hover */
   background-color: #aaa;
   }
+}
+
+/* open-sans-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v44-latin-300.woff2') format('woff2');
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v44-latin-regular.woff2') format('woff2'); 
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v44-latin-600.woff2') format('woff2');
 }
 
 // body.modal-open {
@@ -89,12 +134,42 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2;
 }
 
+h2 {
+  font-size: 1.6rem;
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 575px) {
+    font-size: 1.4rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  @media (max-width: 767px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 575px) {
+    font-size: 1.3rem;
+  }
+}
+
+h4 {
+  font-size: 1.4rem;
+  @media (max-width: 767px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 575px) {
+    font-size: 1.2rem;
+  }
+}
+
 body {
   margin: 0;
   background: var.$primaryBg;
   color: var.$color;
   // font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1900 - 300)));
-  @include mixins.dynamicFontSize(14, 20, 300, 1900);
+  // @include mixins.dynamicFontSize(14, 20, 300, 1900);
   line-height: 2;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
@@ -194,7 +269,7 @@ hr {
 }
 
 // Disallow users highlighting the link or button text
-a, button, .jump-to-top {
+a, button, .jump-to-top, i, img {
   user-select: none;
 }
 
@@ -204,11 +279,12 @@ a, button, .jump-to-top {
 
 
 
-/* For screens wider than and equal to 768px */
+/* For screens wider than or equal to 768px */
 @media (min-width: 768px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 30em) minmax(auto, 30em) 1fr;
+    // grid-template-columns: 1fr minmax(auto, 30em) minmax(auto, 30em) 1fr;
+    grid-template-columns: 1fr minmax(auto, 40rem) minmax(auto, 40rem) 1fr;
   }
 
   header .button {
@@ -241,7 +317,7 @@ a, button, .jump-to-top {
   #projects ul,
   #projects #personal-projects ul,
   #projects h2,
-  #projects h4,
+  #projects h3,
   #projects p,
   #contact div,
   #main-footer div,
@@ -249,30 +325,4 @@ a, button, .jump-to-top {
     grid-column: 2/4;
   }
 
-}
-
-
-@media (max-width: 767px) {
-  h2 {
-    font-size: 1.75rem;
-  }
-  h3 {
-    font-size: 1.6rem;
-  }
-  h4 {
-    font-size: 1.5rem;
-  }
-}
-
-
-@media (max-width: 575px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1.4rem;
-  }
-  h4 {
-    font-size: 1.3rem;
-  }
 }

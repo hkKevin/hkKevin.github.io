@@ -26,13 +26,27 @@
           opacity: 1;
           transform: translateY(0);
         }
-        @include mixins.dynamicFontSize(18, 30, 300, 1900);
         &:active {
           transition-delay: 0s;
           transform: scale(0.97);
         }
       }
       #copy-hint {
+        padding: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: background-color 150ms;
+        height: 44px;
+        border: unset;
+        &:hover, &:focus-visible {
+          background-color: rgba(0, 0, 0, 0.08);
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+          transform: scale(0.97);
+        }
         margin-left: 1.25rem;
         @media (max-width: 767px) {
           margin-left: 1rem !important;
@@ -42,21 +56,6 @@
         }
         @media (max-width: 400px) {
           margin-left: 0.3rem !important;
-        }
-        .copy-icon {
-          padding: 10px;
-          border-radius: 50%;
-          background-color: transparent;
-          transition: background-color 150ms;
-          &:hover {
-            background-color: rgba(0, 0, 0, 0.08);
-          }
-          &:hover {
-            cursor: pointer;
-          }
-          &:active {
-            transform: scale(0.97);
-          }
         }
       }
     }

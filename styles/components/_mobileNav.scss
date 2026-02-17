@@ -22,7 +22,8 @@
   a {
     display: none;
     // @include dynamicFontSize(30, 50, 300, 1900);
-    @include mixins.dynamicFontSize(16, 50, 300, 1900);
+    // @include mixins.dynamicFontSize(16, 50, 300, 1900);
+    font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
     color: #ccc;

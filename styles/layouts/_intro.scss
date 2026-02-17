@@ -27,13 +27,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    @media (max-width: 768px) {
+    justify-content: center;
+    @media (max-width: 767px) {
       flex-direction: column;
       margin-inline: auto;
     }
     @media (max-width: 500px) {
-      margin-top: 85px;
+      margin-top: 10vh;
     }
 
     img {
@@ -42,7 +42,7 @@
       @media (min-width: 768px) and (max-width: 1200px) {
         width: 16vw;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         width: 30vw;
       }
     }
@@ -50,19 +50,15 @@
     h1 {
       text-align: left;
       line-height: 1.7;
-      @include mixins.dynamicFontSize(20, 50, 300, 1900);
-      padding: 5vh 0 3vh;
+      // @include mixins.dynamicFontSize(20, 50, 300, 1900);
+      padding: 3rem 0 3rem 3vw;
+      @media (max-width: 767px) {
+        padding: 3vh 0 3vh;
+      }
       #my-name {
         font-weight: bolder;
         color: var.$lightColor400;
         display: inline-block;
-        // opacity: 0;
-        // transform: translateY(-50%);
-        transition: all 1s;
-        // &.animation-showed {
-        //   opacity: 1;
-        //   transform: translateY(0);
-        // }
       }
     }
   }

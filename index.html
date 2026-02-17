@@ -2,37 +2,26 @@
 <html lang="en">
 
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137810903-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-137810903-1');
-    </script>
     <title>Kevin Leung | Front-end Web Developer + UX/UI Engineer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="index, follow">
     <meta name="title" content="Kevin Leung | Front-end Web Developer" />
-    <meta name="description" content="Kevin is a client-focused web developer with solid front-end experience crafting responsive and intuitive UI, seeking to enhance UX and elevate brand value."/>
-    <link rel="canonical" href="https://hkkevin.github.io/" />
+    <meta name="keywords" content="Kevin Leung, Pak Kiu Leung, Front-end Web Developer, UX/UI Engineer, React Developer, Vue.js Developer, Web Design Portfolio, Responsive Web Design, E-commerce Developer, UI/UX Design, Figma, JavaScript Engineer, A/B Testing, SEO Specialist">
+    <meta name="description" content="4+ years as a Front-end Developer & UX/UI Engineer. Driving ROI with React, Vue, and Figma. Specialized in scalable, user-centric web solutions. View my portfolio here."/>
+    <link rel="canonical" href="https://hkkevin.github.io/" media="print" onload="this.media='all'" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Font family: Open Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
     <!-- Material icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" media="print" onload="this.media='all'">
     <!-- Hint.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.css" media="print" onload="this.media='all'" />
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/ico" href="/images/logos/favicon.ico"/>
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" media="print" onload="this.media='all'">
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#myScrollSpy" data-offset="500">
@@ -41,16 +30,16 @@
       <header>
         <div class="mobile-top-nav">
           <!-- Logo -->
-          <a id="mobileNav-mobile-home" class="logo-link" href="#intro">
+          <a id="mobileNav-mobile-home" class="logo-link" href="#intro" tabindex="0" role="button">
             <div class="logo">
-              <img class="original" src="./images/logos/site-logo.png"/>
-              <img class="sky-blue" src="./images/logos/site-logo-skyblue.png" style="display: none;"/>
+              <img class="original" width="160" height="28" src="./images/logos/site-logo.webp" alt="Site Logo" loading="eager" />
+              <img class="sky-blue" width="160" height="28" src="./images/logos/site-logo-skyblue.webp" style="display: none;" alt="Site Logo in Skyblue" loading="eager" />
             </div>
           </a>
           <!-- Burger Icon -->
           <div id="burger-icon">
-            <i class="material-icons-outlined menu">menu</i>
-            <i class="material-icons-outlined close md-light">close</i>
+            <i class="material-icons-outlined menu" aria-label="Open Navigation Menu">menu</i>
+            <i class="material-icons-outlined close md-light" aria-label="Close Navigation Menu">close</i>
           </div>
         </div>
         <!-- Mobile Nav -->
@@ -69,9 +58,9 @@
         <!-- Top Nav -->
         <div class="top-nav-container grid">
           <nav class="top-nav navbar">
-            <a class="logo-link" href="#intro">
+            <a class="logo-link" href="#intro" tabindex="0" role="button">
               <div class="logo">
-                <img src="./images/logos/site-logo.png" alt="Site Logo"/>
+                <img src="./images/logos/site-logo.webp" width="200" height="34" alt="Site Logo" loading="eager"/>
               </div>
             </a>
             <div id="myScrollSpy">
@@ -101,7 +90,7 @@
           <div class="content-wrap">
 
             <div class="heading">
-              <img src="./images/projects/portfolio/picture-of-myself.png" alt="Picture of Kevin Leung">
+              <img width="200" height="200" src="./images/projects/portfolio/picture-of-myself.webp" alt="Picture of Kevin Leung" loading="eager">
               <h1>
                 Hi! I'm <span id="my-name">Pak Kiu (Kevin) Leung</span>, 
                 <br />a Front-end Web Developer
@@ -125,8 +114,7 @@
             <h2 class="content-title">Skills</h2>
             <div id="tech-skills">
               <div class="front-end-tech">
-                <h5>Front-end Frameworks & Libraries</h5>
-                <!-- <h5>Languages & Frameworks</h5> -->
+                <h3>Front-end Frameworks & Libraries</h3>
                 <div class="skills">
                   <div class="skill">React</div>
                   <div class="skill">Redux</div>
@@ -144,7 +132,7 @@
               </div>
 
               <div class="design-ux">
-                <h5>Design & UX</h5>
+                <h3>Design & UX</h3>
                 <div class="skills">
                   <div class="skill">Figma</div>
                   <div class="skill">UX/UI Design</div>
@@ -159,7 +147,7 @@
 
               <div class="others">
                 <div class="testing-dev">
-                  <h5>Testing & Development</h5>
+                  <h3>Testing & Development</h3>
                   <div class="skills">
                     <div class="skill">Cypress</div>
                     <div class="skill">Git</div>
@@ -172,7 +160,7 @@
                   </div>
                 </div>
                 <div class="testing-dev">
-                  <h5>Platforms & Tools</h5>
+                  <h3>Platforms & Tools</h3>
                   <div class="skills">
                     <div class="skill">WordPress</div>
                     <div class="skill">Firebase</div>
@@ -184,58 +172,17 @@
                     <div class="skill">Wistia</div>
                   </div>
                 </div>
-                <!-- <div class="version-control">
-                  <h5>Version Control</h5>
-                  <div class="skills">
-                    <div class="skill">Git</div>
-                    <div class="skill">GitHub</div>
-                    <div class="skill">SourceTree</div>
-                  </div>
-                </div>
-                <div class="cms">
-                  <h5>Content Management System</h5>
-                  <div class="skills">
-                    <div class="skill">WordPress</div>
-                    <div class="skill">PrestaShop</div>
-                    <div class="skill">Storyblok</div>
-                    <div class="skill">Wistia</div>
-                  </div>
-                </div>
-                <div class="project-management">
-                  <h5>Project Management</h5>
-                  <div class="skills">
-                    <div class="skill">Trello</div>
-                    <div class="skill">Slack</div>
-                    <div class="skill">ClickUp</div>
-                    <div class="skill">Jira</div>
-                  </div>
-                </div>
-                <div class="ide">
-                  <h5>Integrated Development Environment</h5>
-                  <div class="skills">
-                    <div class="skill">Visual Studio Code</div>
-                    <div class="skill">PhpStorm</div>
-                    <div class="skill">Eclipse</div>
-                  </div>
-                </div>
-                <div class="ab-testing">
-                  <h5>A/B Testing Tool</h5>
-                  <div class="skills">
-                    <div class="skill">Google Optimize</div>
-                    <div class="skill">VWO</div>
-                  </div>
-                </div> -->
               </div>
             </div>
 
             <hr>
 
             <div class="english">
-              <h5 class="heading">English Proficiency Test</h5>
+              <h3 class="heading">English Proficiency Test</h3>
               <div class="others">
 
                 <div class="celpip">
-                  <h5 class="sub-heading">CELPIP - General</h5>
+                  <h4 class="sub-heading">CELPIP - General</h4>
                   <div class="headline">
                     <div class="overall">Overall Score: <span class="highlighted">8.75</span> / 12</div>
                     <div class="date">Sep 2023</div>
@@ -261,7 +208,7 @@
                 </div>
 
                 <div class="ielts">
-                  <h5 class="sub-heading">IELTS - Academic</h5>
+                  <h4 class="sub-heading">IELTS - Academic</h4>
                   <div class="headline">
                     <div class="overall">Overall Score: <span class="highlighted">7</span> / 9</div>
                     <div class="date">Sep 2016</div>
@@ -325,7 +272,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Matthew.png" alt="Picture of Matthew" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Matthew.webp" alt="Picture of Matthew" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -347,7 +294,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Eric.png" alt="Picture of Eric" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Eric.webp" alt="Picture of Eric" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -369,7 +316,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Chetan.png" alt="Picture of Chetan" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Chetan.webp" alt="Picture of Chetan" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -393,7 +340,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Marci.jpg" alt="Picture of Marci" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Marci.webp" alt="Picture of Marci" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -417,7 +364,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Diane.png" alt="Picture of Diane" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Diane.webp" alt="Picture of Diane" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -437,7 +384,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Jon.png" alt="Picture of Jon" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Jon.webp" alt="Picture of Jon" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -457,7 +404,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Zyggy.jpg" alt="Picture of Zyggy" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Zyggy.webp" alt="Picture of Zyggy" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -477,7 +424,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Thy.jpg" alt="Picture of Thy" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Thy.webp" alt="Picture of Thy" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -496,7 +443,7 @@
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Sophie.jpg" alt="Picture of Sophie" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Sophie.webp" alt="Picture of Sophie" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -511,12 +458,12 @@
               <div class="testimonial ecosa">
                 <div class="quote">
                   <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" fill="#1070cc"></path></svg>
-                  Kevin was a major contributor to the majority of our front-end projects, always making sure that the components and web pages he worked on were implemented in the highest quality. He is a hardworking team player who’s always ready to get going and complete the job as efficiently as possible.
+                  Kevin was a major contributor to the majority of our front-end projects, always making sure that the components and web pages he worked on were implemented in the highest quality. He is a hardworking team player who's always ready to get going and complete the job as efficiently as possible.
                   <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z" fill="#1070cc"/></svg>
                 </div>
                 <div class="person">
                   <div class="image">
-                    <img src="./images/projects/portfolio/picture-of-Alice.jpg" alt="Picture of Alice" loading="lazy">
+                    <img width="100" height="100" src="./images/projects/portfolio/picture-of-Alice.webp" alt="Picture of Alice" loading="lazy">
                   </div>
                   <div class="text">
                     <div class="name">
@@ -538,23 +485,18 @@
         <section id="projects" class="grid">
           <h2 class="content-title">Projects</h2>
 
-          <h4 class="project-type">Co-developed Project</h4>
+          <h3 class="project-type">Co-developed Project</h3>
           <ul id="co-developed-projects">
             <li class="card" data-bs-toggle="modal" data-bs-target="#modal-sydney-trains">
               <div class="img-wrapper">
                 <img src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of Sydney Trains Data Visualisation System" loading="lazy">
               </div>
               <div class="card-content">
-                <h3 class="card-title">Sydney Trains Data Visualisation System</h3>
+                <h4 class="card-title">Sydney Trains Data Visualisation System</h4>
                 <ul class="project-description">
-                  <li>Co-developed a real-time data visualization application to track train performance metrics.</li>
-                  <li>Utilized Leaflet and OpenStreetMap for interactive geospatial mapping.</li>
+                  <li>Co-developed a real-time data visualization application to track train performance metrics. Utilizing Leaflet and OpenStreetMap for interactive geospatial mapping.</li>
                   <li>Engineered dynamic dashboards with Chart.js and jQuery, transforming complex performance datasets into intuitive graphs for timetable scheduling optimization.</li>
                   <li>Awarded Runner-Up Best Project at the University of Wollongong Tradeshow and received a Certificate of Appreciation from Sydney Trains for technical excellence and impact.</li>
-                  <!-- <li>Received a Certificate of Appreciation from Sydney Trains</li>
-                  <li>Awarded the Runner Up Prize at the University of Wollongong Tradeshow 2018</li>
-                  <li>A web app that displays trains data (real-time & historical) as graphs and map for performance analysis in order to improve timetable scheduling for the client</li>
-                  <li>Responsible for the Front-end development</li> -->
                 </ul>
                 <div class="tech-wrapper">
                   <div class="tech">HTML</div>
@@ -570,14 +512,14 @@
             </li>
           </ul>
 
-          <h4 class="project-type">Personal Projects</h4>
+          <h3 class="project-type">Personal Projects</h3>
             <ul id="personal-projects">
               <li class="card" data-bs-toggle="modal" data-bs-target="#modal-memo-app">
                 <div class="img-wrapper">
-                  <img src="./images/projects/memo/on-load.png" alt="Image of Memo Note" loading="lazy">
+                  <img src="./images/projects/memo/on-load.webp" alt="Image of Memo Note" loading="lazy">
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">Memo Note</h3>
+                  <h4 class="card-title">Memo Note</h4>
                   <p class="project-description">A React web app that can resize, drag, filter, archive, create, edit and delete memos.</p>
                   <div class="tech-wrapper">
                     <div class="tech">React</div>
@@ -600,10 +542,10 @@
               </li>
               <li class="card" data-bs-toggle="modal" data-bs-target="#modal-movie-world">
                 <div class="img-wrapper">
-                  <img src="./images/projects/movie-world/movie-world-landing-page.png" alt="Image of Movie World" loading="lazy">
+                  <img src="./images/projects/movie-world/movie-world-landing-page.webp" alt="Image of Movie World" loading="lazy">
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">Movie World</h3>
+                  <h4 class="card-title">Movie World</h4>
                   <p class="project-description">A React web app that can search info of movies (fetch from The Movie Database API).</p>
                   <div class="tech-wrapper">
                     <div class="tech">Cypress</div>
@@ -624,7 +566,6 @@
                 </div>
               </li>
             </ul>
-          <!-- <p id="thought">These valuable experiences I acquired during the development of the above projects, really broaden my horizons in this industry.</p> -->
         </section>
 
         <div class="projects-padding"></div>
@@ -639,41 +580,41 @@
                   <h4 class="modal-title">
                     Sydney Trains Data Visualisation System
                   </h4>
-                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close">close</i>
+                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close Modal">close</i>
                 </div>
                 <div class="modal-body">
                   <!-- Swiper -->
                   <div class="swiper-container sydneyTrainsSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/Certificate-of-Appreciation.webp" alt="Photo of the Certificate of Appreciation" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/Certificate-of-Appreciation.webp" alt="Photo of the Certificate of Appreciation" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-50" src="./images/projects/sydney-trains-project/UOW-FYP-tradeshow-Runner-up.webp" alt="Photo of the Runner Up Best Project Prize">
+                        <img class="d-block sydneyTrains tradeshow-cert" src="./images/projects/sydney-trains-project/UOW-FYP-tradeshow-Runner-up.webp" alt="Photo of the Runner Up Best Project Prize">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/photo-client.webp" alt="Photo of our project team and client">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/photo-client.webp" alt="Photo of our project team and client">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/photo-supervisors.webp" alt="Photo of our project team and supervisors" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/photo-supervisors.webp" alt="Photo of our project team and supervisors" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of the Live Map" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/sydney-trains-system-1.webp" alt="Image of the Live Map" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-2.webp" alt="Image of the Current Network Performance" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/sydney-trains-system-2.webp" alt="Image of the Current Network Performance" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-3.webp" alt="Image of the Time-Distance Diagram" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/sydney-trains-system-3.webp" alt="Image of the Time-Distance Diagram" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-4.webp" alt="Image of the Arrival Variance Analysis" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/sydney-trains-system-4.webp" alt="Image of the Arrival Variance Analysis" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-5.webp" alt="Image of the Charting & Analysis" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/sydney-trains-system-5.webp" alt="Image of the Charting & Analysis" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/sydney-trains-project/sydney-trains-system-6.webp" alt="Image of the Charting & Analysis" loading="lazy">
+                        <img class="d-block sydneyTrains" src="./images/projects/sydney-trains-project/sydney-trains-system-6.webp" alt="Image of the Charting & Analysis" loading="lazy">
                       </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -718,11 +659,11 @@
                       Live Demo
                     </a>
                   </h4>
-                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close">close</i>
+                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close Modal">close</i>
                 </div>
                 <div class="modal-body">
 
-                  <div class="project-intro">
+                  <div class="project-intro pj-section">
                     <h5 class="headline">
                       A spatial workspace for digital brainstorming.
                     </h5>
@@ -735,41 +676,41 @@
                   </div>
 
                   <!-- Swiper -->
-                  <div class="swiper-container memoSwiper">
+                  <div class="swiper-container memoSwiper pj-section">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/on-load.png" alt="Memo Web App on load" loading="lazy">
+                        <img class="d-block" src="./images/projects/memo/on-load.webp" alt="Memo Web App on load" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/filter-by-color.png" alt="Filter memo by color" loading="lazy">
+                        <img class="d-block" src="./images/projects/memo/filter-by-color.webp" alt="Filter memo by color" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/filter-by-text.png" alt="Filter memo by text" loading="lazy">
+                        <img class="d-block" src="./images/projects/memo/filter-by-text.webp" alt="Filter memo by text" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/edit-memo.png" alt="Edit memo" loading="lazy">
+                        <img class="d-block" src="./images/projects/memo/edit-memo.webp" alt="Edit memo" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/side-nav.png" alt="Side navigation of Memo Web App" loading="lazy">
+                        <img class="d-block" src="./images/projects/memo/side-nav.webp" alt="Side navigation of Memo Web App" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/create-memo.png" alt="Create memo" loading="lazy">
+                        <img class="d-block" src="./images/projects/memo/create-memo.webp" alt="Create memo" loading="lazy">
                       </div>
                       <div class="swiper-slide">
-                        <img class="d-block w-100" src="./images/projects/memo/delete-memo.png" alt="Delete memo" loading="lazy">
+                        <img class="d-block" src="./images/projects/memo/delete-memo.webp" alt="Delete memo" loading="lazy">
                       </div>
                     </div>
                     <div class="swiper-pagination"></div>
                   </div>
 
-                  <div class="project-challenge">
-                    <h4 class="section-title">
+                  <div class="project-challenge pj-section">
+                    <h2 class="section-title">
                       <strong>The Challenge</strong>
-                    </h4>
+                    </h2>
                     <p>
                       Most note-taking applications follow a rigid, linear list format. While organized, this format doesn't mimic the way the human brain brainstorms, which is often non-linear and spatial. Users often feel "boxed in" by standard interfaces, losing the creative freedom of physical sticky notes on a whiteboard.
                     </p>
-                    <p class="inner-thought">How might we create a digital note-taking experience that combines the flexibility of <strong>physical movement</strong> with the power of <strong>cloud synchronization</strong>?</p>
+                    <h5 class="inner-thought">How might we create a digital note-taking experience that combines the flexibility of <strong>physical movement</strong> with the power of <strong>cloud synchronization</strong>?</h5>
                     <div class="illustration-wrapper">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="799.88" height="745.456" viewBox="0 0 799.88 745.456" role="img" artist="Katerina Limpitsouni" source="https://undraw.co/">
                         <g id="Group_119" data-name="Group 119" transform="translate(-745.929 -179.752)">
@@ -818,37 +759,27 @@
                     </div>
                   </div>
                   
-                  <div class="project-objective">
-                    <h4 class="section-title">
+                  <div class="project-objective pj-section">
+                    <h2 class="section-title">
                       <strong>The Objectives</strong>
-                    </h4>
-                    <ul>
-                      <li><strong>Spatial Freedom</strong>: Empower users to prioritize information through size and position.</li>
-                      <li><strong>Real-time Continuity</strong>: Ensure that a thought captured on one device is instantly available and formatted on another.</li>
-                      <li><strong>Visual Efficiency</strong>: Use color-coding and filtering to reduce cognitive load when managing large volumes of notes.</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="project-research-goal">
-                    <h4 class="section-title">
-                      <strong>Research Goals</strong>
-                    </h4>
-                    <p>To build a tool that people actually use, I focused my research on:</p>
-                    <ol>
-                      <li><strong>Spatial Memory</strong>: Understanding how users remember information based on where it is placed on a screen.</li>
-                      <li><strong>Friction Points</strong>: Identifying why users switch from digital apps back to physical post-it notes.</li>
-                      <li><strong>Cross-Device Behavior</strong>: Learning which features are "must-haves" for mobile vs. desktop environments.</li>
-                    </ol>
-                    <div class="illustration-wrapper">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600.11" viewBox="0 0 800 600.11" role="img" artist="Katerina Limpitsouni" source="https://undraw.co/"><g transform="translate(-326.033 -171.654)"><g transform="translate(841.841 228.306) rotate(47)"><path d="M71.479.8C49.926-2.436,26.322,4.046,12.229,21.4A54.455,54.455,0,0,0,.252,49.8,49.8,49.8,0,0,0,7.047,79.843c6.276,10.94,15.6,19.808,25.211,27.807,1.5,1.247,3.667-.9,2.156-2.156C19.1,92.747,3.209,76.418,3.036,55.15,2.868,34.346,16.67,15.82,35.514,7.9A65.9,65.9,0,0,1,70.668,3.745c1.92.289,2.748-2.649.811-2.941h0Z" transform="translate(0 13.138)" fill="#e6e6e6"/><path d="M.687,2.9,21.25,16.884V14.251A31.852,31.852,0,0,0,6.827,26.859C5.8,28.538,8.436,30.071,9.46,28.4A29.122,29.122,0,0,1,22.789,16.884c1.137-.493.839-2.063,0-2.633L2.226.265C.6-.841-.928,1.8.687,2.9h0Z" transform="translate(52.9 0)" fill="#e6e6e6"/></g><g transform="translate(643.942 352.66)"><rect width="126.492" height="126.492" rx="16" transform="translate(-0.004 0)" fill="#f2f2f2"/><g transform="translate(39.853 28.828)"><path d="M46.155,23.077a27.992,27.992,0,0,1-.448,4.989,24.518,24.518,0,0,1-2.426,6.017c-2.052,3.645-4.253,5.007-6.062,8.576-.311.241-.631.457-.956.669-.65.419-.721,2.472-1.411,2.826,0,0-.01,0-.014.01a2.61,2.61,0,0,0-.356,1.187v.01c-.348,2.04-.65,6.188-1,8.642-.047.3-.09.57-.136.81-.118.65-.24,1.065-.377,1.116-1.682.65-2.4-.241-4.24,0-.989.132-6.038.942-7.065.942-2.915,0-4.493-.993-6.852-2.058-.165-.071-.33-.146-.5-.221-.064-.024-.117-.052-.178-.075-.677-.287-1.318-7.531-1.954-10.272a.017.017,0,0,1,0-.014c-.132-.57-.264-.942-.4-1.017l-.1-.056c-.419-.241-.829-.5-1.23-.777-2.426-4.041-7.112-7.886-9.426-14.171A26.488,26.488,0,0,1,0,23.077a23.077,23.077,0,1,1,46.155,0Z" transform="translate(0.368 0.905)" fill="#1070cc"/><path d="M46.046,28.976a24.519,24.519,0,0,1-2.426,6.015c-2.052,3.645-4.253,5.007-6.062,8.576-1.2,2.378-2.229,5.737-2.929,11.4-.042.334.047.716,0,1.045-.107.73.024.6-.419,1.258-.2.113-.325-.047-.392-.356a9.834,9.834,0,0,1-.028-2.364,31.133,31.133,0,0,1,1.026-6.278v-.01c.113-.41.236-.806.356-1.187,2.181-6.641,6.2-9.65,8.025-13.126C52.772,15.73,35.079-4.6,15.591,2.468c-1.045.382-.989.6-1.045.631a21.251,21.251,0,0,0-4.078,1.879c-8.635,5.875-11.734,17.5-7.839,27.082,2.109,5.185,6.528,8.11,9.386,14q.257.513.495,1.074a.017.017,0,0,0,0,.014A28.793,28.793,0,0,1,14.647,57.5c0,.064.01.123.01.184.169.014.334.024.495.038,2.5.217,4.121.617,4.96.183l.923.094c.306.428,5.452-.094,6.273-.1h.212a57.345,57.345,0,0,0,6.164-.175c.1-.01.212-.024.316-.038a.551.551,0,0,1,.419.631,4.983,4.983,0,0,1-1.252,2.506c-.965.565-16.7.852-18.2-.207a2.36,2.36,0,0,1-.834-2.822c-.028-.132-.606-.508-.631-.631-.282-1.6.052-5.665-1.879-10.248a12.367,12.367,0,0,0-.838-1.624C8.359,41.245,3.674,37.4,1.361,31.111A23.514,23.514,0,0,1,.12,20.56C.953,11.706,8.591,2.994,17.162.794,35.1-3.812,50.247,12.455,46.046,28.976Z" transform="translate(0.024 -0.001)" fill="#010001"/><path d="M19.3,0c1.493,1.42.7,1.9,0,3.556-.877-.2-15.895.763-17.987,0A2.131,2.131,0,0,1,.684,0,83.854,83.854,0,0,0,19.3,0Z" transform="translate(14.119 61.305)" fill="#010001"/><path d="M20.495.418c.588,1.306-.537,2.108-1.046,3.137L18.4,3.765,1.88,3.556C.885,3.364.254,1.971,0,1.046A.617.617,0,0,1,.312.418L1.671,0A148.617,148.617,0,0,0,18.09.418a2.39,2.39,0,0,1,2.405,0Z" transform="translate(13.761 65.07)" fill="#010001"/><path d="M8.419,24.179H7.986V17.1L0,.185.392,0,8.419,17Z" transform="translate(12.275 24.292)" fill="#fff"/><path d="M.356,25.327,0,17.456l.008-.03L4.247,0l.421.1L.436,17.5l.352,7.809Z" transform="translate(27.088 23.156)" fill="#fff"/></g></g><g transform="translate(326.033 370.876)"><path d="M327.3,325.69c70.724,0,14.187,46.518,20.4,61.573,3.406,8.247,79.79-33.124,79.79,0,0,42.98-21.825,62.785-56.75,71.772-38.731,9.967-93.926,6.27-152.659,6.27-111.027,0-130.861,30.215-130.861-61.037,0-22.357,13.9-62.844,26.772-72.187C153.107,303.688,243.476,325.69,327.3,325.69Z" transform="translate(-87.221 -72.135)" fill="#f2f2f2"/><g transform="translate(43.046 0)"><path d="M943.888,301.269l5.533,27.173,27.086,45.524,33.4-14.267s45.389-47.561,16.868-54.357a25.01,25.01,0,0,1-9.471-4.22c-5.606-4.22-7.361-10.366-7.361-16.377,0-9.925,4.637-19.493,4.637-19.493l-58.43-18.4a93.322,93.322,0,0,1,4.2,23.676c.442,15.948-5.471,23.749-10.317,27.491a17.717,17.717,0,0,1-6.146,3.251Z" transform="translate(-888.737 -171.711)" fill="#ed9da0"/><path d="M939.782,249.351a46,46,0,1,0,13.452-32.716A46,46,0,0,0,939.782,249.351Z" transform="translate(-879.099 -181.621)" fill="#ed9da0"/><path d="M1001.487,336.547s23.894-33.122,14.892-45.99l40.372,16.549s24.3-2.945,33.122,33.318a62.716,62.716,0,0,1,1.509,18.4c-.322,5.471.417,15.1,6.648,27.552,9.976,19.934,7.7,65.68-12.685,70.218s-27.626,2.258-27.626,2.258,2.711,82.9,14.488,92.41-29.945,11.042-29.945,11.042l-54.76.735-71.037-4.756s8.081-39.639,10.792-61.831,9.065-69.458,9.065-69.458l-46.211-62.564s-8.146-37.82,20.388-54.578S949.755,289,949.755,289s28.632,46.616,43.573,48.91C993.329,337.91,999.009,340.192,1001.487,336.547Z" transform="translate(-889.035 -162.153)" fill="#1070cc"/><path d="M937.882,338.47s.454,14.954-2.257,20.855-12.685,38.507-12.685,38.507h22.646s-12.267-13.139-11.323-19.481S937.882,338.47,937.882,338.47Z" transform="translate(-772.436 -150.936)" opacity="0.1"/><path d="M931.023,442.155s50.026-12.267,54.688-22.658,17.53-33.726,17.53-33.726l-5.275-7.115-24.338,19.1s-28.987,23.1-42.58,25.369S931.023,442.155,931.023,442.155Z" transform="translate(-832.617 -141.823)" fill="#ed9da0"/><path d="M931.023,442.155s50.026-12.267,54.688-22.658,17.53-33.726,17.53-33.726l-5.275-7.115-24.338,19.1s-28.987,23.1-42.58,25.369S931.023,442.155,931.023,442.155Z" transform="translate(-832.617 -141.823)" opacity="0.05"/><path d="M945.461,382.463V409.6h4.367a126.973,126.973,0,0,1,61.556,15.927l8.208,4.56,2.2,1.227,14.046-31.626L1022.7,387.91h-.675c-3.214.307-17.113,1.472-23-.515-5.594-1.9-12.538-7.925-29.012-3.68-8.121,2.073-15.052,11.176-22.929,8.33Z" transform="translate(-890.31 -141.014)" fill="#ed9da0"/><path d="M984.489,347.867l-9.065,10.182v24.695s7.679,77.91,32.214,86.522,68.133-4.993,68.133-4.993,11.274-29.9,6-31.7-46.616-12.734-46.616-12.734.589-45.709-8.477-59.3c0,0,5.888-42.568-14.5-43.475S984.489,347.867,984.489,347.867Z" transform="translate(-974.408 -155.795)" fill="#1070cc"/><path d="M977.428,337.55l-14.181,58.27S952.059,395.757,977.428,337.55Z" transform="translate(-850.71 -151.145)" opacity="0.1"/><path d="M989.7,329.61s18.573,30.423,11.323,61.867l-3.459.257S1003.749,377.171,989.7,329.61Z" transform="translate(-911.45 -152.945)" opacity="0.1"/><path d="M917.43,386.85s4.527,31.7-3.68,44.384c0,0,16.586,6.8,39.869,5.435l15.849-49.818Z" transform="translate(-785.044 -139.967)" fill="#1070cc"/><path d="M535.4,232.073c5.374.7,9.428-4.8,11.307-9.882s3.311-11,7.984-13.746c6.383-3.751,14.55.76,21.849-.477,8.25-1.4,13.6-10.137,14.026-18.483s-2.9-16.382-6.163-24.082l-1.138,9.574a18.975,18.975,0,0,0-8.29-16.586l1.461,14.039a14.9,14.9,0,0,0-17.141-12.337l.231,8.367c-9.522-1.133-19.126-2.266-28.675-1.4s-19.165,3.883-26.4,10.173c-10.826,9.407-14.78,24.9-13.454,39.186s7.218,27.695,13.367,40.659c1.545,3.262,3.683,6.94,7.268,7.356,3.218.372,6.168-2.319,7.17-5.406a19.581,19.581,0,0,0-.087-9.621c-.906-4.814-2.046-9.735-1.2-14.556s4.322-9.59,9.184-10.181,9.838,4.967,7.5,9.27Z" transform="translate(-437.521 -158.391)" fill="#090814"/></g></g><path d="M381.118,412.77H355.531a3.621,3.621,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.583,69.583,0,0,0-.447-32.612,3.628,3.628,0,0,1,1.407-3.812c13.157-9.462,23.518-9.188,30.8.818a3.636,3.636,0,0,1,.637,1.536,113.871,113.871,0,0,1,.319,35.339,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(479.714 -42.702)" fill="#d6d6e3"/><path d="M375.884,391.621h-8.8a1.835,1.835,0,0,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(477.014 -47.176)" fill="#fff"/><path d="M375.884,399.621h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(477.014 -48.74)" fill="#fff"/><path d="M375.884,407.621h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(477.014 -50.304)" fill="#fff"/><path d="M794.488,445.677H712.7a8.277,8.277,0,0,1-8.268-8.268V387.033a8.277,8.277,0,0,1,8.268-8.268h81.791a8.277,8.277,0,0,1,8.268,8.268v50.376a8.277,8.277,0,0,1-8.268,8.268Z" transform="translate(310.146 -19.685)" fill="#e6e6e6"/><path d="M763.515,440.764H719.97a7.752,7.752,0,0,1-7.744-7.743V394.573a7.752,7.752,0,0,1,7.743-7.743h70.293a7.752,7.752,0,0,1,7.743,7.743v11.7A34.53,34.53,0,0,1,763.515,440.764Z" transform="translate(308.622 -21.261)" fill="#fff"/><path d="M786.39,412.107H730.122a1.835,1.835,0,1,1,0-3.67H786.39a1.835,1.835,0,0,1,0,3.67Z" transform="translate(305.483 -25.485)" fill="#1070cc"/><path d="M738.924,421.12h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(305.483 -27.247)" fill="#1070cc"/><path d="M754.513,430.134H730.122a1.835,1.835,0,0,1,0-3.67h24.391a1.835,1.835,0,0,1,0,3.67Z" transform="translate(305.483 -29.009)" fill="#1070cc"/><circle cx="11.09" cy="11.09" r="11.09" transform="translate(1003.485 352.66)" fill="#090814"/><g transform="translate(1011.72 181.981)"><path d="M655.724,216.235H582.178a7.443,7.443,0,0,1-7.434-7.434V163.5a7.443,7.443,0,0,1,7.434-7.434h73.545a7.443,7.443,0,0,1,7.434,7.434v45.3A7.443,7.443,0,0,1,655.724,216.235Z" transform="translate(-548.846 -156.069)" fill="#e6e6e6"/><path d="M628.66,212.631H589.505a6.971,6.971,0,0,1-6.963-6.962V171.1a6.97,6.97,0,0,1,6.963-6.962h63.206a6.97,6.97,0,0,1,6.963,6.962v10.521a31.048,31.048,0,0,1-31.013,31.013Z" transform="translate(-551.003 -158.3)" fill="#fff"/><path d="M650.848,189.042h-50.6a1.65,1.65,0,0,1,0-3.3h50.6a1.65,1.65,0,0,1,0,3.3Z" transform="translate(-555.445 -164.276)" fill="#1070cc"/><path d="M608.167,198.055h-7.914a1.65,1.65,0,0,1,0-3.3h7.914a1.65,1.65,0,0,1,0,3.3Z" transform="translate(-555.445 -166.769)" fill="#1070cc"/><path d="M622.184,207.068H600.252a1.65,1.65,0,0,1,0-3.3h21.932a1.65,1.65,0,0,1,0,3.3Z" transform="translate(-555.445 -169.262)" fill="#1070cc"/><circle cx="11.09" cy="11.09" r="11.09" transform="translate(10.625 63.729) rotate(-58.134)" fill="#090814"/></g><path d="M357.128,302.5H331.542a3.621,3.621,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.6,69.6,0,0,0-.4-32.429,3.589,3.589,0,0,1,1.655-3.972c9.268-5.4,19.166-5.231,29.417.491a3.63,3.63,0,0,1,1.845,2.6,113.888,113.888,0,0,1,.2,34.577,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(484.395 -21.731)" fill="#d6d6e3"/><path d="M346.884,281.621h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(482.684 -25.673)" fill="#fff"/><path d="M357.646,290.634H338.082a1.835,1.835,0,0,1,0-3.67h19.564a1.835,1.835,0,1,1,0,3.67Z" transform="translate(482.684 -27.435)" fill="#fff"/><circle cx="11.09" cy="11.09" r="11.09" transform="translate(762.107 348.009) rotate(-58.134)" fill="#090814"/><path d="M466.132,362.2H440.546a3.621,3.621,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.607,69.607,0,0,0-.386-32.374,3.612,3.612,0,0,1,1.709-4c12.43-7.115,22.272-6.919,30.089.6a3.573,3.573,0,0,1,1.029,1.992,113.884,113.884,0,0,1,.272,35.055,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(451.418 -29.702)" fill="#1070cc"/><path d="M457.884,342.621h-8.8a1.835,1.835,0,0,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(449.32 -34.141)" fill="#fff"/><path d="M468.646,351.634H449.082a1.835,1.835,0,0,1,0-3.67h19.564a1.835,1.835,0,1,1,0,3.67Z" transform="translate(449.32 -35.903)" fill="#fff"/><g transform="translate(844.12 400.656) rotate(-70)"><path d="M71.479,139.877c-21.553,4.228-45.157-4.228-59.25-26.863A83.546,83.546,0,0,1,.252,75.958,81.424,81.424,0,0,1,7.047,36.767C13.323,22.5,22.651,10.927,32.258.491c1.5-1.627,3.667,1.172,2.156,2.813C19.1,19.934,3.209,41.236,3.036,68.981c-.169,27.14,13.634,51.308,32.478,61.638a51.872,51.872,0,0,0,35.154,5.422c1.92-.377,2.748,3.456.811,3.836h0Z" transform="translate(0 0)" fill="#e6e6e6"/><path d="M.687,26.222,21.25,12.237V14.87A31.852,31.852,0,0,1,6.827,2.262C5.8.583,8.437-.95,9.46.723A29.121,29.121,0,0,0,22.789,12.237c1.137.493.839,2.063,0,2.633L2.226,28.856C.6,29.962-.928,27.321.687,26.222h0Z" transform="translate(52.9 124.944)" fill="#e6e6e6"/></g><path d="M526.124,583.477H500.537a3.62,3.62,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.6,69.6,0,0,0-.418-32.5,3.6,3.6,0,0,1,1.57-3.921c8.852-5.484,18.49-5.312,29.468.524a3.661,3.661,0,0,1,1.905,2.635,113.891,113.891,0,0,1,.189,34.533,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(403.3 -122.777)" fill="#1070cc"/><path d="M515.884,563.621h-8.8a1.835,1.835,0,0,1,0-3.67h8.8a1.835,1.835,0,0,1,0,3.67Z" transform="translate(401.586 -126.935)" fill="#fff"/><path d="M526.646,572.634H507.082a1.835,1.835,0,1,1,0-3.67h19.564a1.835,1.835,0,0,1,0,3.67Z" transform="translate(401.586 -128.696)" fill="#fff"/><g transform="translate(976.548 162.694) rotate(47)"><path d="M71.479.8C49.926-2.436,26.322,4.046,12.229,21.4A54.455,54.455,0,0,0,.252,49.8,49.8,49.8,0,0,0,7.047,79.843c6.276,10.94,15.6,19.808,25.211,27.807,1.5,1.247,3.667-.9,2.156-2.156C19.1,92.747,3.209,76.418,3.036,55.15,2.868,34.346,16.67,15.82,35.514,7.9A65.9,65.9,0,0,1,70.668,3.745c1.92.289,2.748-2.649.811-2.941h0Z" transform="translate(0 13.138)" fill="#e6e6e6"/><path d="M.687,2.9,21.25,16.884V14.251A31.852,31.852,0,0,0,6.827,26.859C5.8,28.538,8.436,30.071,9.46,28.4A29.122,29.122,0,0,1,22.789,16.884c1.137-.493.839-2.063,0-2.633L2.226.265C.6-.841-.928,1.8.687,2.9h0Z" transform="translate(52.9 0)" fill="#e6e6e6"/></g><g transform="translate(923.118 179.929)"><path d="M471.172,238.656l-25.565,1.059a3.621,3.621,0,0,1-2.9-1.251,3.546,3.546,0,0,1-.818-2.982,69.62,69.62,0,0,0-1.669-32.143,3.6,3.6,0,0,1,1.776-4.2c10.471-5.44,20.283-5.716,29.16-.821a3.642,3.642,0,0,1,1.828,2.462,113.883,113.883,0,0,1,1.643,34.62A3.613,3.613,0,0,1,471.172,238.656Z" transform="translate(-440.074 -194.837)" fill="#d6d6e3"/><path d="M472.17,227.614l-19.547.81a1.835,1.835,0,1,1-.152-3.667l19.547-.81a1.835,1.835,0,1,1,.152,3.667Z" transform="translate(-442.153 -200.527)" fill="#fff"/><path d="M471.839,219.621l-19.547.81a1.835,1.835,0,0,1-.152-3.667l19.547-.81a1.835,1.835,0,0,1,.152,3.667Z" transform="translate(-442.088 -198.965)" fill="#fff"/></g></g></svg>
+                    </h2>
+                    <div class="wrapper">
+                      <ul>
+                        <li><strong>Spatial Freedom</strong>: Empower users to prioritize information through size and position.</li>
+                        <li><strong>Real-time Continuity</strong>: Ensure that a thought captured on one device is instantly available and formatted on another.</li>
+                        <li><strong>Visual Efficiency</strong>: Use color-coding and filtering to reduce cognitive load when managing large volumes of notes.</li>
+                      </ul>
+                      <div class="illustration-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600.11" viewBox="0 0 800 600.11" role="img" artist="Katerina Limpitsouni" source="https://undraw.co/"><g transform="translate(-326.033 -171.654)"><g transform="translate(841.841 228.306) rotate(47)"><path d="M71.479.8C49.926-2.436,26.322,4.046,12.229,21.4A54.455,54.455,0,0,0,.252,49.8,49.8,49.8,0,0,0,7.047,79.843c6.276,10.94,15.6,19.808,25.211,27.807,1.5,1.247,3.667-.9,2.156-2.156C19.1,92.747,3.209,76.418,3.036,55.15,2.868,34.346,16.67,15.82,35.514,7.9A65.9,65.9,0,0,1,70.668,3.745c1.92.289,2.748-2.649.811-2.941h0Z" transform="translate(0 13.138)" fill="#e6e6e6"/><path d="M.687,2.9,21.25,16.884V14.251A31.852,31.852,0,0,0,6.827,26.859C5.8,28.538,8.436,30.071,9.46,28.4A29.122,29.122,0,0,1,22.789,16.884c1.137-.493.839-2.063,0-2.633L2.226.265C.6-.841-.928,1.8.687,2.9h0Z" transform="translate(52.9 0)" fill="#e6e6e6"/></g><g transform="translate(643.942 352.66)"><rect width="126.492" height="126.492" rx="16" transform="translate(-0.004 0)" fill="#f2f2f2"/><g transform="translate(39.853 28.828)"><path d="M46.155,23.077a27.992,27.992,0,0,1-.448,4.989,24.518,24.518,0,0,1-2.426,6.017c-2.052,3.645-4.253,5.007-6.062,8.576-.311.241-.631.457-.956.669-.65.419-.721,2.472-1.411,2.826,0,0-.01,0-.014.01a2.61,2.61,0,0,0-.356,1.187v.01c-.348,2.04-.65,6.188-1,8.642-.047.3-.09.57-.136.81-.118.65-.24,1.065-.377,1.116-1.682.65-2.4-.241-4.24,0-.989.132-6.038.942-7.065.942-2.915,0-4.493-.993-6.852-2.058-.165-.071-.33-.146-.5-.221-.064-.024-.117-.052-.178-.075-.677-.287-1.318-7.531-1.954-10.272a.017.017,0,0,1,0-.014c-.132-.57-.264-.942-.4-1.017l-.1-.056c-.419-.241-.829-.5-1.23-.777-2.426-4.041-7.112-7.886-9.426-14.171A26.488,26.488,0,0,1,0,23.077a23.077,23.077,0,1,1,46.155,0Z" transform="translate(0.368 0.905)" fill="#1070cc"/><path d="M46.046,28.976a24.519,24.519,0,0,1-2.426,6.015c-2.052,3.645-4.253,5.007-6.062,8.576-1.2,2.378-2.229,5.737-2.929,11.4-.042.334.047.716,0,1.045-.107.73.024.6-.419,1.258-.2.113-.325-.047-.392-.356a9.834,9.834,0,0,1-.028-2.364,31.133,31.133,0,0,1,1.026-6.278v-.01c.113-.41.236-.806.356-1.187,2.181-6.641,6.2-9.65,8.025-13.126C52.772,15.73,35.079-4.6,15.591,2.468c-1.045.382-.989.6-1.045.631a21.251,21.251,0,0,0-4.078,1.879c-8.635,5.875-11.734,17.5-7.839,27.082,2.109,5.185,6.528,8.11,9.386,14q.257.513.495,1.074a.017.017,0,0,0,0,.014A28.793,28.793,0,0,1,14.647,57.5c0,.064.01.123.01.184.169.014.334.024.495.038,2.5.217,4.121.617,4.96.183l.923.094c.306.428,5.452-.094,6.273-.1h.212a57.345,57.345,0,0,0,6.164-.175c.1-.01.212-.024.316-.038a.551.551,0,0,1,.419.631,4.983,4.983,0,0,1-1.252,2.506c-.965.565-16.7.852-18.2-.207a2.36,2.36,0,0,1-.834-2.822c-.028-.132-.606-.508-.631-.631-.282-1.6.052-5.665-1.879-10.248a12.367,12.367,0,0,0-.838-1.624C8.359,41.245,3.674,37.4,1.361,31.111A23.514,23.514,0,0,1,.12,20.56C.953,11.706,8.591,2.994,17.162.794,35.1-3.812,50.247,12.455,46.046,28.976Z" transform="translate(0.024 -0.001)" fill="#010001"/><path d="M19.3,0c1.493,1.42.7,1.9,0,3.556-.877-.2-15.895.763-17.987,0A2.131,2.131,0,0,1,.684,0,83.854,83.854,0,0,0,19.3,0Z" transform="translate(14.119 61.305)" fill="#010001"/><path d="M20.495.418c.588,1.306-.537,2.108-1.046,3.137L18.4,3.765,1.88,3.556C.885,3.364.254,1.971,0,1.046A.617.617,0,0,1,.312.418L1.671,0A148.617,148.617,0,0,0,18.09.418a2.39,2.39,0,0,1,2.405,0Z" transform="translate(13.761 65.07)" fill="#010001"/><path d="M8.419,24.179H7.986V17.1L0,.185.392,0,8.419,17Z" transform="translate(12.275 24.292)" fill="#fff"/><path d="M.356,25.327,0,17.456l.008-.03L4.247,0l.421.1L.436,17.5l.352,7.809Z" transform="translate(27.088 23.156)" fill="#fff"/></g></g><g transform="translate(326.033 370.876)"><path d="M327.3,325.69c70.724,0,14.187,46.518,20.4,61.573,3.406,8.247,79.79-33.124,79.79,0,0,42.98-21.825,62.785-56.75,71.772-38.731,9.967-93.926,6.27-152.659,6.27-111.027,0-130.861,30.215-130.861-61.037,0-22.357,13.9-62.844,26.772-72.187C153.107,303.688,243.476,325.69,327.3,325.69Z" transform="translate(-87.221 -72.135)" fill="#f2f2f2"/><g transform="translate(43.046 0)"><path d="M943.888,301.269l5.533,27.173,27.086,45.524,33.4-14.267s45.389-47.561,16.868-54.357a25.01,25.01,0,0,1-9.471-4.22c-5.606-4.22-7.361-10.366-7.361-16.377,0-9.925,4.637-19.493,4.637-19.493l-58.43-18.4a93.322,93.322,0,0,1,4.2,23.676c.442,15.948-5.471,23.749-10.317,27.491a17.717,17.717,0,0,1-6.146,3.251Z" transform="translate(-888.737 -171.711)" fill="#ed9da0"/><path d="M939.782,249.351a46,46,0,1,0,13.452-32.716A46,46,0,0,0,939.782,249.351Z" transform="translate(-879.099 -181.621)" fill="#ed9da0"/><path d="M1001.487,336.547s23.894-33.122,14.892-45.99l40.372,16.549s24.3-2.945,33.122,33.318a62.716,62.716,0,0,1,1.509,18.4c-.322,5.471.417,15.1,6.648,27.552,9.976,19.934,7.7,65.68-12.685,70.218s-27.626,2.258-27.626,2.258,2.711,82.9,14.488,92.41-29.945,11.042-29.945,11.042l-54.76.735-71.037-4.756s8.081-39.639,10.792-61.831,9.065-69.458,9.065-69.458l-46.211-62.564s-8.146-37.82,20.388-54.578S949.755,289,949.755,289s28.632,46.616,43.573,48.91C993.329,337.91,999.009,340.192,1001.487,336.547Z" transform="translate(-889.035 -162.153)" fill="#1070cc"/><path d="M937.882,338.47s.454,14.954-2.257,20.855-12.685,38.507-12.685,38.507h22.646s-12.267-13.139-11.323-19.481S937.882,338.47,937.882,338.47Z" transform="translate(-772.436 -150.936)" opacity="0.1"/><path d="M931.023,442.155s50.026-12.267,54.688-22.658,17.53-33.726,17.53-33.726l-5.275-7.115-24.338,19.1s-28.987,23.1-42.58,25.369S931.023,442.155,931.023,442.155Z" transform="translate(-832.617 -141.823)" fill="#ed9da0"/><path d="M931.023,442.155s50.026-12.267,54.688-22.658,17.53-33.726,17.53-33.726l-5.275-7.115-24.338,19.1s-28.987,23.1-42.58,25.369S931.023,442.155,931.023,442.155Z" transform="translate(-832.617 -141.823)" opacity="0.05"/><path d="M945.461,382.463V409.6h4.367a126.973,126.973,0,0,1,61.556,15.927l8.208,4.56,2.2,1.227,14.046-31.626L1022.7,387.91h-.675c-3.214.307-17.113,1.472-23-.515-5.594-1.9-12.538-7.925-29.012-3.68-8.121,2.073-15.052,11.176-22.929,8.33Z" transform="translate(-890.31 -141.014)" fill="#ed9da0"/><path d="M984.489,347.867l-9.065,10.182v24.695s7.679,77.91,32.214,86.522,68.133-4.993,68.133-4.993,11.274-29.9,6-31.7-46.616-12.734-46.616-12.734.589-45.709-8.477-59.3c0,0,5.888-42.568-14.5-43.475S984.489,347.867,984.489,347.867Z" transform="translate(-974.408 -155.795)" fill="#1070cc"/><path d="M977.428,337.55l-14.181,58.27S952.059,395.757,977.428,337.55Z" transform="translate(-850.71 -151.145)" opacity="0.1"/><path d="M989.7,329.61s18.573,30.423,11.323,61.867l-3.459.257S1003.749,377.171,989.7,329.61Z" transform="translate(-911.45 -152.945)" opacity="0.1"/><path d="M917.43,386.85s4.527,31.7-3.68,44.384c0,0,16.586,6.8,39.869,5.435l15.849-49.818Z" transform="translate(-785.044 -139.967)" fill="#1070cc"/><path d="M535.4,232.073c5.374.7,9.428-4.8,11.307-9.882s3.311-11,7.984-13.746c6.383-3.751,14.55.76,21.849-.477,8.25-1.4,13.6-10.137,14.026-18.483s-2.9-16.382-6.163-24.082l-1.138,9.574a18.975,18.975,0,0,0-8.29-16.586l1.461,14.039a14.9,14.9,0,0,0-17.141-12.337l.231,8.367c-9.522-1.133-19.126-2.266-28.675-1.4s-19.165,3.883-26.4,10.173c-10.826,9.407-14.78,24.9-13.454,39.186s7.218,27.695,13.367,40.659c1.545,3.262,3.683,6.94,7.268,7.356,3.218.372,6.168-2.319,7.17-5.406a19.581,19.581,0,0,0-.087-9.621c-.906-4.814-2.046-9.735-1.2-14.556s4.322-9.59,9.184-10.181,9.838,4.967,7.5,9.27Z" transform="translate(-437.521 -158.391)" fill="#090814"/></g></g><path d="M381.118,412.77H355.531a3.621,3.621,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.583,69.583,0,0,0-.447-32.612,3.628,3.628,0,0,1,1.407-3.812c13.157-9.462,23.518-9.188,30.8.818a3.636,3.636,0,0,1,.637,1.536,113.871,113.871,0,0,1,.319,35.339,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(479.714 -42.702)" fill="#d6d6e3"/><path d="M375.884,391.621h-8.8a1.835,1.835,0,0,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(477.014 -47.176)" fill="#fff"/><path d="M375.884,399.621h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(477.014 -48.74)" fill="#fff"/><path d="M375.884,407.621h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(477.014 -50.304)" fill="#fff"/><path d="M794.488,445.677H712.7a8.277,8.277,0,0,1-8.268-8.268V387.033a8.277,8.277,0,0,1,8.268-8.268h81.791a8.277,8.277,0,0,1,8.268,8.268v50.376a8.277,8.277,0,0,1-8.268,8.268Z" transform="translate(310.146 -19.685)" fill="#e6e6e6"/><path d="M763.515,440.764H719.97a7.752,7.752,0,0,1-7.744-7.743V394.573a7.752,7.752,0,0,1,7.743-7.743h70.293a7.752,7.752,0,0,1,7.743,7.743v11.7A34.53,34.53,0,0,1,763.515,440.764Z" transform="translate(308.622 -21.261)" fill="#fff"/><path d="M786.39,412.107H730.122a1.835,1.835,0,1,1,0-3.67H786.39a1.835,1.835,0,0,1,0,3.67Z" transform="translate(305.483 -25.485)" fill="#1070cc"/><path d="M738.924,421.12h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(305.483 -27.247)" fill="#1070cc"/><path d="M754.513,430.134H730.122a1.835,1.835,0,0,1,0-3.67h24.391a1.835,1.835,0,0,1,0,3.67Z" transform="translate(305.483 -29.009)" fill="#1070cc"/><circle cx="11.09" cy="11.09" r="11.09" transform="translate(1003.485 352.66)" fill="#090814"/><g transform="translate(1011.72 181.981)"><path d="M655.724,216.235H582.178a7.443,7.443,0,0,1-7.434-7.434V163.5a7.443,7.443,0,0,1,7.434-7.434h73.545a7.443,7.443,0,0,1,7.434,7.434v45.3A7.443,7.443,0,0,1,655.724,216.235Z" transform="translate(-548.846 -156.069)" fill="#e6e6e6"/><path d="M628.66,212.631H589.505a6.971,6.971,0,0,1-6.963-6.962V171.1a6.97,6.97,0,0,1,6.963-6.962h63.206a6.97,6.97,0,0,1,6.963,6.962v10.521a31.048,31.048,0,0,1-31.013,31.013Z" transform="translate(-551.003 -158.3)" fill="#fff"/><path d="M650.848,189.042h-50.6a1.65,1.65,0,0,1,0-3.3h50.6a1.65,1.65,0,0,1,0,3.3Z" transform="translate(-555.445 -164.276)" fill="#1070cc"/><path d="M608.167,198.055h-7.914a1.65,1.65,0,0,1,0-3.3h7.914a1.65,1.65,0,0,1,0,3.3Z" transform="translate(-555.445 -166.769)" fill="#1070cc"/><path d="M622.184,207.068H600.252a1.65,1.65,0,0,1,0-3.3h21.932a1.65,1.65,0,0,1,0,3.3Z" transform="translate(-555.445 -169.262)" fill="#1070cc"/><circle cx="11.09" cy="11.09" r="11.09" transform="translate(10.625 63.729) rotate(-58.134)" fill="#090814"/></g><path d="M357.128,302.5H331.542a3.621,3.621,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.6,69.6,0,0,0-.4-32.429,3.589,3.589,0,0,1,1.655-3.972c9.268-5.4,19.166-5.231,29.417.491a3.63,3.63,0,0,1,1.845,2.6,113.888,113.888,0,0,1,.2,34.577,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(484.395 -21.731)" fill="#d6d6e3"/><path d="M346.884,281.621h-8.8a1.835,1.835,0,1,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(482.684 -25.673)" fill="#fff"/><path d="M357.646,290.634H338.082a1.835,1.835,0,0,1,0-3.67h19.564a1.835,1.835,0,1,1,0,3.67Z" transform="translate(482.684 -27.435)" fill="#fff"/><circle cx="11.09" cy="11.09" r="11.09" transform="translate(762.107 348.009) rotate(-58.134)" fill="#090814"/><path d="M466.132,362.2H440.546a3.621,3.621,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.607,69.607,0,0,0-.386-32.374,3.612,3.612,0,0,1,1.709-4c12.43-7.115,22.272-6.919,30.089.6a3.573,3.573,0,0,1,1.029,1.992,113.884,113.884,0,0,1,.272,35.055,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(451.418 -29.702)" fill="#1070cc"/><path d="M457.884,342.621h-8.8a1.835,1.835,0,0,1,0-3.67h8.8a1.835,1.835,0,1,1,0,3.67Z" transform="translate(449.32 -34.141)" fill="#fff"/><path d="M468.646,351.634H449.082a1.835,1.835,0,0,1,0-3.67h19.564a1.835,1.835,0,1,1,0,3.67Z" transform="translate(449.32 -35.903)" fill="#fff"/><g transform="translate(844.12 400.656) rotate(-70)"><path d="M71.479,139.877c-21.553,4.228-45.157-4.228-59.25-26.863A83.546,83.546,0,0,1,.252,75.958,81.424,81.424,0,0,1,7.047,36.767C13.323,22.5,22.651,10.927,32.258.491c1.5-1.627,3.667,1.172,2.156,2.813C19.1,19.934,3.209,41.236,3.036,68.981c-.169,27.14,13.634,51.308,32.478,61.638a51.872,51.872,0,0,0,35.154,5.422c1.92-.377,2.748,3.456.811,3.836h0Z" transform="translate(0 0)" fill="#e6e6e6"/><path d="M.687,26.222,21.25,12.237V14.87A31.852,31.852,0,0,1,6.827,2.262C5.8.583,8.437-.95,9.46.723A29.121,29.121,0,0,0,22.789,12.237c1.137.493.839,2.063,0,2.633L2.226,28.856C.6,29.962-.928,27.321.687,26.222h0Z" transform="translate(52.9 124.944)" fill="#e6e6e6"/></g><path d="M526.124,583.477H500.537a3.62,3.62,0,0,1-2.844-1.37,3.546,3.546,0,0,1-.694-3.013,69.6,69.6,0,0,0-.418-32.5,3.6,3.6,0,0,1,1.57-3.921c8.852-5.484,18.49-5.312,29.468.524a3.661,3.661,0,0,1,1.905,2.635,113.891,113.891,0,0,1,.189,34.533,3.613,3.613,0,0,1-3.589,3.115Z" transform="translate(403.3 -122.777)" fill="#1070cc"/><path d="M515.884,563.621h-8.8a1.835,1.835,0,0,1,0-3.67h8.8a1.835,1.835,0,0,1,0,3.67Z" transform="translate(401.586 -126.935)" fill="#fff"/><path d="M526.646,572.634H507.082a1.835,1.835,0,1,1,0-3.67h19.564a1.835,1.835,0,0,1,0,3.67Z" transform="translate(401.586 -128.696)" fill="#fff"/><g transform="translate(976.548 162.694) rotate(47)"><path d="M71.479.8C49.926-2.436,26.322,4.046,12.229,21.4A54.455,54.455,0,0,0,.252,49.8,49.8,49.8,0,0,0,7.047,79.843c6.276,10.94,15.6,19.808,25.211,27.807,1.5,1.247,3.667-.9,2.156-2.156C19.1,92.747,3.209,76.418,3.036,55.15,2.868,34.346,16.67,15.82,35.514,7.9A65.9,65.9,0,0,1,70.668,3.745c1.92.289,2.748-2.649.811-2.941h0Z" transform="translate(0 13.138)" fill="#e6e6e6"/><path d="M.687,2.9,21.25,16.884V14.251A31.852,31.852,0,0,0,6.827,26.859C5.8,28.538,8.436,30.071,9.46,28.4A29.122,29.122,0,0,1,22.789,16.884c1.137-.493.839-2.063,0-2.633L2.226.265C.6-.841-.928,1.8.687,2.9h0Z" transform="translate(52.9 0)" fill="#e6e6e6"/></g><g transform="translate(923.118 179.929)"><path d="M471.172,238.656l-25.565,1.059a3.621,3.621,0,0,1-2.9-1.251,3.546,3.546,0,0,1-.818-2.982,69.62,69.62,0,0,0-1.669-32.143,3.6,3.6,0,0,1,1.776-4.2c10.471-5.44,20.283-5.716,29.16-.821a3.642,3.642,0,0,1,1.828,2.462,113.883,113.883,0,0,1,1.643,34.62A3.613,3.613,0,0,1,471.172,238.656Z" transform="translate(-440.074 -194.837)" fill="#d6d6e3"/><path d="M472.17,227.614l-19.547.81a1.835,1.835,0,1,1-.152-3.667l19.547-.81a1.835,1.835,0,1,1,.152,3.667Z" transform="translate(-442.153 -200.527)" fill="#fff"/><path d="M471.839,219.621l-19.547.81a1.835,1.835,0,0,1-.152-3.667l19.547-.81a1.835,1.835,0,0,1,.152,3.667Z" transform="translate(-442.088 -198.965)" fill="#fff"/></g></g></svg>
+                      </div>
                     </div>
                   </div>
-
-                  <div class="project-user-empathy">
-                    <h4 class="section-title">
+                  
+                  <div class="project-user-empathy pj-section">
+                    <h2 class="section-title">
                       <strong>Building User Empathy</strong>
-                    </h4>
-                    <h5>Persona Development</h5>
+                    </h2>
+                    <h3>Persona Development</h3>
                     <ul class="row persona-list">
                       <li class="col-xs-12 col-sm-6">
                         <div class="persona-card">
@@ -907,15 +838,15 @@
                         </div>
                       </li>
                     </ul>
-                    <h5 class="user-journey-map">User Journey Map</h5>
+                    <h3 class="user-journey-map">User Journey Map</h3>
                     <p>This journey maps the psychological transition from <strong>Information Overload</strong> to <strong>Mental Clarity</strong> using the spatial and organizational tools of Memo Note.</p>
-                    <img src="images/projects/memo/user-journey-map.png" class="user-journey-map" alt="User Journey Map" loading="lazy">
+                    <img src="images/projects/memo/user-journey-map.webp" class="user-journey-map" alt="User Journey Map" loading="lazy">
                   </div>
 
-                  <div class="project-functionalities">
-                    <h4 class="section-title">
+                  <div class="project-functionalities pj-section">
+                    <h2 class="section-title">
                       <strong>Functionalities</strong>
-                    </h4>
+                    </h2>
                     <div class="wrapper">
                       <ul>
                         <li>Create a new memo.</li>
@@ -937,12 +868,12 @@
                     </div>
                   </div>
 
-                  <div class="project-design-prototype">
-                    <h4 class="section-title">
+                  <div class="project-design-prototype pj-section">
+                    <h2 class="section-title">
                       <strong>Design & Prototype</strong>
-                    </h4>
+                    </h2>
 
-                    <h5>Visual Identity & Material Design</h5>
+                    <h3>Visual Identity & Material Design</h3>
                     <div class="wrapper">
                       <div class="text">
                         <p>I chose <strong>Material-UI (MUI)</strong> as the core design system. This choice wasn't just aesthetic; it was functional.</p>
@@ -959,69 +890,69 @@
                       </div>
                     </div>
 
-                    <h5 class="wireframing">Wireframing with Figma<img src="images/logos/figma-logo.png" class="figma-logo" alt="Figma logo" /></h5>
+                    <h3 class="wireframing">Wireframing with Figma<img src="images/logos/figma-logo.webp" class="figma-logo" alt="Figma logo" /></h3>
 
                     <p>To bridge the gap between conceptual ideas and visual structure, I crafted low-fidelity wireframes with Figma. This skeletal framework allowed me to iterate quickly on functional layouts and content hierarchy. This stage also focused on defining the spatial relationships between UI elements and mapping out the essential pathways for our primary personas.</p>
 
                     <div class="wireframes">
                         
                       <div class="create">
-                        <div><strong>Create memo</strong></div>
+                        <h4><strong>Create memo</strong></h4>
                         <div class="scroll-container">
-                          <img src="./images/projects/memo/wireframes/create-memo.png" alt="Create memo" loading="lazy"/>
+                          <img src="./images/projects/memo/wireframes/create-memo.webp" alt="Create memo" loading="lazy"/>
                         </div>
                       </div>
 
                       <div class="edit">
-                        <div><strong>Edit memo's background color</strong></div>
+                        <h4><strong>Edit memo's background color</strong></h4>
                         <div class="scroll-container">
-                          <img src="./images/projects/memo/wireframes/edit-memo-color.png" alt="Edit memo color" loading="lazy"/>
+                          <img src="./images/projects/memo/wireframes/edit-memo-color.webp" alt="Edit memo color" loading="lazy"/>
                         </div>
                       </div>
 
                       <div class="drag">
-                        <div><strong>Drag & drop memo</strong></div>
+                        <h4><strong>Drag & drop memo</strong></h4>
                         <div class="scroll-container">
-                          <img src="./images/projects/memo/wireframes/drag-drop-memo.png" alt="Drag & drop memo" loading="lazy"/>
+                          <img src="./images/projects/memo/wireframes/drag-drop-memo.webp" alt="Drag & drop memo" loading="lazy"/>
                         </div>
                       </div>
 
                       <div class="filter">
-                        <div><strong>Filter memo by color</strong></div>
+                        <h4><strong>Filter memo by color</strong></h4>
                         <div class="scroll-container">
-                          <img src="./images/projects/memo/wireframes/filter-memo.png" alt="Filter memo" loading="lazy"/>
+                          <img src="./images/projects/memo/wireframes/filter-memo.webp" alt="Filter memo" loading="lazy"/>
                         </div>
                       </div>
 
                       <div class="archive">
-                        <div><strong>Archive and view memo</strong></div>
+                        <h4><strong>Archive and view memo</strong></h4>
                         <div class="scroll-container">
-                          <img src="./images/projects/memo/wireframes/archive-memo.png" alt="Archive memo" loading="lazy"/>
+                          <img src="./images/projects/memo/wireframes/archive-memo.webp" alt="Archive memo" loading="lazy"/>
                         </div>
                       </div>
 
                       <div class="delete">
-                        <div><strong>Delete memo</strong></div>
+                        <h4><strong>Delete memo</strong></h4>
                         <div class="scroll-container">
-                          <img src="./images/projects/memo/wireframes/delete-memo.png" alt="Delete memo" loading="lazy"/>
+                          <img src="./images/projects/memo/wireframes/delete-memo.webp" alt="Delete memo" loading="lazy"/>
                         </div>
                       </div>
                     </div>
 
-                    <h5>Prototypes & Interaction</h5>
+                    <h3>Prototypes & Interaction</h3>
                     <p>The "Magic" of Memo Note happens in the interaction. I focused on the <strong>physics of the UI</strong>.</p>
                     <ul>
                       <li>
                           <strong>Drag & Resize (The "Snap" Effect)</strong>: Using react-grid-layout, I implemented a grid system where notes snap into place. This provides a satisfying "tactile" feel. When users drag a note, the other notes fluidly reflow.
-                          <img class="gif drag-memo" src="/videos/drag-memo.gif" alt="Drag Memo in motion" loading="lazy">
+                          <img class="gif drag-memo" src="/videos/drag-memo.webp" alt="Drag Memo in motion" loading="lazy">
                       </li>
                       <li>
                         <strong>Feedback Loops</strong>: Every action (creating, updating, archiving, or deleting) is followed by a <strong>MUI Snackbar (Toast)</strong>. This is crucial for Sarah, who needs confirmation that her work is saved to the cloud, and for Leo, who needs to know his "Delete" was successful.
-                        <img class="gif create-memo" src="/videos/create-memo.gif" alt="Create Memo in motion" loading="lazy">
+                        <img class="gif create-memo" src="/videos/create-memo.webp" alt="Create Memo in motion" loading="lazy">
                       </li>
                       <li>
                         <strong>Quick filter</strong>: To speed up filtering, we use color buttons instead of dropdowns to save an extra click. And the input field updates instantly via "onchange" without a submit button.
-                        <img class="gif filter-memo" src="/videos/filter-memo.gif" alt="Filter Memo in motion" loading="lazy">
+                        <img class="gif filter-memo" src="/videos/filter-memo.webp" alt="Filter Memo in motion" loading="lazy">
                       </li>
                     </ul>
 
@@ -1043,12 +974,12 @@
                     </ul>
                   </div> -->
 
-                  <div class="project-reflection">
-                    <h4 class="section-title">
+                  <div class="project-reflection pj-section">
+                    <h2 class="section-title">
                       <strong>Project Reflection</strong>
-                    </h4>
+                    </h2>
                     
-                    <h5>What's Next?</h5>
+                    <h3>What's Next?</h3>
                     <div class="wrapper next">
                       <ul>
                         <li><strong>Markdown Support</strong>: Transitioning from plain text to Markdown Editor.</li>
@@ -1065,7 +996,7 @@
                       </div>
                     </div>
                     
-                    <h5>Project Takeaways</h5>
+                    <h3>Project Takeaways</h3>
                     <div class="wrapper takeaways">
                       <ul class="text">
                         <li><strong>UX/UI is a Balancing Act</strong>: I learned that while "unlimited freedom" sounds good, a <strong>grid system</strong> actually helps users feel more organized.</li>
@@ -1103,17 +1034,298 @@
                     Movie World
                     <span class="hint hint--right hint--rounded" aria-label="GitHub Repository">
                       <a href="https://github.com/hkKevin/movie-world" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="github"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="github"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                          <path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/>
+                        </svg>
                       </a>
                     </span>
                     <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank" rel="noopener noreferrer">
                       Live Demo
                     </a>
                   </h4>
-                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close">close</i>
+                  <i class="material-icons-outlined close" type="button" data-bs-dismiss="modal" aria-label="Close Modal">close</i>
                 </div>
                 <div class="modal-body">
+
+                  <div class="project-intro pj-section">
+                    <h5 class="headline">
+                      A streamlined discovery experience for film enthusiasts.
+                    </h5>
+                    <p class="role">
+                      <strong>Role</strong>: UX/UI Designer & Front-end Developer
+                    </p>
+                    <p class="tech-stack">
+                      <strong>Stack</strong>: Cypress, React, Redux, React Router, Axios, React Reveal, etc.
+                    </p>
+                  </div>
+
                   <!-- Swiper -->
+                  <div class="swiper-container movieWorldSwiper pj-section">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="d-block" src="./images/projects/movie-world/movie-world-landing-page.webp" alt="Movie World" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block" src="./images/projects/movie-world/movie-overview.webp" alt="Movie Overview" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block" src="./images/projects/movie-world/related-YouTube-videos.webp" alt="Related YouTube Viedos" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block" src="./images/projects/movie-world/backdrops.webp" alt="Movie Backdrops" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="d-block" src="./images/projects/movie-world/reviews.webp" alt="Movie Reviews" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                  <div class="project-challenge pj-section">
+                    <h2 class="section-title">
+                      <strong>The Problem</strong>
+                    </h2>
+                    <p>
+                      Existing movie database platforms (IMDb, Rotten Tomatoes) are often criticized for cluttered layout with excessive advertisements and complex navigation that overwhelms users. These heavy "noise", including performance latency, create a frustrating UX for film enthusiasts seeking a clean, fast-moving interface.
+                    </p>
+                    <h5 class="inner-thought">How might we create a lightweight discovery experience with clean UI?</h5>
+                  </div>
+                  
+                  <div class="project-objective pj-section">
+                    <h2 class="section-title">
+                      <strong>The Goal</strong>
+                    </h2>
+                     <p>To bridge the gap between cinematic immersion and high-performance engineering by delivering a distraction-free, media-first environment for film discovery.</p>
+                     <ul>
+                      <li><strong>&#x26A1; Lightweight Speed</strong>: Eliminating the "noise" of traditional databases to ensure a frictionless user journey where content is always two clicks away.</li>
+                      <li><strong>&#127916; Visual Storytelling</strong>: Prioritizing high-quality posters and trailers as the primary UI language to create an immersive, cinematic atmosphere.</li>
+                      <li><strong>&#127959;&#65039; Enterprise Integrity</strong>: Building with a modern <strong>React</strong> architecture to ensure the code is as scalable and performant as the visual experience.</li>
+                     </ul>
+                  </div>
+
+                  <div class="project-research pj-section">
+                    <h2 class="section-title">
+                      <strong>UX Research & Strategy</strong>
+                    </h2>
+
+                    <h3>User Insights</h3>
+                    <p>Through informal user interviews with movie buffs, I identify three primary "pain points":</p>
+                    <ul>
+                      <li><strong>&#128565;&#8205;&#128171; Information Overload</strong>: Excessive text and cluttered metadata create "visual noise" that distracts from discovery. Enthusiasts find it easier to connect with a movie through its imagery and trailers rather than dense blocks of statistics.</li>
+                      <li><strong>&#128241; Mobile Friction</strong>: Many sites fail to provide a fluid browsing experience on smaller viewports. Users need a touch-optimized, fluid experience that prioritizes screen real estate.</li>
+                      <li><strong>&#127919; Fragmented Discovery</strong>: Users expressed frustration with having to leave a movie site to search for trailers or reviews elsewhere. What if I centralize multimedia—integrating YouTube trailers and community reviews directly into the movie's detail page to eliminate "context switching"?</li>
+                    </ul>
+                    
+                    <h3>Information Architecture</h3>
+                    <p>Use a "shallow" structure to ensure movie info is less than two clicks away. This efficient UX reduce the cognitive load from users. It eliminates the friction that often kills engagement in content-heavy apps.</p>
+                    <blockquote>
+                      Homepage <br>
+                      └─ Movie info page
+                    </blockquote>
+
+                    <h3>Keyboard Shortcuts</h3>
+                    <p>To accommodate advanced desktop users, I implemented a suite of keyboard shortcuts designed for rapid, <strong>mouse-free</strong> navigation. These shortcuts ensuring a fluid and intuitive UX for those who prefer tactile control.</p>
+                    <ul>
+                      <li>Press <kbd>/</kbd> to focus the input on the homepage.</li>
+                      <li>Press <kbd>Tab</kbd> to select various movies in the search results.</li>
+                      <li>Press <kbd>Enter</kbd> or <kbd>Space</kbd> to reveal movie info.</li>
+                      <li>Press <kbd>Esc</kbd> to navigate back or clear search.</li>
+                    </ul>
+
+                    <h3>Tooltip on focus</h3>
+                    <p>A non-blocking way to display <strong>supplementary information</strong> (when users focus it) without cluttering the main screen with text. </p>
+                    <ul>
+                      <li>
+                        <div>Focusing the clear button shows "Clear"</div>
+                        <img class="gif tooltip-movie-name" src="/videos/tooltip-movie-name.webp" alt="Movie name tooltip in motion" loading="lazy">
+                      </li>
+                      <li>Focusing the movie poster shows the movie name</li>
+                      <li>
+                        <div>Focusing the cast poster shows the actor/actress name</div>
+                        <img class="gif tooltip-cast-name" src="/videos/tooltip-cast-name.webp" alt="Cast name tooltip in motion" loading="lazy">
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div class="project-design-process pj-section">
+                    <h2 class="section-title">
+                      <strong>Design Process (UI)</strong>
+                    </h2>
+
+                    <h3>Design Philosophy</h3>
+                    <h5 class="headline">Efficiency Through Minimalism</h5>
+                    <div>My approach for this project was to eliminate "interaction friction". I focused on creating a seamless interface where the <strong>technology anticipates the user's intent</strong>. The goal was to transform the traditional "Search, Click, Wait" pattern into a fluid and reactive discovery experience.</div>
+
+                    <h3>User Flow Summary</h3>
+                    <div>The core of this UI is a reactive search-and-discovery loop designed to get users to their content with the fewest possible clicks.</div>
+                    <ul>
+                      <li><strong>&#128640; Immediate Engagement</strong>: Upon landing, the interface removes the need for a "starting click" by auto-focusing the input field, allowing users to begin their journey instantly.</li>
+                      <li><strong>&#128269; Predictive Results</strong>: By replacing the traditional submit button with an <code>onChange</code> mechanism, this ensures the UI syncs with the user's input instantly, giving the data retrieval a seamless and "live" feeling.</li>
+                      <li><strong>&#128208; Adaptive Visuals</strong>: A dynamic grid system (2-5 columns) ensures the movie posters remain the hero of the experience across all devices, maintaining visual density without clutter.</li>
+                      <li><strong>&#127871; Contextual Depth</strong>: A deep-dive experience without the clutter. This layout aggregates critical movie data (ratings, trailers, and reviews) into a single responsive container. This UI eliminates unnecessary navigation while upholding minimalism.</li>
+                    </ul>
+
+                    <h3 class="wireframing">Wireframing with Figma<img src="images/logos/figma-logo.webp" class="figma-logo" alt="Figma logo" /></h3>
+                    
+                    <div class="wireframes movie-world">
+                      <div>
+                        To identify the layout concept and user flow of the UI, I created low-fidelity wireframes with Figma:
+                      </div>
+                      <div class="scroll-container">
+                        <img src="./images/projects/movie-world/wireframe.webp" alt="Wireframe of Movie World" loading="lazy"/>
+                      </div>
+                    </div>
+
+                    <h3>Design System</h3>
+                    <ul>
+                      <li><strong>&#127912; Color Palette</strong>: I choose a dark theme (Deep blue-gray background) to make the movie posters pop, using lightgray and champagne accent to offer a warm and inviting look.</li>
+                      <li><strong>&#128288; Typography</strong>: Utilizing <strong>Open Sans</strong>, a clean and  sans-serif font, to ensure excellent readability on various devices. This font creates a welcoming and approachable experience. </li>
+                      <li><strong>&#127754; Transitions</strong>: I integrate <strong>React Reveal</strong> to create a "fade-in" effect as users scroll. It signals the "start of a scene" for that specific film, easing the user into the content rather than jarring them with a sudden visual "cut". </li>
+                    </ul>
+
+                    <h3>Iterations</h3>
+                    <p>Early prototypes utilized a single-page "pop-up" for movie details, but user testing revealed a "claustrophobic" browsing experience. I pivoted to a <strong>React Router</strong> architecture to implement a multi-route system, giving every film its own dedicated "stage". This transition not only improved visual focus but also enabled deep-linking, allowing users to share specific cinematic discoveries directly.</p>
+
+                  </div>
+
+                  
+                  <div class="project-tech pj-section">
+                    <h2 class="section-title">
+                      <strong>Technical Implementation (Frontend)</strong>
+                    </h2>
+
+                    <h3>Tech Stack & Architecture</h3>
+                    <ul>
+                      <li><strong>Front-end JavaScript Library</strong>: React was chosen for its component-based architecture. By utilizing React's <code>useState</code> and <code>useEffect</code>, I simplified complex asynchronous data fetching and state management, ensuring the UI stays perfectly in sync with the API.</li>
+                      <li>
+                        <strong>Style Management</strong>: By adopting Vanilla CSS, the project prioritized a lightweight footprint and maximum browser compatibility, leveraging native capabilities over external libraries. A centralized design system was implemented using <strong>CSS variables</strong> to establish a single source of truth, ensuring visual consistency while eliminating technical debt. This architecture establishes a scalable foundation, allowing the interface to be instantly re-themed or expanded into dark/light modes without refactoring the core codebase.
+                        <blockquote class="css">
+                          <div><span class="selector">:root</span> <span class="bracket">{</span></div>
+                              <div class="flexi-row"><div><span class="property">--primary</span><span class="colon">: </span><span class="value">#efe1b1</span><span class="semiColon">;</span></div><span class="comment brand">/* Core branding colors */</span></div>
+                              <div><span class="property">--primary-dark</span><span class="colon">: </span><span class="value">#e5ce80</span><span class="semiColon">;</span></div>
+                              <div class="flexi-row"><div><span class="property">--bg-primary</span><span class="colon">: </span><span class="value">#233345</span><span class="semiColon">;</span></div><span class="comment bg">/* Background color */</span></div>
+                              <div class="flexi-row"><div><span class="property">--gray-100</span><span class="colon">: </span><span class="value">#ccc</span><span class="semiColon">;</span></div><span class="comment gray">/* Tiered semantic colors */</span></div>
+                              <div><span class="property">--gray-200</span><span class="colon">: </span><span class="value">#999</span><span class="semiColon">;</span></div>
+                              <div><span class="property">--gray-300</span><span class="colon">: </span><span class="value">#888</span><span class="semiColon">;</span></div>
+                              <div><span class="property">--gray-400</span><span class="colon">: </span><span class="value">#444</span><span class="semiColon">;</span></div>
+                              <div><span class="property">--gray-500</span><span class="colon">: </span><span class="value">#222</span><span class="semiColon">;</span></div>
+                          <div class="bracket">}</div>
+                        </blockquote>
+                      </li>
+                      <li><strong>State Management</strong>: The project required state updates (e.g. search state, movie data) across multiple isolated features. I chose <strong>Redux</strong> to manage these transitions through clear <strong>Actions</strong> and <strong>Reducers</strong>, ensuring that the UI remained consistent and reactive regardless of the user's navigation path.</li>
+                      <li><strong>Routing</strong>: I implemented <strong>React Router</strong> to manage navigation, enabling a seamless app-like experience without page reloads (white flash). By utilizing dynamic parameter routing, I created a scalable architecture that handles thousands of unique movie profiles through a reusable UI component, while maintaining full browser history support for a familiar user experience.</li>
+                      <li><strong>API integration</strong>: I chose <strong>Axios</strong> to build a more robust and predictable data-fetching layer. While <code>fetch()</code> is built into the browser, Axios provides several high-level features that streamline the communication between the UI and the Movie Database, such as automatic JSON transformation and better browser support. Hence, I could write cleaner, more readable asynchronous code.</li>
+                      <li>
+                        <strong>Component Hierarchy</strong>: The React components are structured in a hierarchical manner, with each component representing a specific part of the UI:
+                        <blockquote>
+                          UI Components <br>
+                          ├─ Header <br>
+                          ├─ Search <br>
+                          ├─ Results <br>
+                          │  ├─ Movie <br>
+                          │  └─ GoBack <br>
+                          ├─ Spinner <br>
+                          ├─ JumpToTop <br>
+                          └─ Footer
+                        </blockquote>
+                      </li>
+                      <li><strong>Build Tool</strong>: I transitioned from the deprecated Create React App to <strong>Vite</strong> to leverage a more modern, future-proof build ecosystem. Vite offers <strong>near-instant server starts</strong> and live updates the moment I save my code, unlike the slower bundling process of older tools. This results in a highly optimized, faster-loading website for users by stripping away unnecessary code and organizing files more efficiently.</li>
+                      <li>
+                        <strong>Quality Assurance</strong>: I integrated <strong>Cypress</strong> to ensure critical user journeys remain functional by testing the application in a real browser environment from end-to-end. By leveraging features like time-travel debugging and automatic waiting, I eliminated flaky tests and gained the ability to validate complex asynchronous interactions
+                        <img class="gif cypress" src="/videos/cypress.webp" alt="Screen recording for Cypress tests" loading="lazy">
+                      </li>
+                    </ul>
+
+                    <h3 class="eng-challenge">Engineering Challenges</h3>
+                    <ol>
+                      <li>
+                        <h4>SPA Routing Persistence</h4>
+
+                        <h5><strong>The Problem</strong></h5>
+                        <div>Hosting on <strong>GitHub Pages</strong> presented a challenge for deep-linking. Using a standard BrowserRouter would cause the server to return a <strong>404 error</strong> upon page refresh, as the static server looks for a physical file that doesn't exist for unique movie URLs.</div>
+
+                        <h5><strong>The Solution</strong></h5>
+                        <div>I implemented <strong>HashRouter</strong> to manage the application's navigation. By utilizing the hash portion of the URL (e.g., <code>/#/movie/11</code>), the browser ignores the path during server requests and allows React Router to intercept the change via JavaScript.</div>
+
+                        <h5><strong>The Result</strong></h5>
+                        <div>This implementation ensures users refresh any movie detail page without losing their session. By leveraging client-side rendering, I eliminated "white screen" flickers to create a fluid, uninterrupted experience while maintaining a stable, complex routing structure within a static hosting environment.</div>
+                      </li>
+                      <li>
+                        <h4>Optimizing API Efficiency</h4>
+
+                        <h5><strong>The Problem</strong></h5>
+                        <div>By default, the <code>onChange</code> mechanism triggered <strong>an API request for every single keystroke</strong>. This resulted in excessive network traffic and "UI flickering," where the loading spinner and search results would rapidly flash as the user typed, forming a jittery and distracting experience.</div>
+
+                        <h5><strong>The Solution</strong></h5>
+                        <div>I implemented a <strong>Debouncing</strong> strategy to delay the API call until the user has finished typing for 500ms. This ensures that data is fetched once the user's intent is clear, significantly reducing redundant network overhead.</div>
+
+                        <h5><strong>The Result</strong></h5>
+                        <div>The implementation created a much <strong>smoother UI</strong> by eliminating the aggressive flickering of the loading state. By streamlining the data-fetching logic, I <strong>reduced API load</strong> and provided a more polished, professional feel to the search discovery process.</div>
+
+                        <img class="gif debouncing" src="/videos/debouncing.webp" alt="Screen recording of debouncing search" loading="lazy">
+                      </li>
+                      <li>
+                        <h4>Improving URL Semantic Clarity</h4>
+
+                        <h5><strong>The Problem</strong></h5>
+                        <div>Originally, movie pages were identified solely by a numeric ID (e.g. <code>/#/movie/424</code>). This made shared links look suspicious or uninformative to users and provided zero keyword value for search engine indexing.</div>
+
+                        <h5><strong>The Solution</strong></h5>
+                        <div>I engineered a <code>createSlug</code> utility function to transform movie titles into URL-friendly strings. The logic cleans the data by converting "&" to "and," stripping special characters, and collapsing spaces into single hyphens. This "slug" is then appended to the movie ID, creating a descriptive, human-readable URL.</div>
+
+                        <h5><strong>The Result</strong></h5>
+                        <div>The final URLs (e.g. <code>/#/movie/424/schindlers-list</code>) provide immediate context to the user before they even click. This improves social shareability, enhances SEO keyword relevance, and ensures a more professional, "content-first" navigation structure.</div>
+
+                        <div class="table-container">
+                          <table class="modern-table">
+                            <thead>
+                              <tr>
+                                <th>Movie Title</th>
+                                <th>URL Slug</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="clickable-row" data-href="https://hkkevin.github.io/movie-world/#/movie/280/terminator-2-judgment-day" tabindex="0" role="button">
+                                  <td data-label="Movie Title">Terminator 2: Judgment Day</td>
+                                  <td><code>terminator-2-judgment-day</code></td>
+                              </tr>
+                              <tr class="clickable-row" data-href="https://hkkevin.github.io/movie-world/#/movie/384018/fast-and-furious-presents-hobbs-and-shaw" tabindex="0" role="button">
+                                <td>Fast & Furious Presents: Hobbs & Shaw</td>
+                                <td><code>fast-and-furious-presents-hobbs-and-shaw</code></td>
+                              </tr>
+                              <tr class="clickable-row" data-href="https://hkkevin.github.io/movie-world/#/movie/466272/once-upon-a-time-in-hollywood" tabindex="0" role="button">
+                                <td>Once Upon a Time... in Hollywood</td>
+                                <td><code>once-upon-a-time-in-hollywood</code></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ol>
+
+                  </div>
+
+                  <div class="project-reflection pj-section">
+                    <h2 class="section-title">
+                      <strong>Project Conclusion & Evolution</strong>
+                    </h2>
+
+                    <h3>Future Roadmap</h3>
+                    <ul>
+                      <li><strong>&#128278; Personalized User Journeys</strong>: I plan to implement a <strong>Watchlist</strong> feature, allowing users to pick their own collections and fostering deeper long-term engagement with the platform.</li>
+                      <li><strong>&#128276; Enhanced Error Resilience</strong>: To improve the "fail-soft" experience, I will refine the error-handling logic by introducing <strong>interactive Toast notifications</strong>. These will provide users with clear feedback and a reload button to recover from network or API interruptions gracefully.</li>
+                      <li><strong>&#128279; Rich Social Metadata</strong>: To optimize shareability, I aim to implement <strong>dynamic Open Graph meta tags</strong>. When a movie URL is shared, the platform will automatically append the specific movie backdrop and title as a rich preview, ensuring the link is visually compelling on social media and messaging apps.</li>
+                      <li><strong>&#127763; Aesthetic Flexibility</strong>: Leveraging the existing <strong>CSS Variable architecture</strong>, I will develop a comprehensive "Light Mode" theme. This will demonstrate the scalability of the current design system, allowing users to toggle between visual styles based on their environment or preference.</li>
+                    </ul>
+
+                    <h3>Final Thoughts</h3>
+                    <p>This project was an exercise in balancing technical performance with a frictionless user experience. Beyond mastering React and Vite, the real success was in identifying and solving invisible "points of friction"—from debounced searches to SEO-friendly routing. It reinforced my belief that the best code isn't just clean and scalable; it's code that anticipates and simplifies the user's intent.</p>
+
+                  </div>
+
+                </div>
+                <!-- <div class="modal-body">
                   <div class="swiper-container movieWorldSwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -1148,7 +1360,7 @@
                       <li>Supports Responsive Web Design</li>
                     </ul>
                   </div>
-                </div>
+                </div> -->
                 <div class="modal-footer">
                   <a class="button live-website" href="https://hkkevin.github.io/movie-world" target="_blank" rel="noopener noreferrer">
                     Live Demo
@@ -1169,9 +1381,9 @@
             <p>I would like to hear from you. Please email me and I will get in touch soon.</p><br />
             <div class="email">
               <a class="hint hint--bottom hint--rounded" aria-label="Email me" data-aos="fade-up" data-aos-offset="200" href="mailto:kevin2022leung@gmail.com" target="_blank" rel="noopener noreferrer">kevin2022leung@gmail.com</a>
-              <div id="copy-hint">
-                <i class="material-icons-outlined copy-icon hint hint--bottom hint--rounded" aria-label="Copy" data-clipboard-text="kevin2022leung@gmail.com">file_copy</i>
-              </div>
+              <button id="copy-hint" class="hint hint--bottom hint--rounded" data-clipboard-text="kevin2022leung@gmail.com" aria-label="Copy Email">
+                <i class="material-icons-outlined copy-icon">file_copy</i>
+              </button>
             </div>
           </div>
         </section>
@@ -1195,13 +1407,12 @@
       </footer>
 
       <!-- Jump To Top -->
-      <div class="jump-to-top hint hint--left hint--rounded" type="button" aria-label="Return to Top">
+      <button class="jump-to-top hint hint--left hint--rounded" aria-label="Return to Top">
         <i class="material-icons-outlined">keyboard_arrow_up</i>
-      </div>
+      </button>
 
     </div>
     
-    <script src="scripts/animation-on-scroll.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- jQuery UI -->
@@ -1216,11 +1427,13 @@
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="scripts/swiper.js"></script>
     <!-- clipboard.js -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script defer src="scripts/clipboard.js"></script>
-    <script defer src="scripts/jumpToTop.js"></script>
-    <!-- <script defer src="scripts/page-up-down.js"></script> -->
-    <script defer src="scripts/testimonialNav.js"></script>
+    <script async defer src="scripts/animationOnScroll.js"></script>
+    <script async defer src="scripts/jumpToTop.js"></script>
+    <script async defer src="scripts/testimonialNav.js"></script>
+    <script async defer src="scripts/clickTableRow.js"></script>
+    <script async defer src="scripts/providerInit.js"></script>
 
   </body>
 
