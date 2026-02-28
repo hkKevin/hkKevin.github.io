@@ -1819,6 +1819,26 @@ body {
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
+body.show-mobile-nav #main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #08194f;
+  z-index: 9;
+}
+body.hide-mobile-nav #main::after {
+  content: unset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: unset;
+  z-index: 9;
+}
 
 hr {
   color: lightgray;
@@ -1904,6 +1924,9 @@ hr {
 }
 #container .jump-to-top i {
   color: #08194f;
+}
+#container #main {
+  transition: all 0.2s;
 }
 
 a, button, .jump-to-top, i, img {
