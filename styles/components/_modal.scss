@@ -6,6 +6,12 @@ body.modal-open {
 
 .modal {
   padding: 0 !important;
+  &:focus-visible {
+    @media (max-width: 1399px) {
+      outline: unset !important;
+      border-radius: 0;
+    }
+  }
   .modal-content {
     border: unset;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
