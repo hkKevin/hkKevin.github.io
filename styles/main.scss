@@ -20,7 +20,7 @@
 @use './components/swiper';
 
 :root {
-  --card-border-radius: 20px;
+  --card-border-radius: 14px;
   font-size: 16px;
   @media (max-width: 575px) {
     font-size: 14px;
@@ -35,7 +35,7 @@ html {
 *:focus-visible {
   outline: 4px solid #C2DBFE !important; /* Thick, high-contrast color */
   outline-offset: 2px;        /* Spacing between link and outline */
-  border-radius: 12px;         /* Optional: rounds the corners */
+  border-radius: var(--card-border-radius);         /* Optional: rounds the corners */
   box-shadow: unset !important;
 }
 

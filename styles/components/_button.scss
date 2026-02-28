@@ -11,7 +11,7 @@
   font-weight: bold;
   background: var.$lightColor400;
   color: #fff;
-  border-radius: 12px;
+  border-radius: var(--card-border-radius);
   margin: 0.5em 0;
   padding: 0.4rem 1.7rem;
   text-decoration: none !important;
