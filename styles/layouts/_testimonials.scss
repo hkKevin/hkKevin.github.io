@@ -94,12 +94,13 @@
     margin-inline: auto;
     margin-bottom: 5vh;
     position: sticky;
-    top: 70px;
+    top: 60px;
     z-index: 5;
+    font-weight: 600;
     @media (min-width: 768px) {
       top: 80px;
       width: 700px;
-      height: 55px;
+      height: 44px;
       border-radius: 40px;
     }
     &-list {
@@ -129,7 +130,7 @@
       text-decoration: none;
       transition: color .3s ease-in-out;
       background-color: transparent;
-      color: var.$lightColor400;
+      color: var.$lightColor500;
       border: unset;
       outline: 0;
       cursor: pointer;
@@ -141,13 +142,14 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        padding-top: 6px;
+        padding-top: 8px;
         line-height: 1;
         font-size: 0.7rem;
         background: #fff;
         color: var.$lightColor400;
         @media (min-width: 768px) {
           margin-left: 1rem;
+          padding-top: 6px;
         }
         @media (min-width: 450px) and (max-width: 767px) {
           margin-left: .5rem;
